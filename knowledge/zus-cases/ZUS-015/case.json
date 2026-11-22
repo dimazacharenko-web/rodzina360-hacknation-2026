@@ -1,0 +1,92 @@
+{
+  "schema_version": 1,
+  "id": "ZUS-015",
+  "topic": "father_nontransferable_parental_9_weeks",
+  "source_filename": "Anna Ol_2_zas. mac. - 9 tygodni urlopu rodzicielskiego dla ojca.pdf",
+  "source_pdf_path": "knowledge/zus-cases/incomming/Anna Ol_2_zas. mac. - 9 tygodni urlopu rodzicielskiego dla ojca.pdf",
+  "status": "source_audited_partial_verification",
+  "inputs": {
+    "parent": "father",
+    "parentalClaimStart": "2025-03-10",
+    "parentalClaimEnd": "2025-05-11",
+    "employmentCategory": "self_employed",
+    "motherReceivedParentBenefit": "reported_1000_PLN_monthly_2024-02-27_to_2025-03-26"
+  },
+  "expected": {
+    "parentalRequestedDays": 63
+  },
+  "evidence": [
+    {
+      "page": 3,
+      "evidence_type": "application_and_request_for_information"
+    },
+    {
+      "page": 6,
+      "evidence_type": "application_and_request_for_information"
+    },
+    {
+      "page": 9,
+      "evidence_type": "application_and_request_for_information"
+    },
+    {
+      "page": 12,
+      "evidence_type": "application_and_request_for_information"
+    },
+    {
+      "page": 15,
+      "evidence_type": "application_and_request_for_information"
+    }
+  ],
+  "verification": {
+    "source_review": "selected_pages_visually_inspected",
+    "final_award": "unconfirmed",
+    "amount": "not_available",
+    "app_engine": "not_tested",
+    "full_document_review": "completed",
+    "decision": "not_confirmed",
+    "decision_status": "no_grant_or_refusal_found"
+  },
+  "notes": "ZUS requested KRUS insurance clarification, page 3. Mother's declared parental benefit is an assertion, not a ZUS-verified grant.",
+  "contains_personal_data": false,
+  "full_source_review": {
+    "total_pages_inspected": 16,
+    "method": "visual_contact_sheet_plus_targeted_full_resolution_pages; original is image-only scan",
+    "document_outcome": "not_confirmed",
+    "actual_payment_amount_pln": null,
+    "payment_amount_available": false,
+    "evidence_pages": [
+      1,
+      2,
+      3,
+      6,
+      9,
+      12,
+      13,
+      15
+    ],
+    "findings": [
+      "ZUS letter p3 demands clarification of KRUS coverage, to be supplied by 2025-04-11.",
+      "ZUR application requests 63 days; no grant/refusal document found.",
+      "Mother's 1000 PLN monthly benefit is stated in a declaration, not confirmed as payout to father."
+    ],
+    "legal_outcome_vs_app_test": "source evidence only; no app calculation assertion run",
+    "review_date": "2026-11-21"
+  },
+  "full_source_audit": {
+    "reviewed_pdf_pages": "all_pages_visually_screened",
+    "status": "no_grant_or_refusal_found",
+    "source_pages": [
+      3,
+      6,
+      9,
+      12,
+      13,
+      15
+    ],
+    "documentary_findings": "ZUS letter p3 demands KRUS insurance clarification; ZUR requests 63 days. 1000 PLN/month in a statement refers to mother's declared benefit, NOT confirmed father's payment.",
+    "benefit_payment_amount_pln": null,
+    "amount_status": "not_in_supplied_document",
+    "app_result_comparison": "not_performed",
+    "note": "A form, an insurance contribution basis, and an actual benefit payment are different evidence types."
+  }
+}

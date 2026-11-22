@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "id": "ZUS-031",
+  "topic": "paternity_leave_paid",
+  "source_filename": "Jacek War_04_zas. macierzyński_urlop ojcowski.pdf",
+  "source_pdf_path": "knowledge/zus-cases/incomming/Jacek War_04_zas. macierzyński_urlop ojcowski.pdf",
+  "status": "partially_verified_source_evidence",
+  "inputs": {
+    "parent": "father",
+    "paternityPaidStart": "2026-09-14",
+    "paternityPaidEnd": "2026-09-27",
+    "employmentFte": 1
+  },
+  "expected": {
+    "paternityPaidDays": 14,
+    "awardOutcome": "paid_for_period"
+  },
+  "evidence": [
+    {
+      "page": 1,
+      "source_type": "cover_explicit_payment_and_Z3"
+    },
+    {
+      "page": 4,
+      "source_type": "cover_explicit_payment_and_Z3"
+    },
+    {
+      "page": 8,
+      "source_type": "cover_explicit_payment_and_Z3"
+    }
+  ],
+  "verification": {
+    "source_pages_reviewed": [
+      1,
+      4,
+      8
+    ],
+    "amount": "not_documented",
+    "financial_amount_pln": null,
+    "app_engine": "not_tested",
+    "full_document_audit": "pending"
+  },
+  "notes": "Document cover p1 explicitly says payment was made for 14–27 Sep 2026. No amount stated."
+}

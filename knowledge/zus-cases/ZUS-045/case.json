@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "id": "ZUS-045",
+  "topic": "employee_maternity_and_parental_claim",
+  "source_filename": "Julia No_4_zas. macierzyński.pdf",
+  "source_pdf_path": "knowledge/zus-cases/incomming/Julia No_4_zas. macierzyński.pdf",
+  "status": "partially_extracted",
+  "inputs": {
+    "childBirthDate": "2025-02-03",
+    "maternityClaimStart": "2025-02-03",
+    "maternityClaimEnd": "2025-06-22",
+    "parentalClaimStart": "2025-06-23",
+    "parentalClaimEnd": "2026-02-01"
+  },
+  "expected": {
+    "maternityRequestedDays": 140,
+    "parentalRequestedDays": 224
+  },
+  "evidence": [
+    {
+      "page": 2,
+      "evidence_type": "ZAM_application"
+    },
+    {
+      "page": 4,
+      "evidence_type": "ZAM_application"
+    },
+    {
+      "page": 5,
+      "evidence_type": "ZAM_application"
+    }
+  ],
+  "verification": {
+    "source_pages_reviewed": [
+      2,
+      4,
+      5
+    ],
+    "decision_status": "see_case_notes",
+    "amount_pln": null,
+    "financial_amount_verified": false,
+    "app_engine": "not_tested",
+    "full_document_audit": "pending"
+  },
+  "notes": "ZAM p2 states maternity 140 days and parental 224 days; no proof of award or amount in inspected pages."
+}

@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "id": "ZUS-036",
+  "topic": "maternity_equivalent_due_to_employer_liquidation",
+  "source_filename": "Joanna Łód_3_Zasiłek w wysokości zas. mac. i macierzyński z powodu likwidacji - przyznanie prawa.pdf",
+  "source_pdf_path": "knowledge/zus-cases/incomming/Joanna Łód_3_Zasiłek w wysokości zas. mac. i macierzyński z powodu likwidacji - przyznanie prawa.pdf",
+  "status": "partially_verified_source_evidence",
+  "inputs": {
+    "employmentStart": "2013-08-01",
+    "employmentEnd": "2023-12-31",
+    "employerLiquidationReported": true,
+    "benefitEquivalentApplied": true
+  },
+  "expected": {
+    "awardOutcome": "not_confirmed_from_displayed_decision"
+  },
+  "evidence": [
+    {
+      "page": 1,
+      "source_type": "ZAS55_employment_certificate_Z3_ZAM"
+    },
+    {
+      "page": 2,
+      "source_type": "ZAS55_employment_certificate_Z3_ZAM"
+    },
+    {
+      "page": 3,
+      "source_type": "ZAS55_employment_certificate_Z3_ZAM"
+    },
+    {
+      "page": 5,
+      "source_type": "ZAS55_employment_certificate_Z3_ZAM"
+    },
+    {
+      "page": 8,
+      "source_type": "ZAS55_employment_certificate_Z3_ZAM"
+    },
+    {
+      "page": 10,
+      "source_type": "ZAS55_employment_certificate_Z3_ZAM"
+    },
+    {
+      "page": 16,
+      "source_type": "ZAS55_employment_certificate_Z3_ZAM"
+    }
+  ],
+  "verification": {
+    "source_pages_reviewed": [
+      1,
+      2,
+      3,
+      5,
+      8,
+      10,
+      16
+    ],
+    "amount": "not_documented",
+    "financial_amount_pln": null,
+    "app_engine": "not_tested",
+    "full_document_audit": "pending"
+  },
+  "notes": "Employment certificate p3 and ZAS-55 p1–2 establish context and claim. Filename mentions grant, but an explicit formal granting decision and amount must be located before marking confirmed."
+}

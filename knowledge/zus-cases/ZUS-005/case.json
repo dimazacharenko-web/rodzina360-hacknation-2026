@@ -1,0 +1,34 @@
+{
+  "id": "ZUS-005",
+  "topic": "pregnancy_sick_leave",
+  "source_filename": "Anna Ko_4_zas. chorobowy w ciąży.pdf",
+  "source_page_count": null,
+  "status": "partially_extracted",
+  "source_visibility": "private_only",
+  "inputs": {
+    "claimStart": "2025-02-18",
+    "claimEnd": "2025-03-27",
+    "employerReportedSickLeaveStart": "2025-03-08",
+    "employerReportedSickLeaveEnd": "2025-04-01",
+    "employmentStart": "2024-10-01",
+    "employmentFte": 0.25
+  },
+  "expected": {
+    "claimedDays": 38,
+    "employerReportedDays": 25
+  },
+  "verification": {
+    "dates": "confirmed_from_forms",
+    "pregnancy_code": "not_confirmed",
+    "award": "not_confirmed",
+    "amount": "not_available"
+  },
+  "evidence": [
+    2,
+    4,
+    6,
+    8
+  ],
+  "notes": "ZUS requested missing Z-3, so the claim is not proof of payment or entitlement. Periods refer to different form entries and must not be treated as contradictory without investigation.",
+  "warning": "Application/request is not automatically proof of an awarded payment."
+}

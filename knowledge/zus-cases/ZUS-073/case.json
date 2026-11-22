@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "id": "ZUS-073",
+  "topic": "maternity_claim_minimum_topup_and_parental_additional_nine_weeks",
+  "source_filename": "Teresa No_5_zas. chorobowy i macierzyński.pdf",
+  "source_pdf_path": "knowledge/zus-cases/incomming/Teresa No_5_zas. chorobowy i macierzyński.pdf",
+  "status": "partially_extracted",
+  "inputs": {
+    "employmentFte": 0.25,
+    "maternityBenefitReportedStart": "2024-04-09",
+    "maternityBenefitReportedEnd": "2025-04-07",
+    "additionalParentalNineWeeksAsserted": true,
+    "minimumMonthlyBenefitThresholdPLN": 1000
+  },
+  "expected": {
+    "aggregateBenefitReportedDays": 364,
+    "topupPaymentConfirmed": false
+  },
+  "evidence": [
+    {
+      "page": 3,
+      "kind": "visual_review_original_pdf"
+    },
+    {
+      "page": 4,
+      "kind": "visual_review_original_pdf"
+    },
+    {
+      "page": 7,
+      "kind": "visual_review_original_pdf"
+    },
+    {
+      "page": 9,
+      "kind": "visual_review_original_pdf"
+    },
+    {
+      "page": 14,
+      "kind": "visual_review_original_pdf"
+    }
+  ],
+  "verification": {
+    "pdf_pages": "selected_only",
+    "award": "as_explicitly_stated_in_expected_and_notes",
+    "payment_amount_pln": null,
+    "payment_amount_verified": false,
+    "app_engine": "not_tested",
+    "full_document_audit": "pending"
+  },
+  "notes": "Z-3 p7 reported aggregate 364 days, POG p14 references additional 9-week parental period. ZUS letter pp3–4 explains minimum 1000 PLN supplement but does NOT attest the applicant received it."
+}

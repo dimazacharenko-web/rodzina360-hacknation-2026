@@ -1,0 +1,28 @@
+import assert from 'node:assert/strict';
+import {calculateFlexiblePlan,initialEntries,daysInclusive} from './flexibleLeave.ts';
+const e=(id,owner,start,end,used=false)=>({id,owner,start,end,used});
+assert.equal(daysInclusive('2026-12-01','2026-12-07'),7);
+assert.equal(daysInclusive('2028-02-28','2028-03-01'),3);
+assert.throws(()=>daysInclusive('2026-02-30','2026-03-01'));
+const defaults=initialEntries('2026-12-01',1,true);
+const full=calculateFlexiblePlan('2026-12-01',1,defaults,true);
+assert.equal(full.totalDays,287);
+assert.equal(full.remainingFamilyDays,0);
+assert.equal(full.plannedByParent[0],224);
+assert.equal(full.plannedByParent[1],63);
+const usedAndNew=[e('past',1,'2027-04-20','2027-05-17',true),e('next',1,'2027-05-18','2027-11-30'),e('dad',2,'2027-06-01','2027-07-26')];
+assert.throws(()=>calculateFlexiblePlan('2026-12-01',1,usedAndNew,true)); // 197 days is not an integral number of weeks
+const valid=[e('past',1,'2027-04-20','2027-05-17',true),e('next',1,'2027-05-18','2027-11-29'),e('dad',2,'2027-06-01','2027-07-26')];
+const r=calculateFlexiblePlan('2026-12-01',1,valid,true);
+assert.equal(r.usedByParent[0],28);
+assert.equal(r.plannedByParent[0],196);
+assert.equal(r.plannedByParent[1],56);
+assert.equal(r.remainingFamilyDays,7);
+assert.equal(r.remainingByParent[0],0);
+assert.equal(r.remainingByParent[1],168);
+assert.equal(r.entries[1].employerDeadline,'2027-04-27');
+assert.throws(()=>calculateFlexiblePlan('2026-12-01',1,[e('one',1,'2027-04-20','2027-05-17'),e('two',1,'2027-05-10','2027-05-23')],true));
+assert.throws(()=>calculateFlexiblePlan('2026-12-01',1,[e('tooMuch',1,'2027-04-20','2028-01-31')],false));
+assert.throws(()=>calculateFlexiblePlan('2026-12-01',1,Array.from({length:6},(_,i)=>e(String(i),1,'2027-04-20','2027-04-26')),false));
+assert.throws(()=>calculateFlexiblePlan('2026-12-01',1,[e('dad',2,'2027-04-20','2027-04-26')],false));
+console.log('OK: previous used days, independent overlapping parental periods, separate deadlines and legal limits');

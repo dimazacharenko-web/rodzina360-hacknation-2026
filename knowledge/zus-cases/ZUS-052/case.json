@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "id": "ZUS-052",
+  "source_filename": "Katarzyna Lu_5_zas. mac. - odmowa.pdf",
+  "source_pdf_path": "knowledge/zus-cases/incomming/Katarzyna Lu_5_zas. mac. - odmowa.pdf",
+  "topic": "maternity_claim_refusal_with_corrected_applications",
+  "status": "refusal_header_only_decision_reason_pending",
+  "inputs": {
+    "maternityClaimStart": "2026-07-09",
+    "maternityClaimEnd": "2026-11-25",
+    "parentalClaimStart": "2026-11-26",
+    "parentalClaimEnd": "2027-07-07",
+    "applicationCorrected": true
+  },
+  "expected": {
+    "maternityClaimDays": 140,
+    "parentalClaimDays": 224,
+    "denialIndicatedInCaseHeader": true
+  },
+  "evidence": [
+    {
+      "page": 1,
+      "source": "PDF",
+      "verification_type": "visual_page_read"
+    },
+    {
+      "page": 2,
+      "source": "PDF",
+      "verification_type": "visual_page_read"
+    },
+    {
+      "page": 8,
+      "source": "PDF",
+      "verification_type": "visual_page_read"
+    },
+    {
+      "page": 13,
+      "source": "PDF",
+      "verification_type": "visual_page_read"
+    },
+    {
+      "page": 15,
+      "source": "PDF",
+      "verification_type": "visual_page_read"
+    }
+  ],
+  "verification": {
+    "source_pages_inspected": [
+      1,
+      2,
+      8,
+      13,
+      15
+    ],
+    "decision_and_payment_status": "refusal_header_only_decision_reason_pending",
+    "benefit_payment_amount_pln": null,
+    "amount_verified": false,
+    "app_engine": "not_tested",
+    "full_document_review": "pending"
+  },
+  "notes": "File header says odmowa; amended ZAM p8 shows 140+224 days. Claimant letter pp13,15 asks to reassess business closing and submission dates. No complete formal refusal with precise grounds confirmed."
+}

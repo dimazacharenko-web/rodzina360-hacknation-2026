@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "id": "ZUS-030",
+  "topic": "parental_benefit_denial_sickness_insurance_ended",
+  "source_filename": "Helena Gd_5_zas. mac._odmowa_brak zgłoszenia do ubezpieczeń.pdf",
+  "source_pdf_path": "knowledge/zus-cases/incomming/Helena Gd_5_zas. mac._odmowa_brak zgłoszenia do ubezpieczeń.pdf",
+  "status": "partially_verified_source_evidence",
+  "inputs": {
+    "parentalClaimStart": "2026-02-06",
+    "parentalClaimEnd": "2026-09-17",
+    "insuranceCoverageEnded": "2026-01-24"
+  },
+  "expected": {
+    "parentalClaimDays": 224,
+    "benefitEntitlement": "denied",
+    "denialReason": "voluntary_sickness_insurance_absent_at_start"
+  },
+  "evidence": [
+    {
+      "page": 2,
+      "source_type": "formal_ZUS_denial_decision"
+    },
+    {
+      "page": 5,
+      "source_type": "formal_ZUS_denial_decision"
+    }
+  ],
+  "verification": {
+    "source_pages_reviewed": [
+      2,
+      5
+    ],
+    "amount": "not_documented",
+    "financial_amount_pln": null,
+    "app_engine": "not_tested",
+    "full_document_audit": "pending"
+  },
+  "notes": "Decision p5 refuses benefit for 6 Feb–17 Sep 2026 due to cessation of voluntary sickness insurance as of 24 Jan 2026. Do not confuse absence of registration with all possible insurance rights."
+}

@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "id": "ZUS-81",
+  "source_filename": "Zuzanna Cho._zas. mac. za okres urlopu macierzyńskiego i rodzicielskiego, umowa zlecenie.pdf",
+  "topic": "maternity_parental_commission_contract_insurance_documents_requested",
+  "status": "partially_extracted",
+  "source_pdf_path": "knowledge/zus-cases/incomming/Zuzanna Cho._zas. mac. za okres urlopu macierzyńskiego i rodzicielskiego, umowa zlecenie.pdf",
+  "inputs": {
+    "employmentType": "umowa_zlecenie",
+    "birthDate": "2025-05-30",
+    "maternityClaimStart": "2025-05-30",
+    "maternityClaimEnd": "2025-10-16",
+    "parentalClaimStart": "2025-10-17",
+    "parentalClaimEnd": "2026-05-28",
+    "monthlyMinimumTopUpPLNRequested": 1000,
+    "insuranceDocumentationRequested": true
+  },
+  "expected": {
+    "maternityClaimDays": 140,
+    "parentalClaimDays": 224,
+    "topUpAwardConfirmed": false
+  },
+  "evidence": [
+    {
+      "page": 2,
+      "source": "original_pdf",
+      "evidence_scope": "visual_selected_page"
+    },
+    {
+      "page": 5,
+      "source": "original_pdf",
+      "evidence_scope": "visual_selected_page"
+    },
+    {
+      "page": 6,
+      "source": "original_pdf",
+      "evidence_scope": "visual_selected_page"
+    },
+    {
+      "page": 7,
+      "source": "original_pdf",
+      "evidence_scope": "visual_selected_page"
+    },
+    {
+      "page": 8,
+      "source": "original_pdf",
+      "evidence_scope": "visual_selected_page"
+    },
+    {
+      "page": 10,
+      "source": "original_pdf",
+      "evidence_scope": "visual_selected_page"
+    },
+    {
+      "page": 12,
+      "source": "original_pdf",
+      "evidence_scope": "visual_selected_page"
+    }
+  ],
+  "verification": {
+    "full_document_audit": "pending",
+    "actual_zus_payout_pln": null,
+    "amount_verified": false,
+    "app_engine": "not_tested",
+    "source_pdf_in_repo": "not_independently_verified"
+  },
+  "notes": "ZAM p2 requests 140+224 days. Handwriting p5 requests increase to 1000 PLN; this is a request not confirmed payment. ZUS note p8 requests proper social-insurance reporting; contribution bases p12 are not benefit payments."
+}

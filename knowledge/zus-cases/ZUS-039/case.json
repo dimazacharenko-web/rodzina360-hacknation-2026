@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "id": "ZUS-039",
+  "topic": "foster_care_child_taken_into_care",
+  "source_filename": "Jolanta Go_5_zas. mac.-przyjęcia dziecka w wychowaniu_rodzina zastępcza.pdf",
+  "source_pdf_path": "knowledge/zus-cases/incomming/Jolanta Go_5_zas. mac.-przyjęcia dziecka w wychowaniu_rodzina zastępcza.pdf",
+  "status": "partially_extracted",
+  "inputs": {
+    "employmentCategory": "self_employed",
+    "careSituation": "non_professional_foster_family",
+    "benefitTypesRequested": [
+      "maternity_equivalent",
+      "parental"
+    ],
+    "childPlacementDocumentProvided": true
+  },
+  "expected": {
+    "coverReportsEntitlementAndPayment": true
+  },
+  "evidence": [
+    {
+      "page": 1,
+      "evidence_type": "case_cover_Z3b_ZUR_ZAM_foster_certificate"
+    },
+    {
+      "page": 4,
+      "evidence_type": "case_cover_Z3b_ZUR_ZAM_foster_certificate"
+    },
+    {
+      "page": 7,
+      "evidence_type": "case_cover_Z3b_ZUR_ZAM_foster_certificate"
+    },
+    {
+      "page": 10,
+      "evidence_type": "case_cover_Z3b_ZUR_ZAM_foster_certificate"
+    },
+    {
+      "page": 15,
+      "evidence_type": "case_cover_Z3b_ZUR_ZAM_foster_certificate"
+    }
+  ],
+  "verification": {
+    "source_pages_reviewed": [
+      1,
+      4,
+      7,
+      10,
+      15
+    ],
+    "decision_status": "see_case_notes",
+    "amount_pln": null,
+    "financial_amount_verified": false,
+    "app_engine": "not_tested",
+    "full_document_audit": "pending"
+  },
+  "notes": "Cover explicitly says entitlement established and benefit paid. Placement certificate page 15 lists children; dates handwritten in the scanned applications need individual confirmation. No PLN payout evidenced."
+}

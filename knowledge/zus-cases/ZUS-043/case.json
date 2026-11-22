@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "id": "ZUS-043",
+  "topic": "father_paternity_leave_granted",
+  "source_filename": "Józef Lu_3_zas. mac. za okres urlopu ojcowskiego.pdf",
+  "source_pdf_path": "knowledge/zus-cases/incomming/Józef Lu_3_zas. mac. za okres urlopu ojcowskiego.pdf",
+  "status": "partially_extracted",
+  "inputs": {
+    "parent": "father",
+    "paternityClaimStart": "2026-07-13",
+    "paternityClaimEnd": "2026-07-19",
+    "employmentStart": "2024-11-01"
+  },
+  "expected": {
+    "paternityClaimDays": 7,
+    "grantOutcome": "right_granted_in_case_cover"
+  },
+  "evidence": [
+    {
+      "page": 1,
+      "evidence_type": "cover_ZAO_Z3_employer_leave"
+    },
+    {
+      "page": 2,
+      "evidence_type": "cover_ZAO_Z3_employer_leave"
+    },
+    {
+      "page": 7,
+      "evidence_type": "cover_ZAO_Z3_employer_leave"
+    },
+    {
+      "page": 9,
+      "evidence_type": "cover_ZAO_Z3_employer_leave"
+    },
+    {
+      "page": 13,
+      "evidence_type": "cover_ZAO_Z3_employer_leave"
+    }
+  ],
+  "verification": {
+    "source_pages_reviewed": [
+      1,
+      2,
+      7,
+      9,
+      13
+    ],
+    "decision_status": "see_case_notes",
+    "amount_pln": null,
+    "financial_amount_verified": false,
+    "app_engine": "not_tested",
+    "full_document_audit": "pending"
+  },
+  "notes": "Page 1 reports ZUS granted entitlement for 13–19 July 2026; no transfer amount. ZAO and Z3 support seven-day period."
+}

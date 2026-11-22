@@ -1,0 +1,27 @@
+{
+  "id": "ZUS-011",
+  "topic": "parental_leave",
+  "source_filename": "Andrzej No_1_zas. macierzyński.pdf",
+  "source_page_count": null,
+  "status": "partially_extracted",
+  "source_visibility": "private_only",
+  "inputs": {
+    "parent": "father",
+    "parentalClaimStart": "2026-01-05",
+    "parentalClaimEnd": "2026-03-02"
+  },
+  "expected": {
+    "parentalRequestedDays": 57
+  },
+  "verification": {
+    "source": "selected_pdf_pages",
+    "award": "not_fully_confirmed",
+    "amount": "not_available",
+    "full_document_review": "pending"
+  },
+  "evidence": [
+    2
+  ],
+  "notes": "ZUR requested 57 days; 9-week entitlement not inferred.",
+  "warning": "Application/request is not automatically proof of an awarded payment."
+}

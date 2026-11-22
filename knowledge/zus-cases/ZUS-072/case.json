@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "id": "ZUS-072",
+  "topic": "maternity_and_parental_employee_employer_record",
+  "source_filename": "Sylwia Ol_4_zas. mac. za okres urlopu mac. i rodzicielskiego.pdf",
+  "source_pdf_path": "knowledge/zus-cases/incomming/Sylwia Ol_4_zas. mac. za okres urlopu mac. i rodzicielskiego.pdf",
+  "status": "partially_extracted",
+  "inputs": {
+    "maternityBenefitReportedStart": "2026-06-03",
+    "maternityBenefitReportedEnd": "2026-10-20",
+    "parentalLeaveRequested": true
+  },
+  "expected": {
+    "maternityReportedDays": 140
+  },
+  "evidence": [
+    {
+      "page": 5,
+      "kind": "visual_review_original_pdf"
+    },
+    {
+      "page": 8,
+      "kind": "visual_review_original_pdf"
+    },
+    {
+      "page": 9,
+      "kind": "visual_review_original_pdf"
+    }
+  ],
+  "verification": {
+    "pdf_pages": "selected_only",
+    "award": "as_explicitly_stated_in_expected_and_notes",
+    "payment_amount_pln": null,
+    "payment_amount_verified": false,
+    "app_engine": "not_tested",
+    "full_document_audit": "pending"
+  },
+  "notes": "Z-3 p8 shows 03.06–20.10.2026 maternity period. Claim and parental request p5 handwritten dates need closer review; employer wages are not ZUS payout."
+}

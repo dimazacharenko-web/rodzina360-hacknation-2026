@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "id": "ZUS-059",
+  "source_filename": "Marek Wro_3_zas. macierzyński za część urlopu rodzicielskiego - 9 tyg.pdf",
+  "source_pdf_path": "knowledge/zus-cases/incomming/Marek Wro_3_zas. macierzyński za część urlopu rodzicielskiego - 9 tyg.pdf",
+  "topic": "father_reserved_9_weeks_parental",
+  "status": "application_and_employer_form_not_award",
+  "inputs": {
+    "parent": "father",
+    "parentalBenefitStart": "2026-09-14",
+    "parentalBenefitEnd": "2026-11-15",
+    "employmentType": "employee"
+  },
+  "expected": {
+    "parentalBenefitDays": 63,
+    "parentalBenefitWeeks": 9
+  },
+  "evidence": [
+    {
+      "page": 3,
+      "source": "PDF",
+      "verification_type": "visual_page_read"
+    },
+    {
+      "page": 12,
+      "source": "PDF",
+      "verification_type": "visual_page_read"
+    },
+    {
+      "page": 13,
+      "source": "PDF",
+      "verification_type": "visual_page_read"
+    },
+    {
+      "page": 17,
+      "source": "PDF",
+      "verification_type": "visual_page_read"
+    }
+  ],
+  "verification": {
+    "source_pages_inspected": [
+      3,
+      12,
+      13,
+      17
+    ],
+    "decision_and_payment_status": "application_and_employer_form_not_award",
+    "benefit_payment_amount_pln": null,
+    "amount_verified": false,
+    "app_engine": "not_tested",
+    "full_document_review": "pending"
+  },
+  "notes": "Z-3 and ZUR agree on 14.09–15.11.2026. Handwritten p17 references mother's prior 81.5% benefit, not proof of father's payment or entitlement."
+}

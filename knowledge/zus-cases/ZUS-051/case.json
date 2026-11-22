@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "id": "ZUS-051",
+  "source_filename": "Katarzyna Łó 4_zasiłek w wysokości zasiłku macierzyńskiego.pdf",
+  "source_pdf_path": "knowledge/zus-cases/incomming/Katarzyna Łó 4_zasiłek w wysokości zasiłku macierzyńskiego.pdf",
+  "topic": "maternity_equivalent_after_employer_liquidation_granted",
+  "status": "decision_period_confirmed_amount_unknown",
+  "inputs": {
+    "employmentStart": "2020-03-01",
+    "employmentEnd": "2026-09-30",
+    "expectedDeliveryDate": "2026-10-21",
+    "maternityEquivalentClaimStart": "2026-10-01",
+    "awardStart": "2026-10-01",
+    "awardEnd": "2026-10-21"
+  },
+  "expected": {
+    "awardRecorded": true,
+    "documentedAwardDays": 21
+  },
+  "evidence": [
+    {
+      "page": 2,
+      "source": "PDF",
+      "verification_type": "visual_page_read"
+    },
+    {
+      "page": 3,
+      "source": "PDF",
+      "verification_type": "visual_page_read"
+    },
+    {
+      "page": 6,
+      "source": "PDF",
+      "verification_type": "visual_page_read"
+    },
+    {
+      "page": 8,
+      "source": "PDF",
+      "verification_type": "visual_page_read"
+    },
+    {
+      "page": 13,
+      "source": "PDF",
+      "verification_type": "visual_page_read"
+    }
+  ],
+  "verification": {
+    "source_pages_inspected": [
+      2,
+      3,
+      6,
+      8,
+      13
+    ],
+    "decision_and_payment_status": "decision_period_confirmed_amount_unknown",
+    "benefit_payment_amount_pln": null,
+    "amount_verified": false,
+    "app_engine": "not_tested",
+    "full_document_review": "pending"
+  },
+  "notes": "ZAS-55 requests benefit equivalent to maternity allowance; internal ZUS note p13 explicitly grants benefit 01–21.10.2026. This is not proof of actual transfer or monetary amount."
+}

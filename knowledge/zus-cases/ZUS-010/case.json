@@ -1,0 +1,34 @@
+{
+  "id": "ZUS-010",
+  "topic": "extreme_prematurity",
+  "source_filename": "Agnieszka Poz._zas.mac. za okres mac., uzup., rodz. - skrajny wcześniak masa poniżej 1000 - decyzja przyznająca.pdf",
+  "source_page_count": null,
+  "status": "partially_extracted",
+  "source_visibility": "private_only",
+  "inputs": {
+    "caseContext": "extreme_prematurity",
+    "maternityClaimStart": "2025-06-12",
+    "maternityClaimEnd": "2025-10-29",
+    "supplementaryClaimStart": "2025-10-30",
+    "supplementaryClaimEnd": "2026-02-11",
+    "parentalClaimStart": "2026-02-12",
+    "parentalClaimEnd": "2026-09-23"
+  },
+  "expected": {
+    "maternityRequestedDays": 140,
+    "supplementaryRequestedDays": 105,
+    "parentalRequestedDays": 224
+  },
+  "verification": {
+    "source": "selected_pdf_pages",
+    "award": "not_fully_confirmed",
+    "amount": "not_available",
+    "full_document_review": "pending"
+  },
+  "evidence": [
+    2,
+    3
+  ],
+  "notes": "ZAM requested periods, award and amounts not independently checked.",
+  "warning": "Application/request is not automatically proof of an awarded payment."
+}

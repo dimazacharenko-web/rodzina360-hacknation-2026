@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "id": "ZUS-046",
+  "topic": "twin_pregnancy_sickness_maternity",
+  "source_filename": "Justyna Gd_3_zas. chorobowy w ciąży oraz zas. mac._bliźnięta.pdf",
+  "source_pdf_path": "knowledge/zus-cases/incomming/Justyna Gd_3_zas. chorobowy w ciąży oraz zas. mac._bliźnięta.pdf",
+  "status": "partially_extracted",
+  "inputs": {
+    "employmentCategory": "self_employed",
+    "numberOfChildrenReported": 2,
+    "sicknessReportedStart": "2024-09-27",
+    "sicknessReportedEnd": "2024-10-11",
+    "contributionBasesShown": true
+  },
+  "expected": {
+    "sicknessReportedDays": 15
+  },
+  "evidence": [
+    {
+      "page": 2,
+      "evidence_type": "Z3b_ZUS_insurance_basis"
+    },
+    {
+      "page": 3,
+      "evidence_type": "Z3b_ZUS_insurance_basis"
+    },
+    {
+      "page": 9,
+      "evidence_type": "Z3b_ZUS_insurance_basis"
+    },
+    {
+      "page": 10,
+      "evidence_type": "Z3b_ZUS_insurance_basis"
+    },
+    {
+      "page": 11,
+      "evidence_type": "Z3b_ZUS_insurance_basis"
+    },
+    {
+      "page": 15,
+      "evidence_type": "Z3b_ZUS_insurance_basis"
+    }
+  ],
+  "verification": {
+    "source_pages_reviewed": [
+      2,
+      3,
+      9,
+      10,
+      11,
+      15
+    ],
+    "decision_status": "see_case_notes",
+    "amount_pln": null,
+    "financial_amount_verified": false,
+    "app_engine": "not_tested",
+    "full_document_audit": "pending"
+  },
+  "notes": "Sickness period from Z-3b is 15 days. Insurance and contribution bases appear on pp10–11; these are not paid maternity amounts. Twin birth and final maternity periods require review on later pages."
+}

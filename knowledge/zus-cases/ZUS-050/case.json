@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "id": "ZUS-050",
+  "topic": "self_employed_maternity_supplementary_parental",
+  "source_filename": "Karolina Ra_2_zas. macierzyński za urlop macierzyński, uzupełniający urlop macierzyński, rodzicielski.pdf",
+  "source_pdf_path": "knowledge/zus-cases/incomming/Karolina Ra_2_zas. macierzyński za urlop macierzyński, uzupełniający urlop macierzyński, rodzicielski.pdf",
+  "status": "partially_extracted",
+  "inputs": {
+    "employmentCategory": "self_employed",
+    "benefitTypesRequested": [
+      "maternity",
+      "supplementary_maternity",
+      "parental"
+    ],
+    "aggregateReportedStart": "2025-12-01",
+    "aggregateReportedEnd": "2027-01-24",
+    "childBirthDate": "2025-12-01",
+    "prematurityHospitalEvidencePresent": true
+  },
+  "expected": {
+    "aggregateReportedCalendarDays": 420
+  },
+  "evidence": [
+    {
+      "page": 3,
+      "evidence_type": "Z3b_civil_record_neonatal_records"
+    },
+    {
+      "page": 9,
+      "evidence_type": "Z3b_civil_record_neonatal_records"
+    },
+    {
+      "page": 11,
+      "evidence_type": "Z3b_civil_record_neonatal_records"
+    },
+    {
+      "page": 12,
+      "evidence_type": "Z3b_civil_record_neonatal_records"
+    },
+    {
+      "page": 15,
+      "evidence_type": "Z3b_civil_record_neonatal_records"
+    }
+  ],
+  "verification": {
+    "source_pages_reviewed": [
+      3,
+      9,
+      11,
+      12,
+      15
+    ],
+    "decision_status": "see_case_notes",
+    "amount_pln": null,
+    "financial_amount_verified": false,
+    "app_engine": "not_tested",
+    "full_document_audit": "pending"
+  },
+  "notes": "Z3b p3 reports aggregate period 420 calendar days, not breakdown. Neonatal medical record p12 is supporting evidence, not proof of supplementary leave grant or amount."
+}

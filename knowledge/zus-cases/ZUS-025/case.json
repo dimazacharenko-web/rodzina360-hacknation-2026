@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "id": "ZUS-025",
+  "topic": "paternity_leave_self_employed",
+  "source_filename": "Ewa Ko_1_zas. mac..pdf",
+  "source_pdf_path": "knowledge/zus-cases/incomming/Ewa Ko_1_zas. mac..pdf",
+  "status": "partially_verified_source_evidence",
+  "inputs": {
+    "parent": "father",
+    "employmentCategory": "self_employed",
+    "paternityRequestedStart": "2025-09-08",
+    "paternityRequestedEnd": "2025-09-21"
+  },
+  "expected": {
+    "paternityRequestedDays": 14
+  },
+  "evidence": [
+    {
+      "page": 5,
+      "source_type": "application_only"
+    },
+    {
+      "page": 7,
+      "source_type": "application_only"
+    },
+    {
+      "page": 11,
+      "source_type": "application_only"
+    }
+  ],
+  "verification": {
+    "source_pages_reviewed": [
+      5,
+      7,
+      11
+    ],
+    "amount": "not_documented",
+    "financial_amount_pln": null,
+    "app_engine": "not_tested",
+    "full_document_audit": "pending"
+  },
+  "notes": "ZAO p11 and Z-3b p5 record a 14-day paternity-benefit claim. No award or payout amount is established."
+}

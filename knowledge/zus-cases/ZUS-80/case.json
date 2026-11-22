@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "id": "ZUS-80",
+  "source_filename": "Zofia Zi_4_zas. macierzyński po ustaniu ubezp._zatrudnienie do dnia porodu.pdf",
+  "topic": "maternity_benefit_after_insurance_end_on_birth_day",
+  "status": "partially_extracted",
+  "source_pdf_path": "knowledge/zus-cases/incomming/Zofia Zi_4_zas. macierzyński po ustaniu ubezp._zatrudnienie do dnia porodu.pdf",
+  "inputs": {
+    "employmentStart": "2024-11-04",
+    "employmentEnd": "2025-12-27",
+    "birthDate": "2025-12-27",
+    "ZUSMaternityClaimStart": "2025-12-27",
+    "ZUSMaternityClaimEnd": "2026-06-15",
+    "employerPaidOnBirthDatePLN": 150.11
+  },
+  "expected": {
+    "ZUSClaimDays": 171,
+    "awardNote": "right_granted"
+  },
+  "evidence": [
+    {
+      "page": 4,
+      "source": "original_pdf",
+      "evidence_scope": "visual_selected_page"
+    },
+    {
+      "page": 11,
+      "source": "original_pdf",
+      "evidence_scope": "visual_selected_page"
+    },
+    {
+      "page": 12,
+      "source": "original_pdf",
+      "evidence_scope": "visual_selected_page"
+    },
+    {
+      "page": 15,
+      "source": "original_pdf",
+      "evidence_scope": "visual_selected_page"
+    },
+    {
+      "page": 17,
+      "source": "original_pdf",
+      "evidence_scope": "visual_selected_page"
+    }
+  ],
+  "verification": {
+    "full_document_audit": "pending",
+    "actual_zus_payout_pln": null,
+    "amount_verified": false,
+    "app_engine": "not_tested",
+    "source_pdf_in_repo": "not_independently_verified"
+  },
+  "notes": "Z-3 p15 states employment to birth day 27 Dec 2025 and employer paid 150.11 PLN for ONE DAY. This is not a confirmed ZUS payout amount. ZUS internal note p17 grants maternity benefit; ZAM p4 has requested periods."
+}

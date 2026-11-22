@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "id": "ZUS-033",
+  "topic": "paternity_leave_granted",
+  "source_filename": "Jan Zie_5_zas. macierzyński_urlop ojcowski.pdf",
+  "source_pdf_path": "knowledge/zus-cases/incomming/Jan Zie_5_zas. macierzyński_urlop ojcowski.pdf",
+  "status": "partially_verified_source_evidence",
+  "inputs": {
+    "parent": "father",
+    "paternityClaimStart": "2026-08-31",
+    "paternityClaimEnd": "2026-09-06",
+    "childBirthDate": "2026-05-07"
+  },
+  "expected": {
+    "paternityClaimDays": 7,
+    "awardOutcome": "right_granted_as_internal_note"
+  },
+  "evidence": [
+    {
+      "page": 1,
+      "source_type": "Z3_ZAO_internal_grant_note"
+    },
+    {
+      "page": 5,
+      "source_type": "Z3_ZAO_internal_grant_note"
+    },
+    {
+      "page": 12,
+      "source_type": "Z3_ZAO_internal_grant_note"
+    },
+    {
+      "page": 15,
+      "source_type": "Z3_ZAO_internal_grant_note"
+    }
+  ],
+  "verification": {
+    "source_pages_reviewed": [
+      1,
+      5,
+      12,
+      15
+    ],
+    "amount": "not_documented",
+    "financial_amount_pln": null,
+    "app_engine": "not_tested",
+    "full_document_audit": "pending"
+  },
+  "notes": "Internal note p1 states 'przyznano prawo do zasiłku macierzyńskiego'; Z-3 and ZAO show seven days. Exact payment amount absent."
+}

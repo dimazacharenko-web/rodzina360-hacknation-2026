@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "id": "ZUS-035",
+  "topic": "maternity_parental_conflicting_ZAM_periods",
+  "source_filename": "Joanna El_1_zas. macierzyński.pdf",
+  "source_pdf_path": "knowledge/zus-cases/incomming/Joanna El_1_zas. macierzyński.pdf",
+  "status": "partially_verified_source_evidence",
+  "inputs": {
+    "employmentCategory": "self_employed",
+    "childBirthDateReported": "2026-09-13",
+    "maternityClaimStart": "2026-09-20",
+    "maternityClaimEnd": "2027-02-06",
+    "parentalClaimStart": "2027-02-07",
+    "parentalClaimEnd": "2027-09-18",
+    "alternateMaternityClaimEnd": "2027-09-18"
+  },
+  "expected": {
+    "maternityClaimDays": 140,
+    "parentalClaimDays": 224
+  },
+  "evidence": [
+    {
+      "page": 3,
+      "source_type": "Z3b_ZAM_versions_and_insurance_request"
+    },
+    {
+      "page": 7,
+      "source_type": "Z3b_ZAM_versions_and_insurance_request"
+    },
+    {
+      "page": 10,
+      "source_type": "Z3b_ZAM_versions_and_insurance_request"
+    },
+    {
+      "page": 16,
+      "source_type": "Z3b_ZAM_versions_and_insurance_request"
+    }
+  ],
+  "verification": {
+    "source_pages_reviewed": [
+      3,
+      7,
+      10,
+      16
+    ],
+    "amount": "not_documented",
+    "financial_amount_pln": null,
+    "app_engine": "not_tested",
+    "full_document_audit": "pending"
+  },
+  "notes": "Page 10 shows maternity to 6 Feb 2027 plus parental to 18 Sep; page 16 separately indicates maternity through 18 Sep 2027. Preserve competing form versions, do not infer a ZUS decision."
+}

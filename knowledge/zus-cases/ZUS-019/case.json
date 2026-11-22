@@ -1,0 +1,88 @@
+{
+  "schema_version": 1,
+  "id": "ZUS-019",
+  "topic": "maternity_transfer_after_14_weeks",
+  "source_filename": "Barbara Ra_4_zas. mac._rezygnacja po 14 tyg..pdf",
+  "source_pdf_path": "knowledge/zus-cases/incomming/Barbara Ra_4_zas. mac._rezygnacja po 14 tyg..pdf",
+  "status": "source_audited_partial_verification",
+  "inputs": {
+    "childBirthDate": "2024-08-15",
+    "motherResignedMaternityLeave": true,
+    "declaredMinimumUsedWeeks": 14,
+    "motherReturnToWorkReported": "2024-11-22",
+    "fatherTakingRemainingLeaveReported": true,
+    "maternityFirstPartStart": "2024-08-15",
+    "maternityFirstPartEnd": "2024-11-21"
+  },
+  "expected": {
+    "motherMinimumWeeksBeforeTransfer": 14
+  },
+  "evidence": [
+    {
+      "page": 4,
+      "evidence_type": "applications_and_statements"
+    },
+    {
+      "page": 6,
+      "evidence_type": "applications_and_statements"
+    },
+    {
+      "page": 9,
+      "evidence_type": "applications_and_statements"
+    },
+    {
+      "page": 13,
+      "evidence_type": "applications_and_statements"
+    }
+  ],
+  "verification": {
+    "source_review": "selected_pages_visually_inspected",
+    "final_award": "unconfirmed",
+    "amount": "not_available",
+    "app_engine": "not_tested",
+    "full_document_review": "completed",
+    "decision": "not_confirmed",
+    "decision_status": "no_grant_or_refusal_found"
+  },
+  "notes": "ZAM and written declaration document transfer after 14 weeks; exact start date of relinquished part needs reconciliation. Do not assume approved payout.",
+  "contains_personal_data": false,
+  "full_source_review": {
+    "total_pages_inspected": 22,
+    "method": "visual_contact_sheet_plus_targeted_full_resolution_pages; original is image-only scan",
+    "document_outcome": "not_confirmed",
+    "actual_payment_amount_pln": null,
+    "payment_amount_available": false,
+    "evidence_pages": [
+      4,
+      6,
+      9,
+      13,
+      19,
+      21
+    ],
+    "findings": [
+      "Maternity ZAM p4 requests 14-week first part 2024-08-15 to 2024-11-21; written resignation p9 effective from 2024-11-22.",
+      "Pages 6/9 describe transfer to father. Other parent's actual claim and resulting ZUS payout not confirmed.",
+      "Source contains no verified monetary payout."
+    ],
+    "legal_outcome_vs_app_test": "source evidence only; no app calculation assertion run",
+    "review_date": "2026-11-21"
+  },
+  "full_source_audit": {
+    "reviewed_pdf_pages": "all_pages_visually_screened",
+    "status": "no_grant_or_refusal_found",
+    "source_pages": [
+      4,
+      6,
+      9,
+      13,
+      19,
+      21
+    ],
+    "documentary_findings": "ZAM p4 requests first 14 weeks 2024-08-15..2024-11-21; resignation p9 effective after 14 weeks from 2024-11-22. Father's paid benefit not confirmed.",
+    "benefit_payment_amount_pln": null,
+    "amount_status": "not_in_supplied_document",
+    "app_result_comparison": "not_performed",
+    "note": "A form, an insurance contribution basis, and an actual benefit payment are different evidence types."
+  }
+}

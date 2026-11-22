@@ -1,0 +1,26 @@
+{
+  "id": "ZUS-009",
+  "topic": "maternity_leave",
+  "source_filename": "Agata Go_1_zas. mac. za okres urlopu macierzyńskiego.pdf",
+  "source_page_count": null,
+  "status": "partially_extracted",
+  "source_visibility": "private_only",
+  "inputs": {
+    "benefitTypesRequested": [
+      "maternity",
+      "parental"
+    ]
+  },
+  "expected": {},
+  "verification": {
+    "source": "selected_pdf_pages",
+    "award": "not_fully_confirmed",
+    "amount": "not_available",
+    "full_document_review": "pending"
+  },
+  "evidence": [
+    7
+  ],
+  "notes": "Dates handwritten and illegible on inspected ZAM; do not guess.",
+  "warning": "Application/request is not automatically proof of an awarded payment."
+}

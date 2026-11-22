@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "id": "ZUS-042",
+  "topic": "multiple_births_stillbirth_za_zyciem_work_during_parental",
+  "source_filename": "Jolanta Poz_9_ zas. mac. - url. mac. i rodz., 3 dzieci, 1 martwourodzone, 1 za życiem, łącznie urlop rodz. z pracą - decyzja przyznająca.pdf",
+  "source_pdf_path": "knowledge/zus-cases/incomming/Jolanta Poz_9_ zas. mac. - url. mac. i rodz., 3 dzieci, 1 martwourodzone, 1 za życiem, łącznie urlop rodz. z pracą - decyzja przyznająca.pdf",
+  "status": "partially_extracted",
+  "inputs": {
+    "childrenBornTogetherReported": 3,
+    "stillbirthAmongChildrenReported": true,
+    "zaZyciemReported": true,
+    "workDuringParentalReported": true,
+    "maternityClaimStart": "2024-05-13",
+    "maternityClaimEnd": "2024-12-15"
+  },
+  "expected": {
+    "maternityRequestedDays": 217
+  },
+  "evidence": [
+    {
+      "page": 3,
+      "evidence_type": "ZAM_and_civil_records"
+    },
+    {
+      "page": 9,
+      "evidence_type": "ZAM_and_civil_records"
+    },
+    {
+      "page": 11,
+      "evidence_type": "ZAM_and_civil_records"
+    },
+    {
+      "page": 13,
+      "evidence_type": "ZAM_and_civil_records"
+    },
+    {
+      "page": 15,
+      "evidence_type": "ZAM_and_civil_records"
+    }
+  ],
+  "verification": {
+    "source_pages_reviewed": [
+      3,
+      9,
+      11,
+      13,
+      15
+    ],
+    "decision_status": "see_case_notes",
+    "amount_pln": null,
+    "financial_amount_verified": false,
+    "app_engine": "not_tested",
+    "full_document_audit": "pending"
+  },
+  "notes": "Case filename refers to a granting decision, but specific decision text, rate and percentage of work while on parental leave need full verification. Page 3 maternity interval is 31 weeks."
+}

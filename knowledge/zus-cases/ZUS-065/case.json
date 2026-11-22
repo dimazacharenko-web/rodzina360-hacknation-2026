@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "ZUS-065",
+  "topic": "insurance_exclusion_sickness_and_maternity_claim",
+  "source_filename": "Paulina Po_7_zas. chorobowy i mac. matka za okres url. mac. rodz. - nie podlega ubezpieczeniom - decyzja odmowna.pdf",
+  "source_pdf_path": "knowledge/zus-cases/incomming/Paulina Po_7_zas. chorobowy i mac. matka za okres url. mac. rodz. - nie podlega ubezpieczeniom - decyzja odmowna.pdf",
+  "status": "partially_extracted",
+  "inputs": {
+    "employmentType": "employee_reported",
+    "sicknessClaimIntervals": [
+      [
+        "2025-03-08",
+        "2025-03-28"
+      ],
+      [
+        "2025-03-29",
+        "2025-04-19"
+      ],
+      [
+        "2025-04-20",
+        "2025-04-25"
+      ],
+      [
+        "2025-04-26",
+        "2025-05-27"
+      ]
+    ],
+    "insuranceStatusDisputed": true
+  },
+  "expected": {
+    "outcomeIndicatedInCaseTitle": "denial",
+    "legalReasonFromTitle": "not_subject_to_social_insurance"
+  },
+  "evidence": [
+    {
+      "page": 1,
+      "kind": "visual_review_original_pdf"
+    },
+    {
+      "page": 2,
+      "kind": "visual_review_original_pdf"
+    },
+    {
+      "page": 4,
+      "kind": "visual_review_original_pdf"
+    },
+    {
+      "page": 10,
+      "kind": "visual_review_original_pdf"
+    }
+  ],
+  "verification": {
+    "pdf_pages": "selected_only",
+    "award": "as_explicitly_stated_in_expected_and_notes",
+    "payment_amount_pln": null,
+    "payment_amount_verified": false,
+    "app_engine": "not_tested",
+    "full_document_audit": "pending"
+  },
+  "notes": "Z-3 p2 and ZAS-12 p10 show sickness intervals; case filename calls it ZUS refusal for noncoverage, but full operative decision requires further inspection. Do not assert awarded sum."
+}

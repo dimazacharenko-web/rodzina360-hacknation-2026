@@ -1,0 +1,67 @@
+{
+  "schema_version": 1,
+  "id": "ZUS-060",
+  "source_filename": "Natalia Chrz_4_za. mac. za okres urlopu macierzyńskiego, uzupełniającego, rodzicielskiego.pdf",
+  "source_pdf_path": "knowledge/zus-cases/incomming/Natalia Chrz_4_za. mac. za okres urlopu macierzyńskiego, uzupełniającego, rodzicielskiego.pdf",
+  "topic": "supplementary_maternity_neonatal_hospitalization_date_conflict",
+  "status": "document_date_conflict_requires_review",
+  "inputs": {
+    "childBirthDate": "2025-11-27",
+    "maternityStart": "2025-11-27",
+    "maternityEnd": "2026-04-15",
+    "supplementaryStart": "2026-04-16",
+    "supplementaryEnd": "2026-04-29",
+    "parentalStart": "2026-04-30",
+    "parentalEnd": "2026-12-09",
+    "Z3bAggregateEnd": "2026-11-25",
+    "childHospitalized": true
+  },
+  "expected": {
+    "maternityDays": 140,
+    "supplementaryRequestedDays": 14,
+    "parentalRequestedDays": 224,
+    "dateInconsistency": true
+  },
+  "evidence": [
+    {
+      "page": 3,
+      "source": "PDF",
+      "verification_type": "visual_page_read"
+    },
+    {
+      "page": 6,
+      "source": "PDF",
+      "verification_type": "visual_page_read"
+    },
+    {
+      "page": 13,
+      "source": "PDF",
+      "verification_type": "visual_page_read"
+    },
+    {
+      "page": 16,
+      "source": "PDF",
+      "verification_type": "visual_page_read"
+    },
+    {
+      "page": 17,
+      "source": "PDF",
+      "verification_type": "visual_page_read"
+    }
+  ],
+  "verification": {
+    "source_pages_inspected": [
+      3,
+      6,
+      13,
+      16,
+      17
+    ],
+    "decision_and_payment_status": "document_date_conflict_requires_review",
+    "benefit_payment_amount_pln": null,
+    "amount_verified": false,
+    "app_engine": "not_tested",
+    "full_document_review": "pending"
+  },
+  "notes": "Revised ZAM p16 shows three blocks 140+14+224=378 days; Z-3b p3 shows initial aggregate end 25.11.2026 (364 days). Neonatal certificate p13 documents 36-week birth and hospitalization. Preserve version discrepancy; no final ZUS award checked."
+}

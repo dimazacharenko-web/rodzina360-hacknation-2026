@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "id": "ZUS-070",
+  "topic": "pregnancy_sickness_and_maternity_sequential",
+  "source_filename": "Pola Rze_4_zas. chorobowy w ciąży i zas. macierzyński.pdf",
+  "source_pdf_path": "knowledge/zus-cases/incomming/Pola Rze_4_zas. chorobowy w ciąży i zas. macierzyński.pdf",
+  "status": "partially_extracted",
+  "inputs": {
+    "employmentType": "employee",
+    "sicknessReportedStart": "2026-07-08",
+    "sicknessReportedEnd": "2026-08-22",
+    "maternityPeriodReportedStart": "2026-08-09",
+    "maternityPeriodReportedEnd": "2027-08-07",
+    "employmentSince": "2019-10-01"
+  },
+  "expected": {
+    "sicknessReportedDays": 46,
+    "overlapOrDateConflict": true
+  },
+  "evidence": [
+    {
+      "page": 2,
+      "kind": "visual_review_original_pdf"
+    },
+    {
+      "page": 4,
+      "kind": "visual_review_original_pdf"
+    },
+    {
+      "page": 5,
+      "kind": "visual_review_original_pdf"
+    },
+    {
+      "page": 9,
+      "kind": "visual_review_original_pdf"
+    },
+    {
+      "page": 13,
+      "kind": "visual_review_original_pdf"
+    },
+    {
+      "page": 15,
+      "kind": "visual_review_original_pdf"
+    }
+  ],
+  "verification": {
+    "pdf_pages": "selected_only",
+    "award": "as_explicitly_stated_in_expected_and_notes",
+    "payment_amount_pln": null,
+    "payment_amount_verified": false,
+    "app_engine": "not_tested",
+    "full_document_audit": "pending"
+  },
+  "notes": "Z-3 p2 reports sickness 08.07–22.08.2026 while Z-3 p13 reports maternity from 09.08.2026, creating an overlap that must not be silently corrected. 7000 PLN is reported wage, not allowance."
+}

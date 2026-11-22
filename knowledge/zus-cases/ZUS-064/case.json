@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "id": "ZUS-064",
+  "topic": "maternity_and_parental_employer_certificate",
+  "source_filename": "Natalia Zi_2_zas. macierzyński.pdf",
+  "source_pdf_path": "knowledge/zus-cases/incomming/Natalia Zi_2_zas. macierzyński.pdf",
+  "status": "partially_extracted",
+  "inputs": {
+    "maternityClaimStart": "2025-03-18",
+    "maternityClaimEnd": "2025-08-04",
+    "parentalClaimStart": "2025-08-05",
+    "parentalClaimEnd": "2026-03-16",
+    "employmentFteChangedFrom": 0.5,
+    "employmentFteChangedTo": 0.25,
+    "employmentFteChangeDate": "2024-08-01"
+  },
+  "expected": {
+    "maternityRequestedDays": 140,
+    "parentalRequestedDays": 224
+  },
+  "evidence": [
+    {
+      "page": 7,
+      "kind": "visual_review_original_pdf"
+    },
+    {
+      "page": 9,
+      "kind": "visual_review_original_pdf"
+    },
+    {
+      "page": 11,
+      "kind": "visual_review_original_pdf"
+    },
+    {
+      "page": 16,
+      "kind": "visual_review_original_pdf"
+    }
+  ],
+  "verification": {
+    "pdf_pages": "selected_only",
+    "award": "as_explicitly_stated_in_expected_and_notes",
+    "payment_amount_pln": null,
+    "payment_amount_verified": false,
+    "app_engine": "not_tested",
+    "full_document_audit": "pending"
+  },
+  "notes": "Z-3 p7 aggregate benefit 18.03.2025–16.03.2026, ZAM p16 requested split; Z-3 p11 confirms FTE change; 4300 PLN is a wage component, not paid allowance."
+}

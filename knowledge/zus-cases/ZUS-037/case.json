@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "ZUS-037",
+  "topic": "self_employed_sickness_and_maternity_paid",
+  "source_filename": "Joanna Rze_2_zas. chorobowy i macierzyński.pdf",
+  "source_pdf_path": "knowledge/zus-cases/incomming/Joanna Rze_2_zas. chorobowy i macierzyński.pdf",
+  "status": "partially_verified_source_evidence",
+  "inputs": {
+    "employmentCategory": "self_employed",
+    "sicknessClaimIntervals": [
+      [
+        "2026-02-02",
+        "2026-02-11"
+      ],
+      [
+        "2026-02-12",
+        "2026-04-22"
+      ],
+      [
+        "2026-04-23",
+        "2026-04-27"
+      ]
+    ],
+    "maternityClaimStart": "2026-04-28",
+    "maternityClaimEnd": "2027-04-26"
+  },
+  "expected": {
+    "sicknessClaimDays": [
+      10,
+      70,
+      5
+    ],
+    "maternityClaimDays": 364,
+    "awardOutcome": "granted_and_paid_as_case_cover"
+  },
+  "evidence": [
+    {
+      "page": 1,
+      "source_type": "cover_Z3b_and_insurance_review"
+    },
+    {
+      "page": 2,
+      "source_type": "cover_Z3b_and_insurance_review"
+    },
+    {
+      "page": 9,
+      "source_type": "cover_Z3b_and_insurance_review"
+    },
+    {
+      "page": 10,
+      "source_type": "cover_Z3b_and_insurance_review"
+    },
+    {
+      "page": 11,
+      "source_type": "cover_Z3b_and_insurance_review"
+    },
+    {
+      "page": 15,
+      "source_type": "cover_Z3b_and_insurance_review"
+    }
+  ],
+  "verification": {
+    "source_pages_reviewed": [
+      1,
+      2,
+      9,
+      10,
+      11,
+      15
+    ],
+    "amount": "not_documented",
+    "financial_amount_pln": null,
+    "app_engine": "not_tested",
+    "full_document_audit": "pending"
+  },
+  "notes": "Cover p1 says entitlement established and payment carried out. Z-3b shows sickness and maternity intervals. A contributions debt flag exists in ZUS insurance record; do not equate it with an automatic refusal. No benefit payment PLN amounts present."
+}

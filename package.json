@@ -1,0 +1,26 @@
+{
+  "name": "rodzina360",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview --host 0.0.0.0",
+    "test": "node --experimental-strip-types src/leaveRules.test.mjs && node --experimental-strip-types src/decisionGuards.test.mjs && node --experimental-strip-types src/caseExamples.test.mjs && node --experimental-strip-types src/flexibleLeave.test.mjs && node --experimental-strip-types src/documentPlanner.test.mjs && node --experimental-strip-types src/paymentEngine.test.mjs && node --experimental-strip-types src/caseWizard.test.mjs && node --experimental-strip-types src/entitlementCheck.test.mjs && node --experimental-strip-types src/careRules.test.mjs && node --experimental-strip-types src/applicationReadiness.test.mjs && node --experimental-strip-types src/mobywatelDemo.test.mjs && node --experimental-strip-types src/zusInsuranceDemo.test.mjs && node --experimental-strip-types src/zusDebtCertificate.test.mjs && node --experimental-strip-types src/ezlaDemo.test.mjs && node --experimental-strip-types src/pueEzUSDemo.test.mjs && node --experimental-strip-types src/applicationFormsDemo.test.mjs && node --experimental-strip-types src/civilRegistryDemo.test.mjs && node --experimental-strip-types src/supportDirectory.test.mjs && node --experimental-strip-types src/officialRightsSources.test.mjs && node --experimental-strip-types src/legalConfig.test.mjs",
+    "test:e2e": "playwright test",
+    "test:fixtures": "node tests/zus-data-integrity.test.mjs && node tests/zus-documentary-audit.test.mjs && node tests/zus-new-sources-integrity.test.mjs && node tests/zus-project-batch-025-037.test.mjs && node tests/zus-project-batch-038-050.test.mjs && node tests/zus-project-batch-051-062.test.mjs && node tests/zus-project-batch-063-075.test.mjs",
+    "test:fixtures:pending": "node tests/zus-project-batch-076-086.test.mjs"
+  },
+  "dependencies": {
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.0",
+    "@types/react-dom": "^19.2.0",
+    "typescript": "~5.9.3",
+    "vite": "^6.3.6",
+    "@playwright/test": "^1.56.1"
+  }
+}

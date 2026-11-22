@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "id": "ZUS-032",
+  "topic": "father_parental_partial_period_granted",
+  "source_filename": "Jan Łó 2_zasiłek macierzyński u. rodz..pdf",
+  "source_pdf_path": "knowledge/zus-cases/incomming/Jan Łó 2_zasiłek macierzyński u. rodz..pdf",
+  "status": "partially_verified_source_evidence",
+  "inputs": {
+    "parent": "father",
+    "parentalClaimStart": "2026-06-26",
+    "parentalClaimEnd": "2026-08-10",
+    "childBirthDate": "2026-04-17"
+  },
+  "expected": {
+    "parentalClaimDays": 46,
+    "awardOutcome": "granted_as_recorded"
+  },
+  "evidence": [
+    {
+      "page": 2,
+      "source_type": "ZUR_ZUS_insurance_and_internal_grant_note"
+    },
+    {
+      "page": 5,
+      "source_type": "ZUR_ZUS_insurance_and_internal_grant_note"
+    },
+    {
+      "page": 7,
+      "source_type": "ZUR_ZUS_insurance_and_internal_grant_note"
+    },
+    {
+      "page": 8,
+      "source_type": "ZUR_ZUS_insurance_and_internal_grant_note"
+    },
+    {
+      "page": 9,
+      "source_type": "ZUR_ZUS_insurance_and_internal_grant_note"
+    },
+    {
+      "page": 11,
+      "source_type": "ZUR_ZUS_insurance_and_internal_grant_note"
+    }
+  ],
+  "verification": {
+    "source_pages_reviewed": [
+      2,
+      5,
+      7,
+      8,
+      9,
+      11
+    ],
+    "amount": "not_documented",
+    "financial_amount_pln": null,
+    "app_engine": "not_tested",
+    "full_document_audit": "pending"
+  },
+  "notes": "ZUR p2 requests 46 days, while internal ZUS note p11 says '9 tygodniowy został przyznany'. This is a substantive mismatch; no exact award period or PLN amount established by the note."
+}

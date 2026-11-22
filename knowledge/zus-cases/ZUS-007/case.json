@@ -1,0 +1,29 @@
+{
+  "id": "ZUS-007",
+  "topic": "pregnancy_sick_leave_and_maternity",
+  "source_filename": "Alicja Ta_2_zasiłek chorobowy i macierzyński.pdf",
+  "source_page_count": null,
+  "status": "partially_extracted",
+  "source_visibility": "private_only",
+  "inputs": {
+    "maternityClaimStart": "2025-11-13",
+    "maternityClaimEnd": "2026-04-01",
+    "parentalClaimStart": "2026-04-02",
+    "parentalClaimEnd": "2026-11-11"
+  },
+  "expected": {
+    "maternityRequestedDays": 140,
+    "parentalRequestedDays": 224
+  },
+  "verification": {
+    "source": "selected_pdf_pages",
+    "award": "not_fully_confirmed",
+    "amount": "not_available",
+    "full_document_review": "pending"
+  },
+  "evidence": [
+    5
+  ],
+  "notes": "ZAM application, not award decision.",
+  "warning": "Application/request is not automatically proof of an awarded payment."
+}

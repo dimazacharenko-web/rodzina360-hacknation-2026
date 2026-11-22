@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "id": "ZUS-071",
+  "topic": "father_parental_reserved_weeks_request_with_shorter_dates",
+  "source_filename": "Ryszard Ra_5_zas. macierzyński za okres urlopu rodzicielskiego-9 tyg..pdf",
+  "source_pdf_path": "knowledge/zus-cases/incomming/Ryszard Ra_5_zas. macierzyński za okres urlopu rodzicielskiego-9 tyg..pdf",
+  "status": "partially_extracted",
+  "inputs": {
+    "parent": "father",
+    "childBirthDate": "2025-11-18",
+    "parentalClaimStart": "2026-01-16",
+    "parentalClaimEnd": "2026-03-14",
+    "nonTransferableNineWeeksLabel": true,
+    "claimantOtherLeaveStatementAttached": true
+  },
+  "expected": {
+    "parentalRequestedDays": 58,
+    "expectedIfFullNineWeeks": 63,
+    "dateDiscrepancy": true
+  },
+  "evidence": [
+    {
+      "page": 2,
+      "kind": "visual_review_original_pdf"
+    },
+    {
+      "page": 3,
+      "kind": "visual_review_original_pdf"
+    },
+    {
+      "page": 9,
+      "kind": "visual_review_original_pdf"
+    },
+    {
+      "page": 11,
+      "kind": "visual_review_original_pdf"
+    }
+  ],
+  "verification": {
+    "pdf_pages": "selected_only",
+    "award": "as_explicitly_stated_in_expected_and_notes",
+    "payment_amount_pln": null,
+    "payment_amount_verified": false,
+    "app_engine": "not_tested",
+    "full_document_audit": "pending"
+  },
+  "notes": "ZUR p2 requests 16.01–14.03.2026, only 58 days, despite 9-week label; handwritten statement p9 proposes date correction to 18.03.2026. Do not assert full nine-week award."
+}

@@ -1,0 +1,101 @@
+{
+  "schema_version": 1,
+  "id": "ZUS-021",
+  "topic": "sickness_denial_lack_of_insurance",
+  "source_filename": "Dagmara Chrz_2_odmowa prawa do zasiłku chorobowego w ciąży_brak ubezpieczenia.pdf",
+  "source_filenames": [
+    "Dagmara Chrz_2_odmowa prawa do zasiłku chorobowego w ciąży_brak ubezpieczenia.pdf"
+  ],
+  "source_pdf_paths": [
+    "knowledge/zus-cases/incomming/Dagmara Chrz_2_odmowa prawa do zasiłku chorobowego w ciąży_brak ubezpieczenia.pdf"
+  ],
+  "status": "source_audited_partial_verification",
+  "inputs": {
+    "sickLeaveClaimStart": "2026-02-27",
+    "sickLeaveClaimEnd": "2026-03-27",
+    "employmentStartReported": "2025-10-01",
+    "employerReportedSickPayStart": "2026-02-03",
+    "employerReportedSickPayEnd": "2026-02-28",
+    "insuranceEligibilityDisputed": true
+  },
+  "expected": {
+    "sickLeaveClaimDays": 29,
+    "decisionCategory": "denial_insurance_status",
+    "insuranceCoverage": "not_insured_as_employee_from_2025-10-01"
+  },
+  "evidence": [
+    {
+      "page": 1,
+      "evidence_type": "case_header_Z3_and_ZUS_insurance_reply"
+    },
+    {
+      "page": 2,
+      "evidence_type": "case_header_Z3_and_ZUS_insurance_reply"
+    },
+    {
+      "page": 3,
+      "evidence_type": "case_header_Z3_and_ZUS_insurance_reply"
+    },
+    {
+      "page": 11,
+      "evidence_type": "case_header_Z3_and_ZUS_insurance_reply"
+    },
+    {
+      "page": 13,
+      "evidence_type": "case_header_Z3_and_ZUS_insurance_reply"
+    }
+  ],
+  "verification": {
+    "source_review": "selected_pages_visually_inspected",
+    "final_award": "not_fully_confirmed",
+    "amount": "not_available",
+    "app_engine": "not_tested",
+    "full_document_review": "completed",
+    "decision": "insurance_exclusion_decision_confirmed_sickness_denial_indirect",
+    "decision_status": "insurance_exclusion_decision_confirmed_benefit_refusal_in_case_header_only"
+  },
+  "notes": "The case heading explicitly describes refusal owing to non-coverage. ZUS's insurance investigation page 13 supports contested insurance; exact decision's legal reasoning should still be checked.",
+  "contains_personal_data": false,
+  "full_source_review": {
+    "total_pages_inspected": 14,
+    "method": "visual_contact_sheet_plus_targeted_full_resolution_pages; original is image-only scan",
+    "document_outcome": "insurance_exclusion_decision_confirmed_sickness_denial_indirect",
+    "actual_payment_amount_pln": null,
+    "payment_amount_available": false,
+    "evidence_pages": [
+      1,
+      2,
+      3,
+      5,
+      9,
+      10,
+      11,
+      13
+    ],
+    "findings": [
+      "ZUS insurance reply p13 reports a decision issued 2026-05-11 that person was not subject to mandatory pension, disability, sickness and accident insurance as employee since 2025-10-01.",
+      "Cover p1 labels sickness claim refused. Original full written sickness refusal decision not included; distinguish confirmed exclusion from explicit sickness-benefit refusal.",
+      "No payout amount verified; do not conclude zero monetary transfer as separately certified."
+    ],
+    "legal_outcome_vs_app_test": "source evidence only; no app calculation assertion run",
+    "review_date": "2026-11-21"
+  },
+  "full_source_audit": {
+    "reviewed_pdf_pages": "all_pages_visually_screened",
+    "status": "insurance_exclusion_decision_confirmed_benefit_refusal_in_case_header_only",
+    "source_pages": [
+      1,
+      2,
+      3,
+      9,
+      10,
+      11,
+      13
+    ],
+    "documentary_findings": "ZUS insurance response p13 states decision dated 2026-05-11 finding no employee social/sickness insurance since 2025-10-01. Cover p1 labels claim refused; separate full written sickness denial not provided.",
+    "benefit_payment_amount_pln": null,
+    "amount_status": "not_in_supplied_document",
+    "app_result_comparison": "not_performed",
+    "note": "Do not confuse an application or a contribution wage with approved payment."
+  }
+}

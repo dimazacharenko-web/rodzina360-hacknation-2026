@@ -1,0 +1,78 @@
+{
+  "schema_version": 1,
+  "id": "ZUS-024",
+  "topic": "maternity_equivalent_end_of_employment_during_pregnancy",
+  "source_filename": "Dorota Wa I_3_zasiłek w wysokości zasiłku macierzyńskiego.pdf",
+  "source_filenames": [
+    "Dorota Wa I_3_zasiłek w wysokości zasiłku macierzyńskiego.pdf"
+  ],
+  "source_pdf_paths": [
+    "knowledge/zus-cases/incomming/Dorota Wa I_3_zasiłek w wysokości zasiłku macierzyńskiego.pdf"
+  ],
+  "status": "partially_extracted",
+  "inputs": {
+    "employmentStart": "2025-02-01",
+    "employmentEnd": "2026-08-31",
+    "employmentFteOnLatestContract": 0.333,
+    "claimBenefitFrom": "2026-09-01",
+    "pregnancyDuringNoticeReported": true,
+    "employmentTerminationReasonReported": "employer_liquidation"
+  },
+  "expected": {},
+  "evidence": [
+    {
+      "page": 3,
+      "evidence_type": "Z3_ZAS55_employer_note"
+    },
+    {
+      "page": 7,
+      "evidence_type": "Z3_ZAS55_employer_note"
+    },
+    {
+      "page": 9,
+      "evidence_type": "Z3_ZAS55_employer_note"
+    },
+    {
+      "page": 10,
+      "evidence_type": "Z3_ZAS55_employer_note"
+    },
+    {
+      "page": 13,
+      "evidence_type": "Z3_ZAS55_employer_note"
+    },
+    {
+      "page": 17,
+      "evidence_type": "Z3_ZAS55_employer_note"
+    }
+  ],
+  "verification": {
+    "source_review": "selected_pages_visually_inspected",
+    "final_award": "not_fully_confirmed",
+    "amount": "not_available",
+    "app_engine": "not_tested",
+    "full_document_review": "completed",
+    "decision_status": "no_grant_or_refusal_found"
+  },
+  "notes": "Claim under ZAS-55 starts 1 Sep 2026; Z3 reports employment end and a change of FTE. Actual entitlement needs documentary confirmation, do not treat application as award.",
+  "contains_personal_data": false,
+  "full_source_audit": {
+    "reviewed_pdf_pages": "all_pages_visually_screened",
+    "status": "no_grant_or_refusal_found",
+    "source_pages": [
+      3,
+      5,
+      7,
+      9,
+      10,
+      13,
+      17,
+      18,
+      19
+    ],
+    "documentary_findings": "Z-3 p3 shows employment ended 2026-08-31, ZAS-55 requests benefit-equivalent from 2026-09-01. No ZUS awarding or refusal decision or payment value confirmed.",
+    "benefit_payment_amount_pln": null,
+    "amount_status": "not_in_supplied_document",
+    "app_result_comparison": "not_performed",
+    "note": "Do not confuse an application or a contribution wage with approved payment."
+  }
+}

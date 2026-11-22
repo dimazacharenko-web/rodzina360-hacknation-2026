@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "id": "ZUS-075",
+  "topic": "father_parental_sixth_part_denial",
+  "source_filename": "Tomasz Po_11_zas. mac. ojciec - za okres rodz. - 6ta część - decyzja odmowna.pdf",
+  "source_pdf_path": "knowledge/zus-cases/incomming/Tomasz Po_11_zas. mac. ojciec - za okres rodz. - 6ta część - decyzja odmowna.pdf",
+  "status": "partially_extracted",
+  "inputs": {
+    "parent": "father",
+    "parentalClaimStart": "2024-08-12",
+    "parentalClaimEnd": "2024-08-18",
+    "previousParentalLeavePartsUsed": 5,
+    "requestedPartNumber": 6
+  },
+  "expected": {
+    "parentalRequestedDays": 7,
+    "benefitEntitlement": "denied",
+    "denialReason": "exceeds_maximum_five_parental_leave_parts"
+  },
+  "evidence": [
+    {
+      "page": 2,
+      "kind": "visual_review_original_pdf"
+    },
+    {
+      "page": 9,
+      "kind": "visual_review_original_pdf"
+    },
+    {
+      "page": 11,
+      "kind": "visual_review_original_pdf"
+    },
+    {
+      "page": 13,
+      "kind": "visual_review_original_pdf"
+    },
+    {
+      "page": 14,
+      "kind": "visual_review_original_pdf"
+    }
+  ],
+  "verification": {
+    "pdf_pages": "selected_only",
+    "award": "as_explicitly_stated_in_expected_and_notes",
+    "payment_amount_pln": null,
+    "payment_amount_verified": false,
+    "app_engine": "not_tested",
+    "full_document_audit": "pending"
+  },
+  "notes": "Formal ZUS decision pp13–14 denies 12–18.08.2024 because five previous parental-leave parts had already been used. Distinguish clearly from insurance noncoverage; no paid amount."
+}

@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "id": "ZUS-061",
+  "source_filename": "Natalia Ko_5_zas. mac. w tym przed przewidywaną datą porodu.pdf",
+  "source_pdf_path": "knowledge/zus-cases/incomming/Natalia Ko_5_zas. mac. w tym przed przewidywaną datą porodu.pdf",
+  "topic": "maternity_before_expected_delivery_date",
+  "status": "employer_form_leave_period_no_award",
+  "inputs": {
+    "maternityLeaveStart": "2026-04-21",
+    "maternityLeaveEnd": "2026-09-07",
+    "employmentStart": "2022-09-13",
+    "grossSalaryMonthlyPLN": 6000
+  },
+  "expected": {
+    "maternityLeaveDays": 140
+  },
+  "evidence": [
+    {
+      "page": 3,
+      "source": "PDF",
+      "verification_type": "visual_page_read"
+    },
+    {
+      "page": 4,
+      "source": "PDF",
+      "verification_type": "visual_page_read"
+    },
+    {
+      "page": 5,
+      "source": "PDF",
+      "verification_type": "visual_page_read"
+    },
+    {
+      "page": 9,
+      "source": "PDF",
+      "verification_type": "visual_page_read"
+    },
+    {
+      "page": 10,
+      "source": "PDF",
+      "verification_type": "visual_page_read"
+    }
+  ],
+  "verification": {
+    "source_pages_inspected": [
+      3,
+      4,
+      5,
+      9,
+      10
+    ],
+    "decision_and_payment_status": "employer_form_leave_period_no_award",
+    "benefit_payment_amount_pln": null,
+    "amount_verified": false,
+    "app_engine": "not_tested",
+    "full_document_review": "pending"
+  },
+  "notes": "Z-3 p3 confirms 21.04–07.09.2026; employer request p9 shows start before delivery. Gross salary from Z-3 is not a benefit amount. Actual birth date unclear from displayed scans."
+}

@@ -1,0 +1,359 @@
+{
+  "schema_version": 1,
+  "batch": "2026-11-21-project-13-scans",
+  "total_cases": 13,
+  "source_validation": "selected pages from uploaded project PDF visually reviewed",
+  "cases": [
+    {
+      "id": "ZUS-063",
+      "source_filename": "Natalia Łó 3_zas. macierzyński.pdf",
+      "topic": "parental_leave_combined_with_half_time_work",
+      "inputs": {
+        "maternityApplicationStart": "2026-01-25",
+        "maternityApplicationEnd": "2026-06-13",
+        "plannedParentalStart": "2026-06-14",
+        "workFractionDuringParental": 0.5,
+        "otherParentParentalLeaveReported": false
+      },
+      "expected": {
+        "maternityRequestedDays": 140
+      },
+      "evidence_pages": [
+        2,
+        6,
+        9,
+        11,
+        13
+      ],
+      "notes": "ZAM request and employer request p9 for half-time work during parental leave; amount and exact extended parental end not determined.",
+      "validation_status": "documentary_partial",
+      "payout_pln": null
+    },
+    {
+      "id": "ZUS-064",
+      "source_filename": "Natalia Zi_2_zas. macierzyński.pdf",
+      "topic": "maternity_and_parental_employer_certificate",
+      "inputs": {
+        "maternityClaimStart": "2025-03-18",
+        "maternityClaimEnd": "2025-08-04",
+        "parentalClaimStart": "2025-08-05",
+        "parentalClaimEnd": "2026-03-16",
+        "employmentFteChangedFrom": 0.5,
+        "employmentFteChangedTo": 0.25,
+        "employmentFteChangeDate": "2024-08-01"
+      },
+      "expected": {
+        "maternityRequestedDays": 140,
+        "parentalRequestedDays": 224
+      },
+      "evidence_pages": [
+        7,
+        9,
+        11,
+        16
+      ],
+      "notes": "Z-3 p7 aggregate benefit 18.03.2025–16.03.2026, ZAM p16 requested split; Z-3 p11 confirms FTE change; 4300 PLN is a wage component, not paid allowance.",
+      "validation_status": "documentary_partial",
+      "payout_pln": null
+    },
+    {
+      "id": "ZUS-065",
+      "source_filename": "Paulina Po_7_zas. chorobowy i mac. matka za okres url. mac. rodz. - nie podlega ubezpieczeniom - decyzja odmowna.pdf",
+      "topic": "insurance_exclusion_sickness_and_maternity_claim",
+      "inputs": {
+        "employmentType": "employee_reported",
+        "sicknessClaimIntervals": [
+          [
+            "2025-03-08",
+            "2025-03-28"
+          ],
+          [
+            "2025-03-29",
+            "2025-04-19"
+          ],
+          [
+            "2025-04-20",
+            "2025-04-25"
+          ],
+          [
+            "2025-04-26",
+            "2025-05-27"
+          ]
+        ],
+        "insuranceStatusDisputed": true
+      },
+      "expected": {
+        "outcomeIndicatedInCaseTitle": "denial",
+        "legalReasonFromTitle": "not_subject_to_social_insurance"
+      },
+      "evidence_pages": [
+        1,
+        2,
+        4,
+        10
+      ],
+      "notes": "Z-3 p2 and ZAS-12 p10 show sickness intervals; case filename calls it ZUS refusal for noncoverage, but full operative decision requires further inspection. Do not assert awarded sum.",
+      "validation_status": "documentary_partial",
+      "payout_pln": null
+    },
+    {
+      "id": "ZUS-066",
+      "source_filename": "Paulina Rze_5_zas. macierzyński, uzupełniający, rodzicielski.pdf",
+      "topic": "maternity_supplementary_parental_discrepant_forms",
+      "inputs": {
+        "maternityClaimStart": "2026-06-01",
+        "maternityClaimEnd": "2026-10-18",
+        "employerReportedMaternityEnd": "2026-10-16",
+        "parentalLeaveRequested": true,
+        "supplementaryLeaveMentionedInSourceTitle": true
+      },
+      "expected": {
+        "maternityRequestedDays": 140,
+        "dateConflictBetweenZAMandZ3": true
+      },
+      "evidence_pages": [
+        3,
+        5,
+        12,
+        16
+      ],
+      "notes": "ZAM p5 requests maternity to 18.10.2026; Z-3 p12 appears to report 16.10.2026. Leave reason and extension require complete adjudication. Do not treat title as granted supplementary leave.",
+      "validation_status": "documentary_partial",
+      "payout_pln": null
+    },
+    {
+      "id": "ZUS-067",
+      "source_filename": "Piotr Cho_5_zas. mac. za okres urlopu ojcowskiego, odmowa z powodu zadłużenia, osoba prowadząca działalność.pdf",
+      "topic": "paternity_allowance_denied_due_to_contribution_debt",
+      "inputs": {
+        "employmentType": "self_employed",
+        "paternityClaimStart": "2025-09-25",
+        "paternityClaimEnd": "2025-10-08",
+        "socialInsuranceArrearsPresent": true,
+        "arrearsSettledByDecisionDate": false
+      },
+      "expected": {
+        "paternityClaimDays": 14,
+        "benefitEntitlement": "denied",
+        "denialReason": "social_insurance_contribution_arrears"
+      },
+      "evidence_pages": [
+        2,
+        6,
+        11,
+        12,
+        13,
+        15,
+        16
+      ],
+      "notes": "Formal ZUS decision p15 denies paternity benefit for 25.09–08.10.2025 due to contribution arrears, as confirmed in insurance enquiry p12. Contribution bases are not payout amounts.",
+      "validation_status": "documentary_partial",
+      "payout_pln": null
+    },
+    {
+      "id": "ZUS-068",
+      "source_filename": "Piotr Rze_1_zas. macierzyński - urlop ojcowski.pdf",
+      "topic": "father_paternity_leave_fourteen_day_claim",
+      "inputs": {
+        "parent": "father",
+        "childBirthDate": "2026-05-05",
+        "paternityClaimStart": "2026-10-12",
+        "paternityClaimEnd": "2026-10-25",
+        "employmentSince": "2016-09-01"
+      },
+      "expected": {
+        "paternityRequestedDays": 14
+      },
+      "evidence_pages": [
+        2,
+        3,
+        6,
+        8
+      ],
+      "notes": "ZAO p2 and Z-3 p6 show 12–25.10.2026, 14 days; Z-3 wage table p8 not amount disbursed. No final granting decision located.",
+      "validation_status": "documentary_partial",
+      "payout_pln": null
+    },
+    {
+      "id": "ZUS-069",
+      "source_filename": "Piotr Ta_1_zas. macierzyński_urlop ojcowski.pdf",
+      "topic": "father_paternity_leave_grant_indicated",
+      "inputs": {
+        "parent": "father",
+        "childBirthDate": "2025-05-30",
+        "paternityClaimStart": "2025-09-22",
+        "paternityClaimEnd": "2025-10-05",
+        "employmentSince": "2022-02-01"
+      },
+      "expected": {
+        "paternityRequestedDays": 14,
+        "decisionIndicatedOnCover": "granted"
+      },
+      "evidence_pages": [
+        1,
+        5,
+        8,
+        13,
+        15
+      ],
+      "notes": "Cover p1 says decision granting paternity allowance. ZAO p8 and Z-3 p13 show 22.09–05.10.2025. Actual transferred PLN amount not present.",
+      "validation_status": "documentary_partial",
+      "payout_pln": null
+    },
+    {
+      "id": "ZUS-070",
+      "source_filename": "Pola Rze_4_zas. chorobowy w ciąży i zas. macierzyński.pdf",
+      "topic": "pregnancy_sickness_and_maternity_sequential",
+      "inputs": {
+        "employmentType": "employee",
+        "sicknessReportedStart": "2026-07-08",
+        "sicknessReportedEnd": "2026-08-22",
+        "maternityPeriodReportedStart": "2026-08-09",
+        "maternityPeriodReportedEnd": "2027-08-07",
+        "employmentSince": "2019-10-01"
+      },
+      "expected": {
+        "sicknessReportedDays": 46,
+        "overlapOrDateConflict": true
+      },
+      "evidence_pages": [
+        2,
+        4,
+        5,
+        9,
+        13,
+        15
+      ],
+      "notes": "Z-3 p2 reports sickness 08.07–22.08.2026 while Z-3 p13 reports maternity from 09.08.2026, creating an overlap that must not be silently corrected. 7000 PLN is reported wage, not allowance.",
+      "validation_status": "documentary_partial",
+      "payout_pln": null
+    },
+    {
+      "id": "ZUS-071",
+      "source_filename": "Ryszard Ra_5_zas. macierzyński za okres urlopu rodzicielskiego-9 tyg..pdf",
+      "topic": "father_parental_reserved_weeks_request_with_shorter_dates",
+      "inputs": {
+        "parent": "father",
+        "childBirthDate": "2025-11-18",
+        "parentalClaimStart": "2026-01-16",
+        "parentalClaimEnd": "2026-03-14",
+        "nonTransferableNineWeeksLabel": true,
+        "claimantOtherLeaveStatementAttached": true
+      },
+      "expected": {
+        "parentalRequestedDays": 58,
+        "expectedIfFullNineWeeks": 63,
+        "dateDiscrepancy": true
+      },
+      "evidence_pages": [
+        2,
+        3,
+        9,
+        11
+      ],
+      "notes": "ZUR p2 requests 16.01–14.03.2026, only 58 days, despite 9-week label; handwritten statement p9 proposes date correction to 18.03.2026. Do not assert full nine-week award.",
+      "validation_status": "documentary_partial",
+      "payout_pln": null
+    },
+    {
+      "id": "ZUS-072",
+      "source_filename": "Sylwia Ol_4_zas. mac. za okres urlopu mac. i rodzicielskiego.pdf",
+      "topic": "maternity_and_parental_employee_employer_record",
+      "inputs": {
+        "maternityBenefitReportedStart": "2026-06-03",
+        "maternityBenefitReportedEnd": "2026-10-20",
+        "parentalLeaveRequested": true
+      },
+      "expected": {
+        "maternityReportedDays": 140
+      },
+      "evidence_pages": [
+        5,
+        8,
+        9
+      ],
+      "notes": "Z-3 p8 shows 03.06–20.10.2026 maternity period. Claim and parental request p5 handwritten dates need closer review; employer wages are not ZUS payout.",
+      "validation_status": "documentary_partial",
+      "payout_pln": null
+    },
+    {
+      "id": "ZUS-073",
+      "source_filename": "Teresa No_5_zas. chorobowy i macierzyński.pdf",
+      "topic": "maternity_claim_minimum_topup_and_parental_additional_nine_weeks",
+      "inputs": {
+        "employmentFte": 0.25,
+        "maternityBenefitReportedStart": "2024-04-09",
+        "maternityBenefitReportedEnd": "2025-04-07",
+        "additionalParentalNineWeeksAsserted": true,
+        "minimumMonthlyBenefitThresholdPLN": 1000
+      },
+      "expected": {
+        "aggregateBenefitReportedDays": 364,
+        "topupPaymentConfirmed": false
+      },
+      "evidence_pages": [
+        3,
+        4,
+        7,
+        9,
+        14
+      ],
+      "notes": "Z-3 p7 reported aggregate 364 days, POG p14 references additional 9-week parental period. ZUS letter pp3–4 explains minimum 1000 PLN supplement but does NOT attest the applicant received it.",
+      "validation_status": "documentary_partial",
+      "payout_pln": null
+    },
+    {
+      "id": "ZUS-074",
+      "source_filename": "Teresa Ta_zas. chorobowy i macierzyński_umowa zlecenie.pdf",
+      "topic": "commission_contract_voluntary_sickness_insurance_maternity",
+      "inputs": {
+        "employmentType": "umowa_zlecenie",
+        "childBirthDate": "2025-09-10",
+        "insuranceSicknessRegisteredInZ3a": true,
+        "maternityBenefitReportedStart": "2025-09-10",
+        "maternityBenefitReportedEnd": "2026-09-08"
+      },
+      "expected": {
+        "aggregateBenefitReportedDays": 364,
+        "awardIndicatedOnCover": true
+      },
+      "evidence_pages": [
+        1,
+        5,
+        9,
+        11,
+        12
+      ],
+      "notes": "Cover p1 says granting sick leave and maternity allowance; Z-3a p9 reports maternity 10.09.2025–08.09.2026 and voluntary sickness insurance. Z-3a p11 has contribution bases, not actual transfers.",
+      "validation_status": "documentary_partial",
+      "payout_pln": null
+    },
+    {
+      "id": "ZUS-075",
+      "source_filename": "Tomasz Po_11_zas. mac. ojciec - za okres rodz. - 6ta część - decyzja odmowna.pdf",
+      "topic": "father_parental_sixth_part_denial",
+      "inputs": {
+        "parent": "father",
+        "parentalClaimStart": "2024-08-12",
+        "parentalClaimEnd": "2024-08-18",
+        "previousParentalLeavePartsUsed": 5,
+        "requestedPartNumber": 6
+      },
+      "expected": {
+        "parentalRequestedDays": 7,
+        "benefitEntitlement": "denied",
+        "denialReason": "exceeds_maximum_five_parental_leave_parts"
+      },
+      "evidence_pages": [
+        2,
+        9,
+        11,
+        13,
+        14
+      ],
+      "notes": "Formal ZUS decision pp13–14 denies 12–18.08.2024 because five previous parental-leave parts had already been used. Distinguish clearly from insurance noncoverage; no paid amount.",
+      "validation_status": "documentary_partial",
+      "payout_pln": null
+    }
+  ]
+}

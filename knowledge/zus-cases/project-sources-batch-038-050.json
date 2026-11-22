@@ -1,0 +1,369 @@
+{
+  "schema_version": 1,
+  "batch": "2026-11-21-13-project-sources",
+  "case_count": 13,
+  "cases": [
+    {
+      "id": "ZUS-038",
+      "source_filename": "Joanna Wa I_5_zas. mac., osoba współpracująca, odmowa_zadłużenie z tytułu składek.pdf",
+      "topic": "maternity_claim_and_contribution_debt_risk",
+      "inputs": {
+        "employmentCategory": "self_employed",
+        "maternityClaimStart": "2025-03-21",
+        "maternityClaimEnd": "2025-08-07",
+        "parentalClaimStart": "2025-08-08",
+        "parentalClaimEnd": "2026-03-19",
+        "contributionDebtReportedInCorrespondence": true
+      },
+      "expected": {
+        "maternityRequestedDays": 140,
+        "parentalRequestedDays": 224
+      },
+      "evidence_pages": [
+        3,
+        6,
+        13,
+        15
+      ],
+      "evidence_type": "Z3b_ZAM_civil_record_and_request",
+      "notes": "ZAM page 6 states 140+224 days; claim title mentions refusal due to arrears but complete refusal decision and debt amount are not confirmed from inspected pages.",
+      "status": "partially_extracted",
+      "actual_payment_amount_pln": null,
+      "app_engine_verified": false
+    },
+    {
+      "id": "ZUS-039",
+      "source_filename": "Jolanta Go_5_zas. mac.-przyjęcia dziecka w wychowaniu_rodzina zastępcza.pdf",
+      "topic": "foster_care_child_taken_into_care",
+      "inputs": {
+        "employmentCategory": "self_employed",
+        "careSituation": "non_professional_foster_family",
+        "benefitTypesRequested": [
+          "maternity_equivalent",
+          "parental"
+        ],
+        "childPlacementDocumentProvided": true
+      },
+      "expected": {
+        "coverReportsEntitlementAndPayment": true
+      },
+      "evidence_pages": [
+        1,
+        4,
+        7,
+        10,
+        15
+      ],
+      "evidence_type": "case_cover_Z3b_ZUR_ZAM_foster_certificate",
+      "notes": "Cover explicitly says entitlement established and benefit paid. Placement certificate page 15 lists children; dates handwritten in the scanned applications need individual confirmation. No PLN payout evidenced.",
+      "status": "partially_extracted",
+      "actual_payment_amount_pln": null,
+      "app_engine_verified": false
+    },
+    {
+      "id": "ZUS-040",
+      "source_filename": "Jolanta Ko_2_zas. mac. martwe urodzenie.pdf",
+      "topic": "stillbirth_employed_maternity_leave",
+      "inputs": {
+        "stillbirthContext": "stated_in_case_filename",
+        "maternityReportedStart": "2026-04-12",
+        "maternityReportedEnd": "2026-06-06",
+        "employmentStart": "2020-01-02",
+        "employmentFte": 1
+      },
+      "expected": {
+        "maternityReportedDays": 56
+      },
+      "evidence_pages": [
+        2,
+        3,
+        4
+      ],
+      "evidence_type": "Z3_employer_record",
+      "notes": "Z-3 pages 2 and 3 report 56 days. Page 4 contains earnings (not ZUS payouts); stillbirth must be independently verified from registry if present.",
+      "status": "partially_extracted",
+      "actual_payment_amount_pln": null,
+      "app_engine_verified": false
+    },
+    {
+      "id": "ZUS-041",
+      "source_filename": "Jolanta Pi_2_zas. chorobowy i mac._urlop mac., urlop rodzicielski_zaświadczenie za życiem.pdf",
+      "topic": "pregnancy_sickness_maternity_parental_za_zyciem",
+      "inputs": {
+        "employmentCategory": "employee",
+        "benefitContexts": [
+          "sickness",
+          "maternity",
+          "parental",
+          "za_zyciem_certificate"
+        ],
+        "employmentStart": "2022-09-19"
+      },
+      "expected": {},
+      "evidence_pages": [
+        1,
+        2,
+        3,
+        4,
+        8,
+        10
+      ],
+      "evidence_type": "multiple_Z3_claims_wage_history",
+      "notes": "74-page complex case. Z-3 forms show illness and earnings history; dates across versions require reconciliation. Salary entries are not benefit payout figures. No specific decision confirmed yet.",
+      "status": "partially_extracted",
+      "actual_payment_amount_pln": null,
+      "app_engine_verified": false
+    },
+    {
+      "id": "ZUS-042",
+      "source_filename": "Jolanta Poz_9_ zas. mac. - url. mac. i rodz., 3 dzieci, 1 martwourodzone, 1 za życiem, łącznie urlop rodz. z pracą - decyzja przyznająca.pdf",
+      "topic": "multiple_births_stillbirth_za_zyciem_work_during_parental",
+      "inputs": {
+        "childrenBornTogetherReported": 3,
+        "stillbirthAmongChildrenReported": true,
+        "zaZyciemReported": true,
+        "workDuringParentalReported": true,
+        "maternityClaimStart": "2024-05-13",
+        "maternityClaimEnd": "2024-12-15"
+      },
+      "expected": {
+        "maternityRequestedDays": 217
+      },
+      "evidence_pages": [
+        3,
+        9,
+        11,
+        13,
+        15
+      ],
+      "evidence_type": "ZAM_and_civil_records",
+      "notes": "Case filename refers to a granting decision, but specific decision text, rate and percentage of work while on parental leave need full verification. Page 3 maternity interval is 31 weeks.",
+      "status": "partially_extracted",
+      "actual_payment_amount_pln": null,
+      "app_engine_verified": false
+    },
+    {
+      "id": "ZUS-043",
+      "source_filename": "Józef Lu_3_zas. mac. za okres urlopu ojcowskiego.pdf",
+      "topic": "father_paternity_leave_granted",
+      "inputs": {
+        "parent": "father",
+        "paternityClaimStart": "2026-07-13",
+        "paternityClaimEnd": "2026-07-19",
+        "employmentStart": "2024-11-01"
+      },
+      "expected": {
+        "paternityClaimDays": 7,
+        "grantOutcome": "right_granted_in_case_cover"
+      },
+      "evidence_pages": [
+        1,
+        2,
+        7,
+        9,
+        13
+      ],
+      "evidence_type": "cover_ZAO_Z3_employer_leave",
+      "notes": "Page 1 reports ZUS granted entitlement for 13–19 July 2026; no transfer amount. ZAO and Z3 support seven-day period.",
+      "status": "partially_extracted",
+      "actual_payment_amount_pln": null,
+      "app_engine_verified": false
+    },
+    {
+      "id": "ZUS-044",
+      "source_filename": "Julia Gd._01_zas. macierzyński_przyjęcie dziecka na wychowanie_przysposobienie.pdf",
+      "topic": "adoption_child_placed_court_order",
+      "inputs": {
+        "placementForAdoption": true,
+        "courtAdoptionOrderPresent": true,
+        "benefitTypesRequested": [
+          "maternity_equivalent",
+          "parental"
+        ],
+        "childBirthYear": 2018
+      },
+      "expected": {},
+      "evidence_pages": [
+        2,
+        6,
+        8,
+        10,
+        12,
+        15
+      ],
+      "evidence_type": "ZAM_ZUR_court_order_birth_certificate_insurance_reply",
+      "notes": "Adoption order page 8, child placement ZAM page 2, and sickness insurance reply page 12. Some handwritten periods illegible; avoid guessing entitlement and amount.",
+      "status": "partially_extracted",
+      "actual_payment_amount_pln": null,
+      "app_engine_verified": false
+    },
+    {
+      "id": "ZUS-045",
+      "source_filename": "Julia No_4_zas. macierzyński.pdf",
+      "topic": "employee_maternity_and_parental_claim",
+      "inputs": {
+        "childBirthDate": "2025-02-03",
+        "maternityClaimStart": "2025-02-03",
+        "maternityClaimEnd": "2025-06-22",
+        "parentalClaimStart": "2025-06-23",
+        "parentalClaimEnd": "2026-02-01"
+      },
+      "expected": {
+        "maternityRequestedDays": 140,
+        "parentalRequestedDays": 224
+      },
+      "evidence_pages": [
+        2,
+        4,
+        5
+      ],
+      "evidence_type": "ZAM_application",
+      "notes": "ZAM p2 states maternity 140 days and parental 224 days; no proof of award or amount in inspected pages.",
+      "status": "partially_extracted",
+      "actual_payment_amount_pln": null,
+      "app_engine_verified": false
+    },
+    {
+      "id": "ZUS-046",
+      "source_filename": "Justyna Gd_3_zas. chorobowy w ciąży oraz zas. mac._bliźnięta.pdf",
+      "topic": "twin_pregnancy_sickness_maternity",
+      "inputs": {
+        "employmentCategory": "self_employed",
+        "numberOfChildrenReported": 2,
+        "sicknessReportedStart": "2024-09-27",
+        "sicknessReportedEnd": "2024-10-11",
+        "contributionBasesShown": true
+      },
+      "expected": {
+        "sicknessReportedDays": 15
+      },
+      "evidence_pages": [
+        2,
+        3,
+        9,
+        10,
+        11,
+        15
+      ],
+      "evidence_type": "Z3b_ZUS_insurance_basis",
+      "notes": "Sickness period from Z-3b is 15 days. Insurance and contribution bases appear on pp10–11; these are not paid maternity amounts. Twin birth and final maternity periods require review on later pages.",
+      "status": "partially_extracted",
+      "actual_payment_amount_pln": null,
+      "app_engine_verified": false
+    },
+    {
+      "id": "ZUS-047",
+      "source_filename": "Justyna Toruńska_5_zas. macierzyński, bliźnięta, wcześniaki, zaśw. za życiem.pdf",
+      "topic": "twins_premature_supplementary_maternity_za_zyciem",
+      "inputs": {
+        "childrenBornTogether": 2,
+        "childBirthDate": "2025-07-20",
+        "gestationWeekAtBirth": 28,
+        "zaZyciemReported": true,
+        "maternityClaimStart": "2025-07-20",
+        "supplementaryLeaveRequestedWeeks": 8,
+        "parentalLeaveRequestedWeeks": 58
+      },
+      "expected": {},
+      "evidence_pages": [
+        1,
+        3,
+        4,
+        6,
+        7,
+        10,
+        12
+      ],
+      "evidence_type": "hospital_certificates_employee_request_Z3",
+      "notes": "Page 7 contains request for 31-week maternity, 8-week supplementary and 58-week parental periods; handwritten or stated end dates need reconciliation with day counts. Claimed rates are not payout amounts.",
+      "status": "partially_extracted",
+      "actual_payment_amount_pln": null,
+      "app_engine_verified": false
+    },
+    {
+      "id": "ZUS-048",
+      "source_filename": "Justyna Wa I_4_zas. chorobowy w ciąży, osoba współpracująca, odmowa, zadłużenie z tytułu składek.pdf",
+      "topic": "sickness_denial_contribution_arrears",
+      "inputs": {
+        "employmentCategory": "self_employed",
+        "sicknessClaimStart": "2025-03-04",
+        "sicknessClaimEnd": "2025-03-31",
+        "insuranceDebtRecorded": true
+      },
+      "expected": {
+        "sicknessClaimDays": 28,
+        "caseResolution": "refusal_recorded"
+      },
+      "evidence_pages": [
+        2,
+        3,
+        9,
+        10,
+        11,
+        15
+      ],
+      "evidence_type": "Z3b_ZUS_insurance_and_case_closure",
+      "notes": "Page 11 ZUS insurance reply says debt exists, page 15 states case closed with refusal. Full formal decision text and debt threshold were not evidenced.",
+      "status": "partially_extracted",
+      "actual_payment_amount_pln": null,
+      "app_engine_verified": false
+    },
+    {
+      "id": "ZUS-049",
+      "source_filename": "Karol Go_2_zas. mac. za 9 tygodni urlopu macierzyńskiego dla ojca.pdf",
+      "topic": "father_9_week_parental_benefit",
+      "inputs": {
+        "parent": "father",
+        "employmentCategory": "self_employed",
+        "benefitRequestedStart": "2024-08-19",
+        "benefitRequestedEnd": "2024-10-20"
+      },
+      "expected": {
+        "benefitRequestedDays": 63,
+        "caseOutcome": "entitlement_established_and_paid_from_cover"
+      },
+      "evidence_pages": [
+        1,
+        3,
+        4
+      ],
+      "evidence_type": "cover_Z3b",
+      "notes": "Cover p1 states entitlement established and benefit paid; Z3b p3 shows 63-day period. Filename calls it maternity but this is treated as father reserved 9-week scenario, subject to legal category confirmation.",
+      "status": "partially_extracted",
+      "actual_payment_amount_pln": null,
+      "app_engine_verified": false
+    },
+    {
+      "id": "ZUS-050",
+      "source_filename": "Karolina Ra_2_zas. macierzyński za urlop macierzyński, uzupełniający urlop macierzyński, rodzicielski.pdf",
+      "topic": "self_employed_maternity_supplementary_parental",
+      "inputs": {
+        "employmentCategory": "self_employed",
+        "benefitTypesRequested": [
+          "maternity",
+          "supplementary_maternity",
+          "parental"
+        ],
+        "aggregateReportedStart": "2025-12-01",
+        "aggregateReportedEnd": "2027-01-24",
+        "childBirthDate": "2025-12-01",
+        "prematurityHospitalEvidencePresent": true
+      },
+      "expected": {
+        "aggregateReportedCalendarDays": 420
+      },
+      "evidence_pages": [
+        3,
+        9,
+        11,
+        12,
+        15
+      ],
+      "evidence_type": "Z3b_civil_record_neonatal_records",
+      "notes": "Z3b p3 reports aggregate period 420 calendar days, not breakdown. Neonatal medical record p12 is supporting evidence, not proof of supplementary leave grant or amount.",
+      "status": "partially_extracted",
+      "actual_payment_amount_pln": null,
+      "app_engine_verified": false
+    }
+  ]
+}

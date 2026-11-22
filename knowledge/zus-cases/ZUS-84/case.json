@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "id": "ZUS-84",
+  "source_filename": "Zuzanna Le_zas. chorobowy w ciąży.pdf",
+  "topic": "employee_pregnancy_sickness_insurance_and_salary_basis",
+  "status": "partially_extracted",
+  "source_pdf_path": "knowledge/zus-cases/incomming/Zuzanna Le_zas. chorobowy w ciąży.pdf",
+  "inputs": {
+    "employmentSince": "2026-01-07",
+    "sicknessClaimStart": "2026-10-07",
+    "sicknessClaimEnd": "2026-10-13",
+    "employerPreviousSickPayStart": "2026-09-04",
+    "employerPreviousSickPayEnd": "2026-10-06"
+  },
+  "expected": {
+    "sicknessClaimDays": 7,
+    "grantClaimOnCover": true
+  },
+  "evidence": [
+    {
+      "page": 1,
+      "source": "original_pdf",
+      "evidence_scope": "visual_selected_page"
+    },
+    {
+      "page": 4,
+      "source": "original_pdf",
+      "evidence_scope": "visual_selected_page"
+    },
+    {
+      "page": 5,
+      "source": "original_pdf",
+      "evidence_scope": "visual_selected_page"
+    },
+    {
+      "page": 6,
+      "source": "original_pdf",
+      "evidence_scope": "visual_selected_page"
+    },
+    {
+      "page": 7,
+      "source": "original_pdf",
+      "evidence_scope": "visual_selected_page"
+    },
+    {
+      "page": 9,
+      "source": "original_pdf",
+      "evidence_scope": "visual_selected_page"
+    },
+    {
+      "page": 13,
+      "source": "original_pdf",
+      "evidence_scope": "visual_selected_page"
+    }
+  ],
+  "verification": {
+    "full_document_audit": "pending",
+    "actual_zus_payout_pln": null,
+    "amount_verified": false,
+    "app_engine": "not_tested",
+    "source_pdf_in_repo": "not_independently_verified"
+  },
+  "notes": "Cover says sickness benefit granted for pregnant worker. Employer Z-3 p4 requests 7 days; p6 reports earlier employer sick-pay. Wage data p7 are NOT actual benefit transfers; p9 raises uncertainty over vacation payments in benefit basis."
+}

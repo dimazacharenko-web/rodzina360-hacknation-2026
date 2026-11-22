@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "id": "ZUS-057",
+  "source_filename": "Krystyna Zab_3_Odmowa zas. macierzyńskiego_umowa dla pozoru.pdf",
+  "source_pdf_path": "knowledge/zus-cases/incomming/Krystyna Zab_3_Odmowa zas. macierzyńskiego_umowa dla pozoru.pdf",
+  "topic": "maternity_denial_sham_employment_insurance_exclusion",
+  "status": "insurance_exclusion_decision_shown_full_refusal_pending",
+  "inputs": {
+    "employmentReportedStart": "2025-11-03",
+    "maternityClaimStart": "2026-01-13",
+    "maternityClaimEnd": "2027-01-11",
+    "socialInsuranceCoverageDisputed": true
+  },
+  "expected": {
+    "maternityClaimDays": 364,
+    "insuranceExclusionFrom": "2025-11-03",
+    "denialIndicatedInCaseHeader": true
+  },
+  "evidence": [
+    {
+      "page": 1,
+      "source": "PDF",
+      "verification_type": "visual_page_read"
+    },
+    {
+      "page": 4,
+      "source": "PDF",
+      "verification_type": "visual_page_read"
+    },
+    {
+      "page": 13,
+      "source": "PDF",
+      "verification_type": "visual_page_read"
+    }
+  ],
+  "verification": {
+    "source_pages_inspected": [
+      1,
+      4,
+      13
+    ],
+    "decision_and_payment_status": "insurance_exclusion_decision_shown_full_refusal_pending",
+    "benefit_payment_amount_pln": null,
+    "amount_verified": false,
+    "app_engine": "not_tested",
+    "full_document_review": "pending"
+  },
+  "notes": "Cover p1 labels benefit refusal; p13 ZUS decision establishes non-coverage for mandatory pension/disability/sickness/accident insurance from 03.11.2025. Full 9-page reasoning not reviewed; do not assert detailed motive beyond documented insurance exclusion."
+}

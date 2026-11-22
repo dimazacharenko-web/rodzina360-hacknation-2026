@@ -1,0 +1,29 @@
+{
+  "id": "ZUS-002",
+  "topic": "maternity_and_parental",
+  "source_filename": "Alicja Cho_3_Zasiłek macierzyński za okres urlopu macierzyńskiego i rodzicielskiego.pdf",
+  "source_page_count": null,
+  "status": "partially_extracted",
+  "source_visibility": "private_only",
+  "inputs": {
+    "childBirthDate": "2025-09-26",
+    "sickLeaveStart": "2025-09-15",
+    "sickLeaveEnd": "2025-10-07"
+  },
+  "expected": {
+    "sickLeaveRequestedDays": 23
+  },
+  "verification": {
+    "dates": "confirmed_from_form_and_cover",
+    "maternity_period": "pending",
+    "parental_period": "pending",
+    "award": "not_confirmed",
+    "amount": "not_available"
+  },
+  "evidence": [
+    1,
+    2
+  ],
+  "notes": "",
+  "warning": "Application/request is not automatically proof of an awarded payment."
+}

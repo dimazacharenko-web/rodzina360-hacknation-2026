@@ -1,0 +1,30 @@
+{
+  "id": "ZUS-006",
+  "topic": "adoption_or_foster_care",
+  "source_filename": "Agnieszka War_02_zas. macierzyński - przyjęcie dziecka na wychowanie.pdf",
+  "source_page_count": null,
+  "status": "partially_extracted",
+  "source_visibility": "private_only",
+  "inputs": {
+    "careType": "child_taken_into_care",
+    "maternityStart": "2026-01-27",
+    "maternityEnd": "2026-06-15",
+    "parentalStart": "2026-06-16",
+    "parentalEnd": "2027-01-25"
+  },
+  "expected": {
+    "maternityPaidDays": 140,
+    "parentalPaidDays": 224
+  },
+  "verification": {
+    "source": "selected_pdf_pages",
+    "award": "not_fully_confirmed",
+    "amount": "not_available",
+    "full_document_review": "pending"
+  },
+  "evidence": [
+    1
+  ],
+  "notes": "Case cover explicitly states periods were paid; amounts absent.",
+  "warning": "Application/request is not automatically proof of an awarded payment."
+}

@@ -1,0 +1,27 @@
+{
+  "id": "ZUS-008",
+  "topic": "stillbirth",
+  "source_filename": "Alina Wa I_1_zas. mac. martwe urodzenie.pdf",
+  "source_page_count": null,
+  "status": "partially_extracted",
+  "source_visibility": "private_only",
+  "inputs": {
+    "caseContext": "stillbirth",
+    "maternityReportedStart": "2025-09-20",
+    "maternityReportedEnd": "2025-11-14"
+  },
+  "expected": {
+    "maternityReportedDays": 56
+  },
+  "verification": {
+    "source": "selected_pdf_pages",
+    "award": "not_fully_confirmed",
+    "amount": "not_available",
+    "full_document_review": "pending"
+  },
+  "evidence": [
+    3
+  ],
+  "notes": "Z-3 employer form; decision not verified.",
+  "warning": "Application/request is not automatically proof of an awarded payment."
+}

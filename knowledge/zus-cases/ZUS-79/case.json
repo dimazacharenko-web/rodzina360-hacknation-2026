@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "id": "ZUS-79",
+  "source_filename": "Zofia Lu_1_zas. mac. za okres urlopu macierzyńskiego i rodzicielskiego.pdf",
+  "topic": "self_employed_maternity_parental_benefit_granted",
+  "status": "partially_extracted",
+  "source_pdf_path": "knowledge/zus-cases/incomming/Zofia Lu_1_zas. mac. za okres urlopu macierzyńskiego i rodzicielskiego.pdf",
+  "inputs": {
+    "employmentType": "self_employed",
+    "aggregateMaternityParentalStart": "2025-11-13",
+    "aggregateMaternityParentalEnd": "2026-11-11",
+    "sicknessInsuranceTicked": true
+  },
+  "expected": {
+    "aggregateDays": 364,
+    "decisionMention": "granted_on_case_cover"
+  },
+  "evidence": [
+    {
+      "page": 1,
+      "source": "original_pdf",
+      "evidence_scope": "visual_selected_page"
+    },
+    {
+      "page": 3,
+      "source": "original_pdf",
+      "evidence_scope": "visual_selected_page"
+    },
+    {
+      "page": 5,
+      "source": "original_pdf",
+      "evidence_scope": "visual_selected_page"
+    },
+    {
+      "page": 7,
+      "source": "original_pdf",
+      "evidence_scope": "visual_selected_page"
+    },
+    {
+      "page": 8,
+      "source": "original_pdf",
+      "evidence_scope": "visual_selected_page"
+    },
+    {
+      "page": 11,
+      "source": "original_pdf",
+      "evidence_scope": "visual_selected_page"
+    }
+  ],
+  "verification": {
+    "full_document_audit": "pending",
+    "actual_zus_payout_pln": null,
+    "amount_verified": false,
+    "app_engine": "not_tested",
+    "source_pdf_in_repo": "not_independently_verified"
+  },
+  "notes": "Case cover states benefit entitlement granted. Z-3b p3 reports 364-day overall period; later letter p11 asks for other-parent use statement. Actual transfer and PLN amount not documented."
+}

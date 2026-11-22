@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "id": "ZUS-044",
+  "topic": "adoption_child_placed_court_order",
+  "source_filename": "Julia Gd._01_zas. macierzyński_przyjęcie dziecka na wychowanie_przysposobienie.pdf",
+  "source_pdf_path": "knowledge/zus-cases/incomming/Julia Gd._01_zas. macierzyński_przyjęcie dziecka na wychowanie_przysposobienie.pdf",
+  "status": "partially_extracted",
+  "inputs": {
+    "placementForAdoption": true,
+    "courtAdoptionOrderPresent": true,
+    "benefitTypesRequested": [
+      "maternity_equivalent",
+      "parental"
+    ],
+    "childBirthYear": 2018
+  },
+  "expected": {},
+  "evidence": [
+    {
+      "page": 2,
+      "evidence_type": "ZAM_ZUR_court_order_birth_certificate_insurance_reply"
+    },
+    {
+      "page": 6,
+      "evidence_type": "ZAM_ZUR_court_order_birth_certificate_insurance_reply"
+    },
+    {
+      "page": 8,
+      "evidence_type": "ZAM_ZUR_court_order_birth_certificate_insurance_reply"
+    },
+    {
+      "page": 10,
+      "evidence_type": "ZAM_ZUR_court_order_birth_certificate_insurance_reply"
+    },
+    {
+      "page": 12,
+      "evidence_type": "ZAM_ZUR_court_order_birth_certificate_insurance_reply"
+    },
+    {
+      "page": 15,
+      "evidence_type": "ZAM_ZUR_court_order_birth_certificate_insurance_reply"
+    }
+  ],
+  "verification": {
+    "source_pages_reviewed": [
+      2,
+      6,
+      8,
+      10,
+      12,
+      15
+    ],
+    "decision_status": "see_case_notes",
+    "amount_pln": null,
+    "financial_amount_verified": false,
+    "app_engine": "not_tested",
+    "full_document_audit": "pending"
+  },
+  "notes": "Adoption order page 8, child placement ZAM page 2, and sickness insurance reply page 12. Some handwritten periods illegible; avoid guessing entitlement and amount."
+}

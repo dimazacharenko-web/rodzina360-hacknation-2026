@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "id": "ZUS-86",
+  "source_filename": "Zuzanna Wro_2_zas. macierzyński.pdf",
+  "topic": "self_employed_maternity_parental_insurance_confirmed_no_debt",
+  "status": "partially_extracted",
+  "source_pdf_path": "knowledge/zus-cases/incomming/Zuzanna Wro_2_zas. macierzyński.pdf",
+  "inputs": {
+    "employmentType": "self_employed",
+    "birthDate": "2026-10-01",
+    "aggregateClaimStart": "2026-10-01",
+    "aggregateClaimEnd": "2027-09-29",
+    "sicknessInsuranceConfirmed": true,
+    "contributionDebtPresent": false
+  },
+  "expected": {
+    "aggregateClaimDays": 364,
+    "benefitAwardConfirmed": false
+  },
+  "evidence": [
+    {
+      "page": 2,
+      "source": "original_pdf",
+      "evidence_scope": "visual_selected_page"
+    },
+    {
+      "page": 6,
+      "source": "original_pdf",
+      "evidence_scope": "visual_selected_page"
+    },
+    {
+      "page": 11,
+      "source": "original_pdf",
+      "evidence_scope": "visual_selected_page"
+    },
+    {
+      "page": 13,
+      "source": "original_pdf",
+      "evidence_scope": "visual_selected_page"
+    },
+    {
+      "page": 14,
+      "source": "original_pdf",
+      "evidence_scope": "visual_selected_page"
+    },
+    {
+      "page": 15,
+      "source": "original_pdf",
+      "evidence_scope": "visual_selected_page"
+    }
+  ],
+  "verification": {
+    "full_document_audit": "pending",
+    "actual_zus_payout_pln": null,
+    "amount_verified": false,
+    "app_engine": "not_tested",
+    "source_pdf_in_repo": "not_independently_verified"
+  },
+  "notes": "Z-3b p2 and ZAM p6 state maternity/parental periods; ZUS insurance reply p14 confirms coverage, p15 shows no contribution debt. Confirmation of insurance does not prove benefit grant. Contribution bases are not benefit amounts."
+}

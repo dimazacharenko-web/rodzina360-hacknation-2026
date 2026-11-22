@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "id": "ZUS-038",
+  "topic": "maternity_claim_and_contribution_debt_risk",
+  "source_filename": "Joanna Wa I_5_zas. mac., osoba współpracująca, odmowa_zadłużenie z tytułu składek.pdf",
+  "source_pdf_path": "knowledge/zus-cases/incomming/Joanna Wa I_5_zas. mac., osoba współpracująca, odmowa_zadłużenie z tytułu składek.pdf",
+  "status": "partially_extracted",
+  "inputs": {
+    "employmentCategory": "self_employed",
+    "maternityClaimStart": "2025-03-21",
+    "maternityClaimEnd": "2025-08-07",
+    "parentalClaimStart": "2025-08-08",
+    "parentalClaimEnd": "2026-03-19",
+    "contributionDebtReportedInCorrespondence": true
+  },
+  "expected": {
+    "maternityRequestedDays": 140,
+    "parentalRequestedDays": 224
+  },
+  "evidence": [
+    {
+      "page": 3,
+      "evidence_type": "Z3b_ZAM_civil_record_and_request"
+    },
+    {
+      "page": 6,
+      "evidence_type": "Z3b_ZAM_civil_record_and_request"
+    },
+    {
+      "page": 13,
+      "evidence_type": "Z3b_ZAM_civil_record_and_request"
+    },
+    {
+      "page": 15,
+      "evidence_type": "Z3b_ZAM_civil_record_and_request"
+    }
+  ],
+  "verification": {
+    "source_pages_reviewed": [
+      3,
+      6,
+      13,
+      15
+    ],
+    "decision_status": "see_case_notes",
+    "amount_pln": null,
+    "financial_amount_verified": false,
+    "app_engine": "not_tested",
+    "full_document_audit": "pending"
+  },
+  "notes": "ZAM page 6 states 140+224 days; claim title mentions refusal due to arrears but complete refusal decision and debt amount are not confirmed from inspected pages."
+}

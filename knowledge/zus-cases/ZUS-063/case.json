@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "id": "ZUS-063",
+  "topic": "parental_leave_combined_with_half_time_work",
+  "source_filename": "Natalia Łó 3_zas. macierzyński.pdf",
+  "source_pdf_path": "knowledge/zus-cases/incomming/Natalia Łó 3_zas. macierzyński.pdf",
+  "status": "partially_extracted",
+  "inputs": {
+    "maternityApplicationStart": "2026-01-25",
+    "maternityApplicationEnd": "2026-06-13",
+    "plannedParentalStart": "2026-06-14",
+    "workFractionDuringParental": 0.5,
+    "otherParentParentalLeaveReported": false
+  },
+  "expected": {
+    "maternityRequestedDays": 140
+  },
+  "evidence": [
+    {
+      "page": 2,
+      "kind": "visual_review_original_pdf"
+    },
+    {
+      "page": 6,
+      "kind": "visual_review_original_pdf"
+    },
+    {
+      "page": 9,
+      "kind": "visual_review_original_pdf"
+    },
+    {
+      "page": 11,
+      "kind": "visual_review_original_pdf"
+    },
+    {
+      "page": 13,
+      "kind": "visual_review_original_pdf"
+    }
+  ],
+  "verification": {
+    "pdf_pages": "selected_only",
+    "award": "as_explicitly_stated_in_expected_and_notes",
+    "payment_amount_pln": null,
+    "payment_amount_verified": false,
+    "app_engine": "not_tested",
+    "full_document_audit": "pending"
+  },
+  "notes": "ZAM request and employer request p9 for half-time work during parental leave; amount and exact extended parental end not determined."
+}

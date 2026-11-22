@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "id": "ZUS-067",
+  "topic": "paternity_allowance_denied_due_to_contribution_debt",
+  "source_filename": "Piotr Cho_5_zas. mac. za okres urlopu ojcowskiego, odmowa z powodu zadłużenia, osoba prowadząca działalność.pdf",
+  "source_pdf_path": "knowledge/zus-cases/incomming/Piotr Cho_5_zas. mac. za okres urlopu ojcowskiego, odmowa z powodu zadłużenia, osoba prowadząca działalność.pdf",
+  "status": "partially_extracted",
+  "inputs": {
+    "employmentType": "self_employed",
+    "paternityClaimStart": "2025-09-25",
+    "paternityClaimEnd": "2025-10-08",
+    "socialInsuranceArrearsPresent": true,
+    "arrearsSettledByDecisionDate": false
+  },
+  "expected": {
+    "paternityClaimDays": 14,
+    "benefitEntitlement": "denied",
+    "denialReason": "social_insurance_contribution_arrears"
+  },
+  "evidence": [
+    {
+      "page": 2,
+      "kind": "visual_review_original_pdf"
+    },
+    {
+      "page": 6,
+      "kind": "visual_review_original_pdf"
+    },
+    {
+      "page": 11,
+      "kind": "visual_review_original_pdf"
+    },
+    {
+      "page": 12,
+      "kind": "visual_review_original_pdf"
+    },
+    {
+      "page": 13,
+      "kind": "visual_review_original_pdf"
+    },
+    {
+      "page": 15,
+      "kind": "visual_review_original_pdf"
+    },
+    {
+      "page": 16,
+      "kind": "visual_review_original_pdf"
+    }
+  ],
+  "verification": {
+    "pdf_pages": "selected_only",
+    "award": "as_explicitly_stated_in_expected_and_notes",
+    "payment_amount_pln": null,
+    "payment_amount_verified": false,
+    "app_engine": "not_tested",
+    "full_document_audit": "pending"
+  },
+  "notes": "Formal ZUS decision p15 denies paternity benefit for 25.09–08.10.2025 due to contribution arrears, as confirmed in insurance enquiry p12. Contribution bases are not payout amounts."
+}

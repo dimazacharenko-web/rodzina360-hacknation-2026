@@ -1,0 +1,99 @@
+{
+  "schema_version": 1,
+  "id": "ZUS-020",
+  "topic": "maternity_parental_employment",
+  "source_filename": "Cecylia By_zas. macierzyński za okres urlopu macierzyńskiego i rodzicielskiego w trakcie zatrudnienia.pdf",
+  "source_filenames": [
+    "Cecylia By_zas. macierzyński za okres urlopu macierzyńskiego i rodzicielskiego w trakcie zatrudnienia.pdf"
+  ],
+  "source_pdf_paths": [
+    "knowledge/zus-cases/incomming/Cecylia By_zas. macierzyński za okres urlopu macierzyńskiego i rodzicielskiego w trakcie zatrudnienia.pdf"
+  ],
+  "status": "source_audited_partial_verification",
+  "inputs": {
+    "birthDateOnCertificate": "2024-05-23",
+    "reportedMaternityBenefitStart": "2024-05-22",
+    "reportedMaternityBenefitEnd": "2025-06-20",
+    "employmentFte": 1,
+    "childcareLeaveReportedBeforeBirth": true
+  },
+  "expected": {},
+  "evidence": [
+    {
+      "page": 3,
+      "evidence_type": "employer_Z3_and_applications"
+    },
+    {
+      "page": 7,
+      "evidence_type": "employer_Z3_and_applications"
+    },
+    {
+      "page": 9,
+      "evidence_type": "employer_Z3_and_applications"
+    },
+    {
+      "page": 11,
+      "evidence_type": "employer_Z3_and_applications"
+    },
+    {
+      "page": 15,
+      "evidence_type": "employer_Z3_and_applications"
+    }
+  ],
+  "verification": {
+    "source_review": "selected_pages_visually_inspected",
+    "final_award": "not_fully_confirmed",
+    "amount": "not_available",
+    "app_engine": "not_tested",
+    "full_document_review": "completed",
+    "decision": "employer_leave_consent_not_ZUS_payment",
+    "decision_status": "employer_leave_approval_not_ZUS_payment"
+  },
+  "notes": "Z-3 reports aggregate benefit period and employer's notes on return from childcare leave. Potential mismatch between start and birth dates demands review; do not infer continuous granted parental period.",
+  "contains_personal_data": false,
+  "full_source_review": {
+    "total_pages_inspected": 30,
+    "method": "visual_contact_sheet_plus_targeted_full_resolution_pages; original is image-only scan",
+    "document_outcome": "employer_leave_consent_not_ZUS_payment",
+    "actual_payment_amount_pln": null,
+    "payment_amount_available": false,
+    "evidence_pages": [
+      3,
+      7,
+      9,
+      11,
+      15,
+      22,
+      25,
+      27,
+      29
+    ],
+    "findings": [
+      "Employer Z-3 p3 gives 2024-05-22 to 2025-06-20 as aggregate reported benefit interval.",
+      "Civil birth certificate p11 says 2024-05-23, while employer leave request p25 states 2024-05-22: dates inconsistent and require source reconciliation.",
+      "Employer consent on p25 is evidence of employment leave, not of ZUS payment. No amount confirmed."
+    ],
+    "legal_outcome_vs_app_test": "source evidence only; no app calculation assertion run",
+    "review_date": "2026-11-21"
+  },
+  "full_source_audit": {
+    "reviewed_pdf_pages": "all_pages_visually_screened",
+    "status": "employer_leave_approval_not_ZUS_payment",
+    "source_pages": [
+      3,
+      7,
+      9,
+      11,
+      15,
+      22,
+      25,
+      27,
+      29
+    ],
+    "documentary_findings": "Employer Z-3 p3 starts reported benefits on 2024-05-22, but child birth certificate p11 says 2024-05-23. Employer approves leave in p25; ZUS award and payment unconfirmed. Date mismatch requires further reconciliation.",
+    "benefit_payment_amount_pln": null,
+    "amount_status": "not_in_supplied_document",
+    "app_result_comparison": "not_performed",
+    "note": "Do not confuse an application or a contribution wage with approved payment."
+  }
+}

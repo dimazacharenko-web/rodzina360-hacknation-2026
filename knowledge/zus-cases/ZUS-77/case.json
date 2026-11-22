@@ -1,0 +1,67 @@
+{
+  "schema_version": 1,
+  "id": "ZUS-77",
+  "source_filename": "Zofia By_1_Zas. macierzyński za ookres urlopu macierzyńskiego i rodzicielskiego w trakcie zatrudnienia.pdf",
+  "topic": "maternity_parental_employment_with_conflicting_application_versions",
+  "status": "partially_extracted",
+  "source_pdf_path": "knowledge/zus-cases/incomming/Zofia By_1_Zas. macierzyński za ookres urlopu macierzyńskiego i rodzicielskiego w trakcie zatrudnienia.pdf",
+  "inputs": {
+    "childBirthDate": "2024-05-23",
+    "employerZ3BenefitAggregateStart": "2024-05-22",
+    "employerZ3BenefitAggregateEnd": "2025-05-20",
+    "benefitTypes": [
+      "maternity",
+      "parental"
+    ],
+    "childcareLeaveBeforeBirth": true
+  },
+  "expected": {
+    "employerReportedAggregateDays": 364,
+    "dateConflict": true
+  },
+  "evidence": [
+    {
+      "page": 3,
+      "source": "original_pdf",
+      "evidence_scope": "visual_selected_page"
+    },
+    {
+      "page": 4,
+      "source": "original_pdf",
+      "evidence_scope": "visual_selected_page"
+    },
+    {
+      "page": 7,
+      "source": "original_pdf",
+      "evidence_scope": "visual_selected_page"
+    },
+    {
+      "page": 9,
+      "source": "original_pdf",
+      "evidence_scope": "visual_selected_page"
+    },
+    {
+      "page": 11,
+      "source": "original_pdf",
+      "evidence_scope": "visual_selected_page"
+    },
+    {
+      "page": 15,
+      "source": "original_pdf",
+      "evidence_scope": "visual_selected_page"
+    },
+    {
+      "page": 22,
+      "source": "original_pdf",
+      "evidence_scope": "visual_selected_page"
+    }
+  ],
+  "verification": {
+    "full_document_audit": "pending",
+    "actual_zus_payout_pln": null,
+    "amount_verified": false,
+    "app_engine": "not_tested",
+    "source_pdf_in_repo": "not_independently_verified"
+  },
+  "notes": "Z-3 p3 says 22 May 2024–20 May 2025, while birth registry p11 says 23 May 2024; ZAM pp15/22 show differing period versions. Neither wage basis nor employer leave consent proves ZUS paid benefit."
+}

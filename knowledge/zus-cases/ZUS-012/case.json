@@ -1,0 +1,28 @@
+{
+  "id": "ZUS-012",
+  "topic": "pregnancy_sick_leave_self_employed",
+  "source_filename": "Anna Le_zas. chorobowy w ciąży.pdf",
+  "source_page_count": null,
+  "status": "partially_extracted",
+  "source_visibility": "private_only",
+  "inputs": {
+    "employmentCategory": "non_employee",
+    "sickLeaveReportedStart": "2026-06-04",
+    "sickLeaveReportedEnd": "2026-06-24"
+  },
+  "expected": {
+    "sickLeaveReportedDays": 21
+  },
+  "verification": {
+    "source": "selected_pdf_pages",
+    "award": "not_fully_confirmed",
+    "amount": "not_available",
+    "full_document_review": "pending"
+  },
+  "evidence": [
+    2,
+    3
+  ],
+  "notes": "Z-3b reported sick leave; insurance decision and amount not confirmed.",
+  "warning": "Application/request is not automatically proof of an awarded payment."
+}

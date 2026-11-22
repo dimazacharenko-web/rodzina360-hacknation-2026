@@ -1,0 +1,97 @@
+{
+  "schema_version": 1,
+  "id": "ZUS-022",
+  "topic": "paternity_leave_paid",
+  "source_filename": "Dariusz Go_3_zas. mac. za okres urlopu ojcowskiego.pdf",
+  "source_filenames": [
+    "Dariusz Go_3_zas. mac. za okres urlopu ojcowskiego.pdf",
+    "Dariusz Go_3_zas. mac. za okres urlopu ojcowskiego (1).pdf"
+  ],
+  "source_pdf_paths": [
+    "knowledge/zus-cases/incomming/Dariusz Go_3_zas. mac. za okres urlopu ojcowskiego.pdf",
+    "knowledge/zus-cases/incomming/Dariusz Go_3_zas. mac. za okres urlopu ojcowskiego (1).pdf"
+  ],
+  "status": "source_audited_partial_verification",
+  "inputs": {
+    "parent": "father",
+    "paternityPaidStart": "2026-05-11",
+    "paternityPaidEnd": "2026-05-17",
+    "childBirthDateReported": "2025-05-07"
+  },
+  "expected": {
+    "paternityPaidDays": 7,
+    "award": "paid",
+    "benefitAwardOutcome": "paid_for_documented_period"
+  },
+  "evidence": [
+    {
+      "page": 1,
+      "evidence_type": "cover_explicitly_paid_Z3_ZAO"
+    },
+    {
+      "page": 3,
+      "evidence_type": "cover_explicitly_paid_Z3_ZAO"
+    },
+    {
+      "page": 4,
+      "evidence_type": "cover_explicitly_paid_Z3_ZAO"
+    },
+    {
+      "page": 7,
+      "evidence_type": "cover_explicitly_paid_Z3_ZAO"
+    },
+    {
+      "page": 9,
+      "evidence_type": "cover_explicitly_paid_Z3_ZAO"
+    }
+  ],
+  "verification": {
+    "source_review": "selected_pages_visually_inspected",
+    "final_award": "payment_confirmed_period_only",
+    "amount": "not_available",
+    "app_engine": "not_tested",
+    "full_document_review": "completed",
+    "decision": "payment_confirmed_period_only",
+    "decision_status": "payment_confirmed_for_period"
+  },
+  "notes": "Cover page explicitly states payment for 11–17 May 2026. PDF with suffix (1) is duplicate-looking alternate source, not another independent test case.",
+  "contains_personal_data": false,
+  "full_source_review": {
+    "total_pages_inspected": 12,
+    "method": "visual_contact_sheet_plus_targeted_full_resolution_pages; original is image-only scan",
+    "document_outcome": "payment_confirmed_period_only",
+    "actual_payment_amount_pln": null,
+    "payment_amount_available": false,
+    "evidence_pages": [
+      1,
+      3,
+      4,
+      7,
+      8,
+      9
+    ],
+    "findings": [
+      "Cover p1 explicitly confirms paid paternity-leave benefit for 2026-05-11 to 2026-05-17 (7 days).",
+      "Z-3 p3 lists corresponding period; no actual amount of payment appears.",
+      "Second PDF is byte-for-byte duplicate; SHA-256 28d15681986c0ca355c187e0883a510e5479385d8aededbeba272c9eda6ef2b2."
+    ],
+    "legal_outcome_vs_app_test": "source evidence only; no app calculation assertion run",
+    "review_date": "2026-11-21"
+  },
+  "full_source_audit": {
+    "reviewed_pdf_pages": "all_pages_visually_screened",
+    "status": "payment_confirmed_for_period",
+    "source_pages": [
+      1,
+      3,
+      4,
+      7,
+      9
+    ],
+    "documentary_findings": "Cover p1 explicitly reports paid paternity benefit 2026-05-11..2026-05-17, 7 days; amount absent. Two source PDFs are byte-identical, SHA256 28d15681986c0ca355c187e0883a510e5479385d8aededbeba272c9eda6ef2b2.",
+    "benefit_payment_amount_pln": null,
+    "amount_status": "not_in_supplied_document",
+    "app_result_comparison": "not_performed",
+    "note": "Do not confuse an application or a contribution wage with approved payment."
+  }
+}

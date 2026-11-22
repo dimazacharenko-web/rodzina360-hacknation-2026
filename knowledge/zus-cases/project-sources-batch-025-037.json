@@ -1,0 +1,426 @@
+{
+  "schema_version": 1,
+  "batch": "2026-11-21-13-project-sources",
+  "case_count": 13,
+  "cases": [
+    {
+      "id": "ZUS-025",
+      "source_filename": "Ewa Ko_1_zas. mac..pdf",
+      "source_pdf_path": "knowledge/zus-cases/incomming/Ewa Ko_1_zas. mac..pdf",
+      "topic": "paternity_leave_self_employed",
+      "inputs": {
+        "parent": "father",
+        "employmentCategory": "self_employed",
+        "paternityRequestedStart": "2025-09-08",
+        "paternityRequestedEnd": "2025-09-21"
+      },
+      "expected": {
+        "paternityRequestedDays": 14
+      },
+      "evidence_pages": [
+        5,
+        7,
+        11
+      ],
+      "evidence_class": "application_only",
+      "notes": "ZAO p11 and Z-3b p5 record a 14-day paternity-benefit claim. No award or payout amount is established.",
+      "status": "partially_verified_source_evidence",
+      "financial_amount_pln": null,
+      "amount_verified": false,
+      "app_engine_verified": false,
+      "review_scope": "selected source pages visually inspected",
+      "source_documents_present_in_project": true
+    },
+    {
+      "id": "ZUS-026",
+      "source_filename": "Ewa Łó 6_zas. macierzyński.pdf",
+      "source_pdf_path": "knowledge/zus-cases/incomming/Ewa Łó 6_zas. macierzyński.pdf",
+      "topic": "stillbirth_maternity_period_anomaly",
+      "inputs": {
+        "event": "stillbirth",
+        "stillbirthDate": "2026-02-21",
+        "maternityRequestedStart": "2026-02-21",
+        "maternityRequestedEnd": "2026-04-18",
+        "employmentCategory": "self_employed"
+      },
+      "expected": {
+        "maternityRequestedCalendarDays": 57
+      },
+      "evidence_pages": [
+        2,
+        9,
+        11,
+        13,
+        15,
+        16
+      ],
+      "evidence_class": "application_and_medical_certificate",
+      "notes": "ZAM and Z-3b show 21 Feb–18 Apr (57 inclusive days), whereas an 8-week period would be 56 days. Do not silently repair this apparent inconsistency; exact last digit must be reviewed from high-resolution scan. Insurance contributions are NOT payout amounts.",
+      "status": "partially_verified_source_evidence",
+      "financial_amount_pln": null,
+      "amount_verified": false,
+      "app_engine_verified": false,
+      "review_scope": "selected source pages visually inspected",
+      "source_documents_present_in_project": true
+    },
+    {
+      "id": "ZUS-027",
+      "source_filename": "Ewa Łód_5_zas. macierzyński - odmowa - nie podlega ubezp. chorobowemu na dzień porodu.pdf",
+      "source_pdf_path": "knowledge/zus-cases/incomming/Ewa Łód_5_zas. macierzyński - odmowa - nie podlega ubezp. chorobowemu na dzień porodu.pdf",
+      "topic": "maternity_denial_not_insured_on_birth",
+      "inputs": {
+        "birthDate": "2025-06-12",
+        "maternityClaimStart": "2025-06-12",
+        "maternityClaimEnd": "2026-06-10",
+        "lastCoverageDateReported": "2024-10-04"
+      },
+      "expected": {
+        "benefitEntitlement": "denied",
+        "denialReason": "no_sickness_insurance_on_birth_date",
+        "claimedCalendarDays": 364
+      },
+      "evidence_pages": [
+        1,
+        3,
+        5,
+        7
+      ],
+      "evidence_class": "formal_ZUS_denial_decision",
+      "notes": "Formal decision p1 refuses maternity benefit 12 Jun 2025–10 Jun 2026 because claimant was not sickness-insured on birth date. No payment amount stated.",
+      "status": "partially_verified_source_evidence",
+      "financial_amount_pln": null,
+      "amount_verified": false,
+      "app_engine_verified": false,
+      "review_scope": "selected source pages visually inspected",
+      "source_documents_present_in_project": true
+    },
+    {
+      "id": "ZUS-028",
+      "source_filename": "Ewa No_2_zas. macierzyński.pdf",
+      "source_pdf_path": "knowledge/zus-cases/incomming/Ewa No_2_zas. macierzyński.pdf",
+      "topic": "stillbirth_maternity_paid",
+      "inputs": {
+        "event": "stillbirth",
+        "stillbirthDate": "2024-04-17",
+        "maternityReportedStart": "2024-04-17",
+        "maternityReportedEnd": "2024-06-11",
+        "employmentFte": 0.25
+      },
+      "expected": {
+        "maternityReportedDays": 56,
+        "awardOutcome": "granted_and_paid_reported"
+      },
+      "evidence_pages": [
+        3,
+        9,
+        11,
+        15,
+        16
+      ],
+      "evidence_class": "Z3_registry_and_ZUS_case_resolution",
+      "notes": "Birth registry p9/11 confirms stillbirth. Z-3 shows 56 days. Internal ZUS case resolution at p16 states right established and payment made; no disbursed PLN sum.",
+      "status": "partially_verified_source_evidence",
+      "financial_amount_pln": null,
+      "amount_verified": false,
+      "app_engine_verified": false,
+      "review_scope": "selected source pages visually inspected",
+      "source_documents_present_in_project": true
+    },
+    {
+      "id": "ZUS-029",
+      "source_filename": "Ewa Wro_5_zas. macierzyński_martwe urodzenie.pdf",
+      "source_pdf_path": "knowledge/zus-cases/incomming/Ewa Wro_5_zas. macierzyński_martwe urodzenie.pdf",
+      "topic": "stillbirth_maternity_equivalent_claim",
+      "inputs": {
+        "event": "stillbirth",
+        "stillbirthDate": "2026-09-11",
+        "benefitEquivalentClaimStart": "2026-09-11",
+        "benefitEquivalentClaimEnd": "2026-11-05"
+      },
+      "expected": {
+        "benefitEquivalentRequestedDays": 56
+      },
+      "evidence_pages": [
+        3,
+        9,
+        11
+      ],
+      "evidence_class": "employer_form_and_medical_certificate",
+      "notes": "Z-3 p3 selects benefit in amount of maternity allowance, 11 Sep–5 Nov 2026, and medical certificate p11 documents stillbirth. This is NOT proof of payment.",
+      "status": "partially_verified_source_evidence",
+      "financial_amount_pln": null,
+      "amount_verified": false,
+      "app_engine_verified": false,
+      "review_scope": "selected source pages visually inspected",
+      "source_documents_present_in_project": true
+    },
+    {
+      "id": "ZUS-030",
+      "source_filename": "Helena Gd_5_zas. mac._odmowa_brak zgłoszenia do ubezpieczeń.pdf",
+      "source_pdf_path": "knowledge/zus-cases/incomming/Helena Gd_5_zas. mac._odmowa_brak zgłoszenia do ubezpieczeń.pdf",
+      "topic": "parental_benefit_denial_sickness_insurance_ended",
+      "inputs": {
+        "parentalClaimStart": "2026-02-06",
+        "parentalClaimEnd": "2026-09-17",
+        "insuranceCoverageEnded": "2026-01-24"
+      },
+      "expected": {
+        "parentalClaimDays": 224,
+        "benefitEntitlement": "denied",
+        "denialReason": "voluntary_sickness_insurance_absent_at_start"
+      },
+      "evidence_pages": [
+        2,
+        5
+      ],
+      "evidence_class": "formal_ZUS_denial_decision",
+      "notes": "Decision p5 refuses benefit for 6 Feb–17 Sep 2026 due to cessation of voluntary sickness insurance as of 24 Jan 2026. Do not confuse absence of registration with all possible insurance rights.",
+      "status": "partially_verified_source_evidence",
+      "financial_amount_pln": null,
+      "amount_verified": false,
+      "app_engine_verified": false,
+      "review_scope": "selected source pages visually inspected",
+      "source_documents_present_in_project": true
+    },
+    {
+      "id": "ZUS-031",
+      "source_filename": "Jacek War_04_zas. macierzyński_urlop ojcowski.pdf",
+      "source_pdf_path": "knowledge/zus-cases/incomming/Jacek War_04_zas. macierzyński_urlop ojcowski.pdf",
+      "topic": "paternity_leave_paid",
+      "inputs": {
+        "parent": "father",
+        "paternityPaidStart": "2026-09-14",
+        "paternityPaidEnd": "2026-09-27",
+        "employmentFte": 1
+      },
+      "expected": {
+        "paternityPaidDays": 14,
+        "awardOutcome": "paid_for_period"
+      },
+      "evidence_pages": [
+        1,
+        4,
+        8
+      ],
+      "evidence_class": "cover_explicit_payment_and_Z3",
+      "notes": "Document cover p1 explicitly says payment was made for 14–27 Sep 2026. No amount stated.",
+      "status": "partially_verified_source_evidence",
+      "financial_amount_pln": null,
+      "amount_verified": false,
+      "app_engine_verified": false,
+      "review_scope": "selected source pages visually inspected",
+      "source_documents_present_in_project": true
+    },
+    {
+      "id": "ZUS-032",
+      "source_filename": "Jan Łó 2_zasiłek macierzyński u. rodz..pdf",
+      "source_pdf_path": "knowledge/zus-cases/incomming/Jan Łó 2_zasiłek macierzyński u. rodz..pdf",
+      "topic": "father_parental_partial_period_granted",
+      "inputs": {
+        "parent": "father",
+        "parentalClaimStart": "2026-06-26",
+        "parentalClaimEnd": "2026-08-10",
+        "childBirthDate": "2026-04-17"
+      },
+      "expected": {
+        "parentalClaimDays": 46,
+        "awardOutcome": "granted_as_recorded"
+      },
+      "evidence_pages": [
+        2,
+        5,
+        7,
+        8,
+        9,
+        11
+      ],
+      "evidence_class": "ZUR_ZUS_insurance_and_internal_grant_note",
+      "notes": "ZUR p2 requests 46 days, while internal ZUS note p11 says '9 tygodniowy został przyznany'. This is a substantive mismatch; no exact award period or PLN amount established by the note.",
+      "status": "partially_verified_source_evidence",
+      "financial_amount_pln": null,
+      "amount_verified": false,
+      "app_engine_verified": false,
+      "review_scope": "selected source pages visually inspected",
+      "source_documents_present_in_project": true
+    },
+    {
+      "id": "ZUS-033",
+      "source_filename": "Jan Zie_5_zas. macierzyński_urlop ojcowski.pdf",
+      "source_pdf_path": "knowledge/zus-cases/incomming/Jan Zie_5_zas. macierzyński_urlop ojcowski.pdf",
+      "topic": "paternity_leave_granted",
+      "inputs": {
+        "parent": "father",
+        "paternityClaimStart": "2026-08-31",
+        "paternityClaimEnd": "2026-09-06",
+        "childBirthDate": "2026-05-07"
+      },
+      "expected": {
+        "paternityClaimDays": 7,
+        "awardOutcome": "right_granted_as_internal_note"
+      },
+      "evidence_pages": [
+        1,
+        5,
+        12,
+        15
+      ],
+      "evidence_class": "Z3_ZAO_internal_grant_note",
+      "notes": "Internal note p1 states 'przyznano prawo do zasiłku macierzyńskiego'; Z-3 and ZAO show seven days. Exact payment amount absent.",
+      "status": "partially_verified_source_evidence",
+      "financial_amount_pln": null,
+      "amount_verified": false,
+      "app_engine_verified": false,
+      "review_scope": "selected source pages visually inspected",
+      "source_documents_present_in_project": true
+    },
+    {
+      "id": "ZUS-034",
+      "source_filename": "Janina Poz_2_zas. macierzyński, podwyższenie kwoty zasiłku.pdf",
+      "source_pdf_path": "knowledge/zus-cases/incomming/Janina Poz_2_zas. macierzyński, podwyższenie kwoty zasiłku.pdf",
+      "topic": "maternity_parental_1000_pln_topup_request",
+      "inputs": {
+        "employmentCategory": "self_employed",
+        "maternityClaimStart": "2024-01-23",
+        "maternityClaimEnd": "2024-06-10",
+        "parentalClaimStart": "2024-06-11",
+        "parentalClaimEnd": "2025-01-20",
+        "requestedMinimumTopUpPLNMonthly": 1000
+      },
+      "expected": {
+        "maternityClaimDays": 140,
+        "parentalClaimDays": 224,
+        "topUpAwardOutcome": "not_confirmed"
+      },
+      "evidence_pages": [
+        2,
+        5,
+        10,
+        12,
+        13
+      ],
+      "evidence_class": "Z3b_ZAM_and_claimant_topup_request",
+      "notes": "POG p12 requests topping up allowance to 1000 PLN monthly. Do not assert award of 1000 PLN; that figure is requested statutory threshold, not an observed payout.",
+      "status": "partially_verified_source_evidence",
+      "financial_amount_pln": null,
+      "amount_verified": false,
+      "app_engine_verified": false,
+      "review_scope": "selected source pages visually inspected",
+      "source_documents_present_in_project": true
+    },
+    {
+      "id": "ZUS-035",
+      "source_filename": "Joanna El_1_zas. macierzyński.pdf",
+      "source_pdf_path": "knowledge/zus-cases/incomming/Joanna El_1_zas. macierzyński.pdf",
+      "topic": "maternity_parental_conflicting_ZAM_periods",
+      "inputs": {
+        "employmentCategory": "self_employed",
+        "childBirthDateReported": "2026-09-13",
+        "maternityClaimStart": "2026-09-20",
+        "maternityClaimEnd": "2027-02-06",
+        "parentalClaimStart": "2027-02-07",
+        "parentalClaimEnd": "2027-09-18",
+        "alternateMaternityClaimEnd": "2027-09-18"
+      },
+      "expected": {
+        "maternityClaimDays": 140,
+        "parentalClaimDays": 224
+      },
+      "evidence_pages": [
+        3,
+        7,
+        10,
+        16
+      ],
+      "evidence_class": "Z3b_ZAM_versions_and_insurance_request",
+      "notes": "Page 10 shows maternity to 6 Feb 2027 plus parental to 18 Sep; page 16 separately indicates maternity through 18 Sep 2027. Preserve competing form versions, do not infer a ZUS decision.",
+      "status": "partially_verified_source_evidence",
+      "financial_amount_pln": null,
+      "amount_verified": false,
+      "app_engine_verified": false,
+      "review_scope": "selected source pages visually inspected",
+      "source_documents_present_in_project": true
+    },
+    {
+      "id": "ZUS-036",
+      "source_filename": "Joanna Łód_3_Zasiłek w wysokości zas. mac. i macierzyński z powodu likwidacji - przyznanie prawa.pdf",
+      "source_pdf_path": "knowledge/zus-cases/incomming/Joanna Łód_3_Zasiłek w wysokości zas. mac. i macierzyński z powodu likwidacji - przyznanie prawa.pdf",
+      "topic": "maternity_equivalent_due_to_employer_liquidation",
+      "inputs": {
+        "employmentStart": "2013-08-01",
+        "employmentEnd": "2023-12-31",
+        "employerLiquidationReported": true,
+        "benefitEquivalentApplied": true
+      },
+      "expected": {
+        "awardOutcome": "not_confirmed_from_displayed_decision"
+      },
+      "evidence_pages": [
+        1,
+        2,
+        3,
+        5,
+        8,
+        10,
+        16
+      ],
+      "evidence_class": "ZAS55_employment_certificate_Z3_ZAM",
+      "notes": "Employment certificate p3 and ZAS-55 p1–2 establish context and claim. Filename mentions grant, but an explicit formal granting decision and amount must be located before marking confirmed.",
+      "status": "partially_verified_source_evidence",
+      "financial_amount_pln": null,
+      "amount_verified": false,
+      "app_engine_verified": false,
+      "review_scope": "selected source pages visually inspected",
+      "source_documents_present_in_project": true
+    },
+    {
+      "id": "ZUS-037",
+      "source_filename": "Joanna Rze_2_zas. chorobowy i macierzyński.pdf",
+      "source_pdf_path": "knowledge/zus-cases/incomming/Joanna Rze_2_zas. chorobowy i macierzyński.pdf",
+      "topic": "self_employed_sickness_and_maternity_paid",
+      "inputs": {
+        "employmentCategory": "self_employed",
+        "sicknessClaimIntervals": [
+          [
+            "2026-02-02",
+            "2026-02-11"
+          ],
+          [
+            "2026-02-12",
+            "2026-04-22"
+          ],
+          [
+            "2026-04-23",
+            "2026-04-27"
+          ]
+        ],
+        "maternityClaimStart": "2026-04-28",
+        "maternityClaimEnd": "2027-04-26"
+      },
+      "expected": {
+        "sicknessClaimDays": [
+          10,
+          70,
+          5
+        ],
+        "maternityClaimDays": 364,
+        "awardOutcome": "granted_and_paid_as_case_cover"
+      },
+      "evidence_pages": [
+        1,
+        2,
+        9,
+        10,
+        11,
+        15
+      ],
+      "evidence_class": "cover_Z3b_and_insurance_review",
+      "notes": "Cover p1 says entitlement established and payment carried out. Z-3b shows sickness and maternity intervals. A contributions debt flag exists in ZUS insurance record; do not equate it with an automatic refusal. No benefit payment PLN amounts present.",
+      "status": "partially_verified_source_evidence",
+      "financial_amount_pln": null,
+      "amount_verified": false,
+      "app_engine_verified": false,
+      "review_scope": "selected source pages visually inspected",
+      "source_documents_present_in_project": true
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "ZUS-058",
+  "source_filename": "Małgorzata Rze_3_zas. macierzyński_umowa zlecenie bez chorobowego_odmowa.pdf",
+  "source_pdf_path": "knowledge/zus-cases/incomming/Małgorzata Rze_3_zas. macierzyński_umowa zlecenie bez chorobowego_odmowa.pdf",
+  "topic": "maternity_denial_commission_contract_no_voluntary_sickness_insurance",
+  "status": "insurance_nonregistration_confirmed_denial_header_only",
+  "inputs": {
+    "employmentType": "umowa_zlecenie",
+    "maternityClaimStart": "2025-08-24",
+    "maternityClaimEnd": "2026-01-10",
+    "voluntarySicknessInsuranceRegistered": false
+  },
+  "expected": {
+    "maternityClaimDays": 140,
+    "coverageRisk": "missing_voluntary_sickness_insurance",
+    "denialIndicatedInCaseHeader": true
+  },
+  "evidence": [
+    {
+      "page": 1,
+      "source": "PDF",
+      "verification_type": "visual_page_read"
+    },
+    {
+      "page": 2,
+      "source": "PDF",
+      "verification_type": "visual_page_read"
+    },
+    {
+      "page": 10,
+      "source": "PDF",
+      "verification_type": "visual_page_read"
+    },
+    {
+      "page": 16,
+      "source": "PDF",
+      "verification_type": "visual_page_read"
+    },
+    {
+      "page": 17,
+      "source": "PDF",
+      "verification_type": "visual_page_read"
+    }
+  ],
+  "verification": {
+    "source_pages_inspected": [
+      1,
+      2,
+      10,
+      16,
+      17
+    ],
+    "decision_and_payment_status": "insurance_nonregistration_confirmed_denial_header_only",
+    "benefit_payment_amount_pln": null,
+    "amount_verified": false,
+    "app_engine": "not_tested",
+    "full_document_review": "pending"
+  },
+  "notes": "ZUS insurance response p17 explicitly notes 'brak zgłoszenia do dobrowolnego ubezpieczenia chorobowego'. Cover describes refusal. Do not claim a full written refusal was present or infer paid amount."
+}

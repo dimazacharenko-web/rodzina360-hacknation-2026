@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "id": "ZUS-83",
+  "source_filename": "Zuzanna Ko_3_zac. mac..pdf",
+  "topic": "employee_maternity_parental_employment_ends_on_birth",
+  "status": "partially_extracted",
+  "source_pdf_path": "knowledge/zus-cases/incomming/Zuzanna Ko_3_zac. mac..pdf",
+  "inputs": {
+    "employmentStart": "2022-07-02",
+    "employmentEnd": "2025-08-30",
+    "birthDateReported": "2025-08-30",
+    "maternityClaimStart": "2025-08-30",
+    "maternityClaimEnd": "2026-01-16",
+    "parentalClaimStart": "2026-01-17",
+    "parentalClaimEnd": "2026-08-28",
+    "sickLeaveReportedStart": "2025-08-13",
+    "sickLeaveReportedEnd": "2025-09-11"
+  },
+  "expected": {
+    "maternityClaimDays": 140,
+    "parentalClaimDays": 224,
+    "sourceDateConflict": true
+  },
+  "evidence": [
+    {
+      "page": 2,
+      "source": "original_pdf",
+      "evidence_scope": "visual_selected_page"
+    },
+    {
+      "page": 3,
+      "source": "original_pdf",
+      "evidence_scope": "visual_selected_page"
+    },
+    {
+      "page": 4,
+      "source": "original_pdf",
+      "evidence_scope": "visual_selected_page"
+    },
+    {
+      "page": 10,
+      "source": "original_pdf",
+      "evidence_scope": "visual_selected_page"
+    },
+    {
+      "page": 15,
+      "source": "original_pdf",
+      "evidence_scope": "visual_selected_page"
+    },
+    {
+      "page": 18,
+      "source": "original_pdf",
+      "evidence_scope": "visual_selected_page"
+    }
+  ],
+  "verification": {
+    "full_document_audit": "pending",
+    "actual_zus_payout_pln": null,
+    "amount_verified": false,
+    "app_engine": "not_tested",
+    "source_pdf_in_repo": "not_independently_verified"
+  },
+  "notes": "Z-3 pp2-4 show sickness through 11 Sep 2025 and maternity from 30 Aug 2025, an overlap requiring audit. ZUS p15 requests needed maternity documents. No final award or PLN amount confirmed."
+}

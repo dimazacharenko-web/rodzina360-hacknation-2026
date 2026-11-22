@@ -1,0 +1,29 @@
+{
+  "id": "ZUS-001",
+  "topic": "non_transferable_9_weeks",
+  "source_filename": "Andrzej El_5_zas. macierzyński za część urlopu rodzicielskiego - 9 tygodni.pdf",
+  "source_page_count": null,
+  "status": "partially_extracted",
+  "source_visibility": "private_only",
+  "inputs": {
+    "parent": "father",
+    "parentalLeaveStart": "2026-09-29",
+    "parentalLeaveEnd": "2026-11-30",
+    "childrenBornTogether": 1
+  },
+  "expected": {
+    "parentalLeaveDays": 63,
+    "parentalLeaveWeeks": 9
+  },
+  "verification": {
+    "dates": "confirmed_from_application",
+    "award": "not_confirmed",
+    "amount": "not_available"
+  },
+  "evidence": [
+    6,
+    7
+  ],
+  "notes": "",
+  "warning": "Application/request is not automatically proof of an awarded payment."
+}

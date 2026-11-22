@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "id": "ZUS-069",
+  "topic": "father_paternity_leave_grant_indicated",
+  "source_filename": "Piotr Ta_1_zas. macierzyński_urlop ojcowski.pdf",
+  "source_pdf_path": "knowledge/zus-cases/incomming/Piotr Ta_1_zas. macierzyński_urlop ojcowski.pdf",
+  "status": "partially_extracted",
+  "inputs": {
+    "parent": "father",
+    "childBirthDate": "2025-05-30",
+    "paternityClaimStart": "2025-09-22",
+    "paternityClaimEnd": "2025-10-05",
+    "employmentSince": "2022-02-01"
+  },
+  "expected": {
+    "paternityRequestedDays": 14,
+    "decisionIndicatedOnCover": "granted"
+  },
+  "evidence": [
+    {
+      "page": 1,
+      "kind": "visual_review_original_pdf"
+    },
+    {
+      "page": 5,
+      "kind": "visual_review_original_pdf"
+    },
+    {
+      "page": 8,
+      "kind": "visual_review_original_pdf"
+    },
+    {
+      "page": 13,
+      "kind": "visual_review_original_pdf"
+    },
+    {
+      "page": 15,
+      "kind": "visual_review_original_pdf"
+    }
+  ],
+  "verification": {
+    "pdf_pages": "selected_only",
+    "award": "as_explicitly_stated_in_expected_and_notes",
+    "payment_amount_pln": null,
+    "payment_amount_verified": false,
+    "app_engine": "not_tested",
+    "full_document_audit": "pending"
+  },
+  "notes": "Cover p1 says decision granting paternity allowance. ZAO p8 and Z-3 p13 show 22.09–05.10.2025. Actual transferred PLN amount not present."
+}

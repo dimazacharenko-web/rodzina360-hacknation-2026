@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "id": "ZUS-85",
+  "source_filename": "Zuzanna Wa_03_zas. mac. za urlop macierzyński, uzupełniający, rodzicielski.pdf",
+  "topic": "maternity_supplementary_parental_hospitalization_paid_report",
+  "status": "partially_extracted",
+  "source_pdf_path": "knowledge/zus-cases/incomming/Zuzanna Wa_03_zas. mac. za urlop macierzyński, uzupełniający, rodzicielski.pdf",
+  "inputs": {
+    "birthDate": "2026-05-02",
+    "maternityStart": "2026-05-02",
+    "maternityEnd": "2026-09-18",
+    "supplementaryMaternityStart": "2026-09-19",
+    "supplementaryMaternityEnd": "2026-09-25",
+    "parentalStart": "2026-09-26",
+    "parentalEnd": "2027-05-07",
+    "hospitalizationCertificateProvided": true
+  },
+  "expected": {
+    "maternityDays": 140,
+    "supplementaryDays": 7,
+    "parentalDays": 224,
+    "caseCoverSaysPaid": true
+  },
+  "evidence": [
+    {
+      "page": 1,
+      "source": "original_pdf",
+      "evidence_scope": "visual_selected_page"
+    },
+    {
+      "page": 2,
+      "source": "original_pdf",
+      "evidence_scope": "visual_selected_page"
+    },
+    {
+      "page": 3,
+      "source": "original_pdf",
+      "evidence_scope": "visual_selected_page"
+    },
+    {
+      "page": 4,
+      "source": "original_pdf",
+      "evidence_scope": "visual_selected_page"
+    },
+    {
+      "page": 5,
+      "source": "original_pdf",
+      "evidence_scope": "visual_selected_page"
+    },
+    {
+      "page": 11,
+      "source": "original_pdf",
+      "evidence_scope": "visual_selected_page"
+    }
+  ],
+  "verification": {
+    "full_document_audit": "pending",
+    "actual_zus_payout_pln": null,
+    "amount_verified": false,
+    "app_engine": "not_tested",
+    "source_pdf_in_repo": "not_independently_verified"
+  },
+  "notes": "Page 1 describes payments for all three periods, including parental period to 07.05.2027 (future relative to 2026-11-21). Do NOT treat as actual completed payments through that future date without clarifying data date. Supporting hospital certificate p5. Exact PLN amount absent."
+}

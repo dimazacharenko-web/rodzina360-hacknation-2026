@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "id": "ZUS-048",
+  "topic": "sickness_denial_contribution_arrears",
+  "source_filename": "Justyna Wa I_4_zas. chorobowy w ciąży, osoba współpracująca, odmowa, zadłużenie z tytułu składek.pdf",
+  "source_pdf_path": "knowledge/zus-cases/incomming/Justyna Wa I_4_zas. chorobowy w ciąży, osoba współpracująca, odmowa, zadłużenie z tytułu składek.pdf",
+  "status": "partially_extracted",
+  "inputs": {
+    "employmentCategory": "self_employed",
+    "sicknessClaimStart": "2025-03-04",
+    "sicknessClaimEnd": "2025-03-31",
+    "insuranceDebtRecorded": true
+  },
+  "expected": {
+    "sicknessClaimDays": 28,
+    "caseResolution": "refusal_recorded"
+  },
+  "evidence": [
+    {
+      "page": 2,
+      "evidence_type": "Z3b_ZUS_insurance_and_case_closure"
+    },
+    {
+      "page": 3,
+      "evidence_type": "Z3b_ZUS_insurance_and_case_closure"
+    },
+    {
+      "page": 9,
+      "evidence_type": "Z3b_ZUS_insurance_and_case_closure"
+    },
+    {
+      "page": 10,
+      "evidence_type": "Z3b_ZUS_insurance_and_case_closure"
+    },
+    {
+      "page": 11,
+      "evidence_type": "Z3b_ZUS_insurance_and_case_closure"
+    },
+    {
+      "page": 15,
+      "evidence_type": "Z3b_ZUS_insurance_and_case_closure"
+    }
+  ],
+  "verification": {
+    "source_pages_reviewed": [
+      2,
+      3,
+      9,
+      10,
+      11,
+      15
+    ],
+    "decision_status": "see_case_notes",
+    "amount_pln": null,
+    "financial_amount_verified": false,
+    "app_engine": "not_tested",
+    "full_document_audit": "pending"
+  },
+  "notes": "Page 11 ZUS insurance reply says debt exists, page 15 states case closed with refusal. Full formal decision text and debt threshold were not evidenced."
+}

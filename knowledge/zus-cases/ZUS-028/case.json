@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "id": "ZUS-028",
+  "topic": "stillbirth_maternity_paid",
+  "source_filename": "Ewa No_2_zas. macierzyński.pdf",
+  "source_pdf_path": "knowledge/zus-cases/incomming/Ewa No_2_zas. macierzyński.pdf",
+  "status": "partially_verified_source_evidence",
+  "inputs": {
+    "event": "stillbirth",
+    "stillbirthDate": "2024-04-17",
+    "maternityReportedStart": "2024-04-17",
+    "maternityReportedEnd": "2024-06-11",
+    "employmentFte": 0.25
+  },
+  "expected": {
+    "maternityReportedDays": 56,
+    "awardOutcome": "granted_and_paid_reported"
+  },
+  "evidence": [
+    {
+      "page": 3,
+      "source_type": "Z3_registry_and_ZUS_case_resolution"
+    },
+    {
+      "page": 9,
+      "source_type": "Z3_registry_and_ZUS_case_resolution"
+    },
+    {
+      "page": 11,
+      "source_type": "Z3_registry_and_ZUS_case_resolution"
+    },
+    {
+      "page": 15,
+      "source_type": "Z3_registry_and_ZUS_case_resolution"
+    },
+    {
+      "page": 16,
+      "source_type": "Z3_registry_and_ZUS_case_resolution"
+    }
+  ],
+  "verification": {
+    "source_pages_reviewed": [
+      3,
+      9,
+      11,
+      15,
+      16
+    ],
+    "amount": "not_documented",
+    "financial_amount_pln": null,
+    "app_engine": "not_tested",
+    "full_document_audit": "pending"
+  },
+  "notes": "Birth registry p9/11 confirms stillbirth. Z-3 shows 56 days. Internal ZUS case resolution at p16 states right established and payment made; no disbursed PLN sum."
+}

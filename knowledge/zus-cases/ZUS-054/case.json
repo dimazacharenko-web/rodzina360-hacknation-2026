@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "ZUS-054",
+  "source_filename": "Konrad Wa I_2_zas. mac. za okres urlopu ojcowskiego.pdf",
+  "source_pdf_path": "knowledge/zus-cases/incomming/Konrad Wa I_2_zas. mac. za okres urlopu ojcowskiego.pdf",
+  "topic": "paternity_leave_7_days_payment_completed",
+  "status": "payment_confirmed_amount_unknown",
+  "inputs": {
+    "parent": "father",
+    "employmentStart": "2026-01-07",
+    "paternityBenefitStart": "2026-04-28",
+    "paternityBenefitEnd": "2026-05-04",
+    "employmentSalaryGrossPLN": 4900
+  },
+  "expected": {
+    "paternityBenefitDays": 7,
+    "paymentCompleted": true
+  },
+  "evidence": [
+    {
+      "page": 3,
+      "source": "PDF",
+      "verification_type": "visual_page_read"
+    },
+    {
+      "page": 4,
+      "source": "PDF",
+      "verification_type": "visual_page_read"
+    },
+    {
+      "page": 5,
+      "source": "PDF",
+      "verification_type": "visual_page_read"
+    },
+    {
+      "page": 7,
+      "source": "PDF",
+      "verification_type": "visual_page_read"
+    },
+    {
+      "page": 15,
+      "source": "PDF",
+      "verification_type": "visual_page_read"
+    }
+  ],
+  "verification": {
+    "source_pages_inspected": [
+      3,
+      4,
+      5,
+      7,
+      15
+    ],
+    "decision_and_payment_status": "payment_confirmed_amount_unknown",
+    "benefit_payment_amount_pln": null,
+    "amount_verified": false,
+    "app_engine": "not_tested",
+    "full_document_review": "pending"
+  },
+  "notes": "Z-3 p3 reports 7-day paternity leave; p15 states 'Sprawa zakończona wypłatą'. PLN 4900 on pp5,7 is salary not paid benefit. Exact disbursement absent."
+}

@@ -1,0 +1,29 @@
+{
+  "id": "ZUS-003",
+  "topic": "supplementary_maternity",
+  "source_filename": "Anna Lu_2_zas. mac. za okres urlopu macierzyńskiego, uzupełniającego url. mac., rodzicielskiego.pdf",
+  "source_page_count": null,
+  "status": "partially_extracted",
+  "source_visibility": "private_only",
+  "inputs": {},
+  "expected": {
+    "benefitTypes": [
+      "maternity",
+      "supplementary_maternity",
+      "parental"
+    ]
+  },
+  "verification": {
+    "benefit_types": "confirmed_from_cover_and_form",
+    "periods": "pending_manual_review",
+    "hospitalization": "pending_manual_review",
+    "award": "not_confirmed",
+    "amount": "not_available"
+  },
+  "evidence": [
+    1,
+    4
+  ],
+  "notes": "",
+  "warning": "Application/request is not automatically proof of an awarded payment."
+}

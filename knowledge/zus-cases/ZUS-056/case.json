@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "id": "ZUS-056",
+  "source_filename": "Krystyna Poz_1_zas. mac. - martwe urodzenie.pdf",
+  "source_pdf_path": "knowledge/zus-cases/incomming/Krystyna Poz_1_zas. mac. - martwe urodzenie.pdf",
+  "topic": "stillbirth_maternity_56_days",
+  "status": "source_evidence_no_verified_award",
+  "inputs": {
+    "stillbirthDocumented": true,
+    "maternityClaimStart": "2025-09-06",
+    "maternityClaimEnd": "2025-10-31",
+    "employmentStart": "2025-06-26"
+  },
+  "expected": {
+    "maternityClaimDays": 56
+  },
+  "evidence": [
+    {
+      "page": 3,
+      "source": "PDF",
+      "verification_type": "visual_page_read"
+    },
+    {
+      "page": 10,
+      "source": "PDF",
+      "verification_type": "visual_page_read"
+    },
+    {
+      "page": 17,
+      "source": "PDF",
+      "verification_type": "visual_page_read"
+    }
+  ],
+  "verification": {
+    "source_pages_inspected": [
+      3,
+      10,
+      17
+    ],
+    "decision_and_payment_status": "source_evidence_no_verified_award",
+    "benefit_payment_amount_pln": null,
+    "amount_verified": false,
+    "app_engine": "not_tested",
+    "full_document_review": "pending"
+  },
+  "notes": "Z-3 p3 and ZAM p10 provide 56-day period; stillbirth certificate p17. Salary p5 not ZUS benefit amount. No final award confirmed."
+}

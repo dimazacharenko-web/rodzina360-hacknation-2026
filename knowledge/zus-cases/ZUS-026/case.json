@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "id": "ZUS-026",
+  "topic": "stillbirth_maternity_period_anomaly",
+  "source_filename": "Ewa Łó 6_zas. macierzyński.pdf",
+  "source_pdf_path": "knowledge/zus-cases/incomming/Ewa Łó 6_zas. macierzyński.pdf",
+  "status": "partially_verified_source_evidence",
+  "inputs": {
+    "event": "stillbirth",
+    "stillbirthDate": "2026-02-21",
+    "maternityRequestedStart": "2026-02-21",
+    "maternityRequestedEnd": "2026-04-18",
+    "employmentCategory": "self_employed"
+  },
+  "expected": {
+    "maternityRequestedCalendarDays": 57
+  },
+  "evidence": [
+    {
+      "page": 2,
+      "source_type": "application_and_medical_certificate"
+    },
+    {
+      "page": 9,
+      "source_type": "application_and_medical_certificate"
+    },
+    {
+      "page": 11,
+      "source_type": "application_and_medical_certificate"
+    },
+    {
+      "page": 13,
+      "source_type": "application_and_medical_certificate"
+    },
+    {
+      "page": 15,
+      "source_type": "application_and_medical_certificate"
+    },
+    {
+      "page": 16,
+      "source_type": "application_and_medical_certificate"
+    }
+  ],
+  "verification": {
+    "source_pages_reviewed": [
+      2,
+      9,
+      11,
+      13,
+      15,
+      16
+    ],
+    "amount": "not_documented",
+    "financial_amount_pln": null,
+    "app_engine": "not_tested",
+    "full_document_audit": "pending"
+  },
+  "notes": "ZAM and Z-3b show 21 Feb–18 Apr (57 inclusive days), whereas an 8-week period would be 56 days. Do not silently repair this apparent inconsistency; exact last digit must be reviewed from high-resolution scan. Insurance contributions are NOT payout amounts."
+}

@@ -1,0 +1,33 @@
+name: Prepare public video transfer
+on:
+  push:
+    paths:
+      - 'demo/rodzina360-hacknation-2026-v2.mp4'
+      - '.github/workflows/demo-transfer-v2.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  prepare-base64:
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    steps:
+      - uses: actions/checkout@v4
+      - name: Encode generated MP4 in transport chunks
+        run: |
+          test -f demo/rodzina360-hacknation-2026-v2.mp4
+          mkdir -p demo/transfer
+          base64 -w 0 demo/rodzina360-hacknation-2026-v2.mp4 > /tmp/rodzina360-v2.b64
+          split -b 500000 -d -a 2 /tmp/rodzina360-v2.b64 demo/transfer/rodzina360-v2-part-
+          wc -c demo/transfer/rodzina360-v2-part-*
+      - name: Save transfer chunks
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add demo/transfer/rodzina360-v2-part-*
+          if ! git diff --staged --quiet; then
+            git commit -m "Prepare encoded v2 demo for public publishing"
+            git fetch origin main
+            git rebase origin/main
+            git push origin HEAD:main
+          fi

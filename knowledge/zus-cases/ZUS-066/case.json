@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "id": "ZUS-066",
+  "topic": "maternity_supplementary_parental_discrepant_forms",
+  "source_filename": "Paulina Rze_5_zas. macierzyński, uzupełniający, rodzicielski.pdf",
+  "source_pdf_path": "knowledge/zus-cases/incomming/Paulina Rze_5_zas. macierzyński, uzupełniający, rodzicielski.pdf",
+  "status": "partially_extracted",
+  "inputs": {
+    "maternityClaimStart": "2026-06-01",
+    "maternityClaimEnd": "2026-10-18",
+    "employerReportedMaternityEnd": "2026-10-16",
+    "parentalLeaveRequested": true,
+    "supplementaryLeaveMentionedInSourceTitle": true
+  },
+  "expected": {
+    "maternityRequestedDays": 140,
+    "dateConflictBetweenZAMandZ3": true
+  },
+  "evidence": [
+    {
+      "page": 3,
+      "kind": "visual_review_original_pdf"
+    },
+    {
+      "page": 5,
+      "kind": "visual_review_original_pdf"
+    },
+    {
+      "page": 12,
+      "kind": "visual_review_original_pdf"
+    },
+    {
+      "page": 16,
+      "kind": "visual_review_original_pdf"
+    }
+  ],
+  "verification": {
+    "pdf_pages": "selected_only",
+    "award": "as_explicitly_stated_in_expected_and_notes",
+    "payment_amount_pln": null,
+    "payment_amount_verified": false,
+    "app_engine": "not_tested",
+    "full_document_audit": "pending"
+  },
+  "notes": "ZAM p5 requests maternity to 18.10.2026; Z-3 p12 appears to report 16.10.2026. Leave reason and extension require complete adjudication. Do not treat title as granted supplementary leave."
+}

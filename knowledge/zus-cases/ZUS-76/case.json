@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "ZUS-76",
+  "source_filename": "Wojciech Lu_4_zas. mac. za okres urlopu rodzicielskiego.pdf",
+  "topic": "parental_self_employed_application_grant_noted",
+  "status": "partially_extracted",
+  "source_pdf_path": "knowledge/zus-cases/incomming/Wojciech Lu_4_zas. mac. za okres urlopu rodzicielskiego.pdf",
+  "inputs": {
+    "parentalClaimStart": "2026-10-01",
+    "parentalClaimEnd": "2027-05-12",
+    "insuredAsSelfEmployed": true,
+    "statementNoConcurrentParentalLeave": true
+  },
+  "expected": {
+    "parentalRequestedDays": 224,
+    "decisionMention": "grant_stated_on_cover"
+  },
+  "evidence": [
+    {
+      "page": 1,
+      "source": "original_pdf",
+      "evidence_scope": "visual_selected_page"
+    },
+    {
+      "page": 2,
+      "source": "original_pdf",
+      "evidence_scope": "visual_selected_page"
+    },
+    {
+      "page": 3,
+      "source": "original_pdf",
+      "evidence_scope": "visual_selected_page"
+    },
+    {
+      "page": 6,
+      "source": "original_pdf",
+      "evidence_scope": "visual_selected_page"
+    },
+    {
+      "page": 9,
+      "source": "original_pdf",
+      "evidence_scope": "visual_selected_page"
+    }
+  ],
+  "verification": {
+    "full_document_audit": "pending",
+    "actual_zus_payout_pln": null,
+    "amount_verified": false,
+    "app_engine": "not_tested",
+    "source_pdf_in_repo": "not_independently_verified"
+  },
+  "notes": "Cover states parental benefit granted. ZUR p2 asks 1 Oct 2026–12 May 2027; Z-3b p6 repeats. It does not prove exact transfer amount, despite declaration about 100% requested."
+}

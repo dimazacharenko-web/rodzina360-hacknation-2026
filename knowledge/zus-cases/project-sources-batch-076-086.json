@@ -1,0 +1,335 @@
+{
+  "schema_version": 1,
+  "batch": "last-11-project-source-scans",
+  "total": 11,
+  "cases": [
+    {
+      "id": "ZUS-76",
+      "source_filename": "Wojciech Lu_4_zas. mac. za okres urlopu rodzicielskiego.pdf",
+      "topic": "parental_self_employed_application_grant_noted",
+      "inputs": {
+        "parentalClaimStart": "2026-10-01",
+        "parentalClaimEnd": "2027-05-12",
+        "insuredAsSelfEmployed": true,
+        "statementNoConcurrentParentalLeave": true
+      },
+      "expected": {
+        "parentalRequestedDays": 224,
+        "decisionMention": "grant_stated_on_cover"
+      },
+      "evidence_pages": [
+        1,
+        2,
+        3,
+        6,
+        9
+      ],
+      "notes": "Cover states parental benefit granted. ZUR p2 asks 1 Oct 2026–12 May 2027; Z-3b p6 repeats. It does not prove exact transfer amount, despite declaration about 100% requested.",
+      "status": "partially_extracted",
+      "financial_payout_pln": null,
+      "app_engine_tested": false
+    },
+    {
+      "id": "ZUS-77",
+      "source_filename": "Zofia By_1_Zas. macierzyński za ookres urlopu macierzyńskiego i rodzicielskiego w trakcie zatrudnienia.pdf",
+      "topic": "maternity_parental_employment_with_conflicting_application_versions",
+      "inputs": {
+        "childBirthDate": "2024-05-23",
+        "employerZ3BenefitAggregateStart": "2024-05-22",
+        "employerZ3BenefitAggregateEnd": "2025-05-20",
+        "benefitTypes": [
+          "maternity",
+          "parental"
+        ],
+        "childcareLeaveBeforeBirth": true
+      },
+      "expected": {
+        "employerReportedAggregateDays": 364,
+        "dateConflict": true
+      },
+      "evidence_pages": [
+        3,
+        4,
+        7,
+        9,
+        11,
+        15,
+        22
+      ],
+      "notes": "Z-3 p3 says 22 May 2024–20 May 2025, while birth registry p11 says 23 May 2024; ZAM pp15/22 show differing period versions. Neither wage basis nor employer leave consent proves ZUS paid benefit.",
+      "status": "partially_extracted",
+      "financial_payout_pln": null,
+      "app_engine_tested": false
+    },
+    {
+      "id": "ZUS-78",
+      "source_filename": "Zofia Le_zas. mac. za okres u. mac. i rodz..pdf",
+      "topic": "maternity_early_transfer_to_father_employee",
+      "inputs": {
+        "birthDate": "2026-03-21",
+        "employmentSince": "2025-09-01",
+        "employerZ3AggregateBenefitStart": "2026-08-01",
+        "employerZ3AggregateBenefitEnd": "2027-03-05",
+        "motherDeclaredMaternityUsedWeeks": 19,
+        "earlyTransferToFatherReported": true
+      },
+      "expected": {
+        "employerReportedAggregateDays": 217,
+        "grantNote": "benefit_granted_as_requested"
+      },
+      "evidence_pages": [
+        3,
+        7,
+        11,
+        12,
+        15,
+        16
+      ],
+      "notes": "Z-3 p3 and p7 show remaining maternity and parental claim; handwritten declaration p15 says mother used 19 weeks, internal note p16 says granted as requested. Needs exact split check and who received each part; no disbursement amount.",
+      "status": "partially_extracted",
+      "financial_payout_pln": null,
+      "app_engine_tested": false
+    },
+    {
+      "id": "ZUS-79",
+      "source_filename": "Zofia Lu_1_zas. mac. za okres urlopu macierzyńskiego i rodzicielskiego.pdf",
+      "topic": "self_employed_maternity_parental_benefit_granted",
+      "inputs": {
+        "employmentType": "self_employed",
+        "aggregateMaternityParentalStart": "2025-11-13",
+        "aggregateMaternityParentalEnd": "2026-11-11",
+        "sicknessInsuranceTicked": true
+      },
+      "expected": {
+        "aggregateDays": 364,
+        "decisionMention": "granted_on_case_cover"
+      },
+      "evidence_pages": [
+        1,
+        3,
+        5,
+        7,
+        8,
+        11
+      ],
+      "notes": "Case cover states benefit entitlement granted. Z-3b p3 reports 364-day overall period; later letter p11 asks for other-parent use statement. Actual transfer and PLN amount not documented.",
+      "status": "partially_extracted",
+      "financial_payout_pln": null,
+      "app_engine_tested": false
+    },
+    {
+      "id": "ZUS-80",
+      "source_filename": "Zofia Zi_4_zas. macierzyński po ustaniu ubezp._zatrudnienie do dnia porodu.pdf",
+      "topic": "maternity_benefit_after_insurance_end_on_birth_day",
+      "inputs": {
+        "employmentStart": "2024-11-04",
+        "employmentEnd": "2025-12-27",
+        "birthDate": "2025-12-27",
+        "ZUSMaternityClaimStart": "2025-12-27",
+        "ZUSMaternityClaimEnd": "2026-06-15",
+        "employerPaidOnBirthDatePLN": 150.11
+      },
+      "expected": {
+        "ZUSClaimDays": 171,
+        "awardNote": "right_granted"
+      },
+      "evidence_pages": [
+        4,
+        11,
+        12,
+        15,
+        17
+      ],
+      "notes": "Z-3 p15 states employment to birth day 27 Dec 2025 and employer paid 150.11 PLN for ONE DAY. This is not a confirmed ZUS payout amount. ZUS internal note p17 grants maternity benefit; ZAM p4 has requested periods.",
+      "status": "partially_extracted",
+      "financial_payout_pln": null,
+      "app_engine_tested": false
+    },
+    {
+      "id": "ZUS-81",
+      "source_filename": "Zuzanna Cho._zas. mac. za okres urlopu macierzyńskiego i rodzicielskiego, umowa zlecenie.pdf",
+      "topic": "maternity_parental_commission_contract_insurance_documents_requested",
+      "inputs": {
+        "employmentType": "umowa_zlecenie",
+        "birthDate": "2025-05-30",
+        "maternityClaimStart": "2025-05-30",
+        "maternityClaimEnd": "2025-10-16",
+        "parentalClaimStart": "2025-10-17",
+        "parentalClaimEnd": "2026-05-28",
+        "monthlyMinimumTopUpPLNRequested": 1000,
+        "insuranceDocumentationRequested": true
+      },
+      "expected": {
+        "maternityClaimDays": 140,
+        "parentalClaimDays": 224,
+        "topUpAwardConfirmed": false
+      },
+      "evidence_pages": [
+        2,
+        5,
+        6,
+        7,
+        8,
+        10,
+        12
+      ],
+      "notes": "ZAM p2 requests 140+224 days. Handwriting p5 requests increase to 1000 PLN; this is a request not confirmed payment. ZUS note p8 requests proper social-insurance reporting; contribution bases p12 are not benefit payments.",
+      "status": "partially_extracted",
+      "financial_payout_pln": null,
+      "app_engine_tested": false
+    },
+    {
+      "id": "ZUS-82",
+      "source_filename": "Zuzanna Go_4_zas. chorobowy w ciąży, zas. mac. za okres urlopu mac. i rodzicielskiego.pdf",
+      "topic": "employee_pregnancy_sickness_maternity_parental_paid",
+      "inputs": {
+        "employmentSince": "2020-05-25",
+        "maternityStart": "2024-02-04",
+        "maternityEnd": "2024-06-22",
+        "parentalStart": "2024-06-23",
+        "parentalEnd": "2025-02-01",
+        "employeeFte": 1
+      },
+      "expected": {
+        "maternityDays": 140,
+        "parentalDays": 224,
+        "benefitsPaidStatedOnCover": true
+      },
+      "evidence_pages": [
+        1,
+        4,
+        12,
+        16,
+        21
+      ],
+      "notes": "Cover p1 states sickness and maternity benefits were paid. Z-3 p4 and p16 document 140+224 days. Insurer print p21 contains benefit category entries, no reliable PLN payout.",
+      "status": "partially_extracted",
+      "financial_payout_pln": null,
+      "app_engine_tested": false
+    },
+    {
+      "id": "ZUS-83",
+      "source_filename": "Zuzanna Ko_3_zac. mac..pdf",
+      "topic": "employee_maternity_parental_employment_ends_on_birth",
+      "inputs": {
+        "employmentStart": "2022-07-02",
+        "employmentEnd": "2025-08-30",
+        "birthDateReported": "2025-08-30",
+        "maternityClaimStart": "2025-08-30",
+        "maternityClaimEnd": "2026-01-16",
+        "parentalClaimStart": "2026-01-17",
+        "parentalClaimEnd": "2026-08-28",
+        "sickLeaveReportedStart": "2025-08-13",
+        "sickLeaveReportedEnd": "2025-09-11"
+      },
+      "expected": {
+        "maternityClaimDays": 140,
+        "parentalClaimDays": 224,
+        "sourceDateConflict": true
+      },
+      "evidence_pages": [
+        2,
+        3,
+        4,
+        10,
+        15,
+        18
+      ],
+      "notes": "Z-3 pp2-4 show sickness through 11 Sep 2025 and maternity from 30 Aug 2025, an overlap requiring audit. ZUS p15 requests needed maternity documents. No final award or PLN amount confirmed.",
+      "status": "partially_extracted",
+      "financial_payout_pln": null,
+      "app_engine_tested": false
+    },
+    {
+      "id": "ZUS-84",
+      "source_filename": "Zuzanna Le_zas. chorobowy w ciąży.pdf",
+      "topic": "employee_pregnancy_sickness_insurance_and_salary_basis",
+      "inputs": {
+        "employmentSince": "2026-01-07",
+        "sicknessClaimStart": "2026-10-07",
+        "sicknessClaimEnd": "2026-10-13",
+        "employerPreviousSickPayStart": "2026-09-04",
+        "employerPreviousSickPayEnd": "2026-10-06"
+      },
+      "expected": {
+        "sicknessClaimDays": 7,
+        "grantClaimOnCover": true
+      },
+      "evidence_pages": [
+        1,
+        4,
+        5,
+        6,
+        7,
+        9,
+        13
+      ],
+      "notes": "Cover says sickness benefit granted for pregnant worker. Employer Z-3 p4 requests 7 days; p6 reports earlier employer sick-pay. Wage data p7 are NOT actual benefit transfers; p9 raises uncertainty over vacation payments in benefit basis.",
+      "status": "partially_extracted",
+      "financial_payout_pln": null,
+      "app_engine_tested": false
+    },
+    {
+      "id": "ZUS-85",
+      "source_filename": "Zuzanna Wa_03_zas. mac. za urlop macierzyński, uzupełniający, rodzicielski.pdf",
+      "topic": "maternity_supplementary_parental_hospitalization_paid_report",
+      "inputs": {
+        "birthDate": "2026-05-02",
+        "maternityStart": "2026-05-02",
+        "maternityEnd": "2026-09-18",
+        "supplementaryMaternityStart": "2026-09-19",
+        "supplementaryMaternityEnd": "2026-09-25",
+        "parentalStart": "2026-09-26",
+        "parentalEnd": "2027-05-07",
+        "hospitalizationCertificateProvided": true
+      },
+      "expected": {
+        "maternityDays": 140,
+        "supplementaryDays": 7,
+        "parentalDays": 224,
+        "caseCoverSaysPaid": true
+      },
+      "evidence_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        11
+      ],
+      "notes": "Page 1 describes payments for all three periods, including parental period to 07.05.2027 (future relative to 2026-11-21). Do NOT treat as actual completed payments through that future date without clarifying data date. Supporting hospital certificate p5. Exact PLN amount absent.",
+      "status": "partially_extracted",
+      "financial_payout_pln": null,
+      "app_engine_tested": false
+    },
+    {
+      "id": "ZUS-86",
+      "source_filename": "Zuzanna Wro_2_zas. macierzyński.pdf",
+      "topic": "self_employed_maternity_parental_insurance_confirmed_no_debt",
+      "inputs": {
+        "employmentType": "self_employed",
+        "birthDate": "2026-10-01",
+        "aggregateClaimStart": "2026-10-01",
+        "aggregateClaimEnd": "2027-09-29",
+        "sicknessInsuranceConfirmed": true,
+        "contributionDebtPresent": false
+      },
+      "expected": {
+        "aggregateClaimDays": 364,
+        "benefitAwardConfirmed": false
+      },
+      "evidence_pages": [
+        2,
+        6,
+        11,
+        13,
+        14,
+        15
+      ],
+      "notes": "Z-3b p2 and ZAM p6 state maternity/parental periods; ZUS insurance reply p14 confirms coverage, p15 shows no contribution debt. Confirmation of insurance does not prove benefit grant. Contribution bases are not benefit amounts.",
+      "status": "partially_extracted",
+      "financial_payout_pln": null,
+      "app_engine_tested": false
+    }
+  ]
+}

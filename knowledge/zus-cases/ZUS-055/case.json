@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "id": "ZUS-055",
+  "source_filename": "Krystyna Łód - zas. macierzyński_urlop macierzyński i rodzicielski - prawo do zasiłku.pdf",
+  "source_pdf_path": "knowledge/zus-cases/incomming/Krystyna Łód - zas. macierzyński_urlop macierzyński i rodzicielski - prawo do zasiłku.pdf",
+  "topic": "maternity_parental_claim_missing_Z3_ZAM",
+  "status": "employer_leave_and_document_request_no_award",
+  "inputs": {
+    "maternityLeaveStart": "2026-03-01",
+    "maternityLeaveEnd": "2026-07-18",
+    "parentalLeaveStart": "2026-07-19",
+    "parentalLeaveEnd": "2027-02-27",
+    "ZUSRequestedDocuments": [
+      "Z-3",
+      "ZAM"
+    ],
+    "deadlineForAdditionalDocuments": "2026-04-10"
+  },
+  "expected": {
+    "maternityLeaveDays": 140,
+    "parentalLeaveDays": 224,
+    "risk": "missing_documents"
+  },
+  "evidence": [
+    {
+      "page": 1,
+      "source": "PDF",
+      "verification_type": "visual_page_read"
+    },
+    {
+      "page": 5,
+      "source": "PDF",
+      "verification_type": "visual_page_read"
+    },
+    {
+      "page": 7,
+      "source": "PDF",
+      "verification_type": "visual_page_read"
+    },
+    {
+      "page": 10,
+      "source": "PDF",
+      "verification_type": "visual_page_read"
+    }
+  ],
+  "verification": {
+    "source_pages_inspected": [
+      1,
+      5,
+      7,
+      10
+    ],
+    "decision_and_payment_status": "employer_leave_and_document_request_no_award",
+    "benefit_payment_amount_pln": null,
+    "amount_verified": false,
+    "app_engine": "not_tested",
+    "full_document_review": "pending"
+  },
+  "notes": "Employer leave request p1 confirms dates; ZUS p5 and p7 requests Z-3 and ZAM, warning refusal if not submitted. No ZUS benefit grant established."
+}

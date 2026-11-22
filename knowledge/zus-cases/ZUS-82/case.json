@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "id": "ZUS-82",
+  "source_filename": "Zuzanna Go_4_zas. chorobowy w ciąży, zas. mac. za okres urlopu mac. i rodzicielskiego.pdf",
+  "topic": "employee_pregnancy_sickness_maternity_parental_paid",
+  "status": "partially_extracted",
+  "source_pdf_path": "knowledge/zus-cases/incomming/Zuzanna Go_4_zas. chorobowy w ciąży, zas. mac. za okres urlopu mac. i rodzicielskiego.pdf",
+  "inputs": {
+    "employmentSince": "2020-05-25",
+    "maternityStart": "2024-02-04",
+    "maternityEnd": "2024-06-22",
+    "parentalStart": "2024-06-23",
+    "parentalEnd": "2025-02-01",
+    "employeeFte": 1
+  },
+  "expected": {
+    "maternityDays": 140,
+    "parentalDays": 224,
+    "benefitsPaidStatedOnCover": true
+  },
+  "evidence": [
+    {
+      "page": 1,
+      "source": "original_pdf",
+      "evidence_scope": "visual_selected_page"
+    },
+    {
+      "page": 4,
+      "source": "original_pdf",
+      "evidence_scope": "visual_selected_page"
+    },
+    {
+      "page": 12,
+      "source": "original_pdf",
+      "evidence_scope": "visual_selected_page"
+    },
+    {
+      "page": 16,
+      "source": "original_pdf",
+      "evidence_scope": "visual_selected_page"
+    },
+    {
+      "page": 21,
+      "source": "original_pdf",
+      "evidence_scope": "visual_selected_page"
+    }
+  ],
+  "verification": {
+    "full_document_audit": "pending",
+    "actual_zus_payout_pln": null,
+    "amount_verified": false,
+    "app_engine": "not_tested",
+    "source_pdf_in_repo": "not_independently_verified"
+  },
+  "notes": "Cover p1 states sickness and maternity benefits were paid. Z-3 p4 and p16 document 140+224 days. Insurer print p21 contains benefit category entries, no reliable PLN payout."
+}

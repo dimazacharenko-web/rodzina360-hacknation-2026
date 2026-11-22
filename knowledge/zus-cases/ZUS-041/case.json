@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "ZUS-041",
+  "topic": "pregnancy_sickness_maternity_parental_za_zyciem",
+  "source_filename": "Jolanta Pi_2_zas. chorobowy i mac._urlop mac., urlop rodzicielski_zaświadczenie za życiem.pdf",
+  "source_pdf_path": "knowledge/zus-cases/incomming/Jolanta Pi_2_zas. chorobowy i mac._urlop mac., urlop rodzicielski_zaświadczenie za życiem.pdf",
+  "status": "partially_extracted",
+  "inputs": {
+    "employmentCategory": "employee",
+    "benefitContexts": [
+      "sickness",
+      "maternity",
+      "parental",
+      "za_zyciem_certificate"
+    ],
+    "employmentStart": "2022-09-19"
+  },
+  "expected": {},
+  "evidence": [
+    {
+      "page": 1,
+      "evidence_type": "multiple_Z3_claims_wage_history"
+    },
+    {
+      "page": 2,
+      "evidence_type": "multiple_Z3_claims_wage_history"
+    },
+    {
+      "page": 3,
+      "evidence_type": "multiple_Z3_claims_wage_history"
+    },
+    {
+      "page": 4,
+      "evidence_type": "multiple_Z3_claims_wage_history"
+    },
+    {
+      "page": 8,
+      "evidence_type": "multiple_Z3_claims_wage_history"
+    },
+    {
+      "page": 10,
+      "evidence_type": "multiple_Z3_claims_wage_history"
+    }
+  ],
+  "verification": {
+    "source_pages_reviewed": [
+      1,
+      2,
+      3,
+      4,
+      8,
+      10
+    ],
+    "decision_status": "see_case_notes",
+    "amount_pln": null,
+    "financial_amount_verified": false,
+    "app_engine": "not_tested",
+    "full_document_audit": "pending"
+  },
+  "notes": "74-page complex case. Z-3 forms show illness and earnings history; dates across versions require reconciliation. Salary entries are not benefit payout figures. No specific decision confirmed yet."
+}

@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "id": "ZUS-023",
+  "topic": "father_parental_uninsured_mother",
+  "source_filename": "Dariusz Łód_4_zas. macierzyński za rodzicielski dla ojca_matka nieubezpieczona.pdf",
+  "source_filenames": [
+    "Dariusz Łód_4_zas. macierzyński za rodzicielski dla ojca_matka nieubezpieczona.pdf"
+  ],
+  "source_pdf_paths": [
+    "knowledge/zus-cases/incomming/Dariusz Łód_4_zas. macierzyński za rodzicielski dla ojca_matka nieubezpieczona.pdf"
+  ],
+  "status": "partially_extracted",
+  "inputs": {
+    "parent": "father",
+    "childBirthDate": "2024-01-10",
+    "motherInsured": false,
+    "parentalClaimStart": "2025-01-01",
+    "parentalClaimEnd": "2025-03-12",
+    "employmentFte": 1
+  },
+  "expected": {
+    "parentalRequestedDays": 71
+  },
+  "evidence": [
+    {
+      "page": 2,
+      "evidence_type": "ZUR_request_and_employer_form"
+    },
+    {
+      "page": 3,
+      "evidence_type": "ZUR_request_and_employer_form"
+    },
+    {
+      "page": 5,
+      "evidence_type": "ZUR_request_and_employer_form"
+    },
+    {
+      "page": 7,
+      "evidence_type": "ZUR_request_and_employer_form"
+    },
+    {
+      "page": 11,
+      "evidence_type": "ZUR_request_and_employer_form"
+    }
+  ],
+  "verification": {
+    "source_review": "selected_pages_visually_inspected",
+    "final_award": "not_fully_confirmed",
+    "amount": "not_available",
+    "app_engine": "not_tested",
+    "full_document_review": "completed",
+    "decision_status": "no_grant_or_refusal_found"
+  },
+  "notes": "Employer Z3 and ZUR show parental claim; the mother is described as uninsured. Dates and eligibility require reconciliation; no award confirmed.",
+  "contains_personal_data": false,
+  "full_source_audit": {
+    "reviewed_pdf_pages": "all_pages_visually_screened",
+    "status": "no_grant_or_refusal_found",
+    "source_pages": [
+      2,
+      3,
+      5,
+      7,
+      11,
+      12,
+      13
+    ],
+    "documentary_findings": "Father's ZUR request 2025-01-01..2025-03-12; mother reported uninsured, birth 2024-01-10. No ZUS approval or payout confirmed.",
+    "benefit_payment_amount_pln": null,
+    "amount_status": "not_in_supplied_document",
+    "app_result_comparison": "not_performed",
+    "note": "Do not confuse an application or a contribution wage with approved payment."
+  }
+}

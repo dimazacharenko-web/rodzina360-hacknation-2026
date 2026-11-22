@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "id": "ZUS-068",
+  "topic": "father_paternity_leave_fourteen_day_claim",
+  "source_filename": "Piotr Rze_1_zas. macierzyński - urlop ojcowski.pdf",
+  "source_pdf_path": "knowledge/zus-cases/incomming/Piotr Rze_1_zas. macierzyński - urlop ojcowski.pdf",
+  "status": "partially_extracted",
+  "inputs": {
+    "parent": "father",
+    "childBirthDate": "2026-05-05",
+    "paternityClaimStart": "2026-10-12",
+    "paternityClaimEnd": "2026-10-25",
+    "employmentSince": "2016-09-01"
+  },
+  "expected": {
+    "paternityRequestedDays": 14
+  },
+  "evidence": [
+    {
+      "page": 2,
+      "kind": "visual_review_original_pdf"
+    },
+    {
+      "page": 3,
+      "kind": "visual_review_original_pdf"
+    },
+    {
+      "page": 6,
+      "kind": "visual_review_original_pdf"
+    },
+    {
+      "page": 8,
+      "kind": "visual_review_original_pdf"
+    }
+  ],
+  "verification": {
+    "pdf_pages": "selected_only",
+    "award": "as_explicitly_stated_in_expected_and_notes",
+    "payment_amount_pln": null,
+    "payment_amount_verified": false,
+    "app_engine": "not_tested",
+    "full_document_audit": "pending"
+  },
+  "notes": "ZAO p2 and Z-3 p6 show 12–25.10.2026, 14 days; Z-3 wage table p8 not amount disbursed. No final granting decision located."
+}

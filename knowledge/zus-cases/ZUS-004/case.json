@@ -1,0 +1,33 @@
+{
+  "id": "ZUS-004",
+  "topic": "parental_leave_with_work",
+  "source_filename": "Agnieszka Wa_05_zas. mac. łęczenie urlopu rodzicielskiego z pracą.pdf",
+  "source_page_count": null,
+  "status": "partially_extracted",
+  "source_visibility": "private_only",
+  "inputs": {
+    "maternityStart": "2023-11-22",
+    "maternityEnd": "2024-04-09",
+    "parentalStart": "2024-04-10",
+    "parentalEnd": "2025-01-31",
+    "employmentFteBeforeLeave": 0.63
+  },
+  "expected": {
+    "maternityDays": 140,
+    "maternityWeeks": 20
+  },
+  "verification": {
+    "dates": "confirmed_from_cover_and_form",
+    "work_fraction_during_parental_leave": "pending",
+    "parental_extension": "pending",
+    "award": "not_confirmed",
+    "amount": "not_available"
+  },
+  "evidence": [
+    1,
+    2,
+    7
+  ],
+  "notes": "0.63 is the employment FTE on Z-3, NOT the fraction of work performed during parental leave. Cover reports benefit suspension from 2025-02-01 and childcare benefit adjustment; do not infer benefit amount.",
+  "warning": "Application/request is not automatically proof of an awarded payment."
+}

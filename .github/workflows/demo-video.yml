@@ -1,0 +1,60 @@
+name: Generate Rodzina360 demo video
+on:
+  push:
+    paths:
+      - 'scripts/record-hacknation-demo.mjs'
+      - '.github/workflows/demo-video.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  capture-demo:
+    runs-on: ubuntu-latest
+    timeout-minutes: 18
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install dependencies
+        run: |
+          npm install --no-audit --no-fund
+          npx playwright install --with-deps chromium
+      - name: Start app and record demo
+        run: |
+          npm run dev -- --host 127.0.0.1 --port 4173 --strictPort > /tmp/rodzina-vite.log 2>&1 &
+          for i in {1..45}; do
+            if curl --fail --silent http://127.0.0.1:4173 > /dev/null; then break; fi
+            sleep 2
+          done
+          node scripts/record-hacknation-demo.mjs
+      - name: Install FFmpeg
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg
+      - name: Encode MP4 (H.264)
+        run: |
+          mkdir -p demo
+          ffmpeg -hide_banner -loglevel error -y -i demo/rodzina360-recording.webm -vf "fps=24,format=yuv420p" -c:v libx264 -preset medium -crf 25 -movflags +faststart -an demo/rodzina360-hacknation-2026.mp4
+          ffprobe -v error -show_entries format=duration,size -of default=noprint_wrappers=1 demo/rodzina360-hacknation-2026.mp4
+      - name: Upload video artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: Rodzina360-HackNation-demo-video
+          path: demo/rodzina360-hacknation-2026.mp4
+          retention-days: 30
+      - name: Publish video in repository
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add demo/rodzina360-hacknation-2026.mp4
+          if git diff --staged --quiet; then
+            echo "No video changes"
+          else
+            git commit -m "Add generated 2-3 minute demo video"
+            git fetch origin main
+            git rebase origin/main
+            git push origin HEAD:main
+          fi
